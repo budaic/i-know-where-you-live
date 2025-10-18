@@ -10,8 +10,8 @@ const api = axios.create({
   },
 });
 
-export const createProfiles = async (subjects: Subject[]): Promise<ProfileResponse> => {
-  const response = await api.post<ProfileResponse>('/profiles/create', { subjects });
+export const createProfiles = async (subjects: Subject[], sessionId?: string): Promise<ProfileResponse> => {
+  const response = await api.post<ProfileResponse>('/profiles/create', { subjects, sessionId });
   return response.data;
 };
 
@@ -27,6 +27,22 @@ export const getAllProfiles = async (): Promise<Profile[]> => {
 
 export const deleteProfile = async (id: string): Promise<void> => {
   await api.delete(`/profiles/${id}`);
+};
+
+// Session management APIs
+export const getAllSessions = async (): Promise<any[]> => {
+  const response = await api.get('/profiles/sessions');
+  return response.data.sessions;
+};
+
+export const getSession = async (sessionId: string): Promise<any> => {
+  const response = await api.get(`/profiles/sessions/${sessionId}`);
+  return response.data;
+};
+
+export const recoverSession = async (sessionId: string): Promise<any> => {
+  const response = await api.post(`/profiles/sessions/${sessionId}/recover`);
+  return response.data;
 };
 
 export default api;

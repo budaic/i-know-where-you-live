@@ -1,37 +1,53 @@
 import React, { useState } from 'react';
 import SubjectForm from './components/SubjectForm';
 import ProfileList from './components/ProfileList';
+import LiveSearchProgress from './components/LiveSearchProgress';
 import { useProfiles } from './hooks/useProfiles';
+import { useLiveSearch } from './hooks/useLiveSearch';
 import { Subject } from './types';
 
 function App() {
   const { profiles, loading, error, createProfiles, deleteProfile } = useProfiles();
+  const { searchState, startSearch, stopSearch, clearSearch } = useLiveSearch();
   const [creationStatus, setCreationStatus] = useState<{
     success?: string;
     errors?: string[];
   }>({});
+  const [useLiveSearchMode, setUseLiveSearchMode] = useState(true);
 
   const handleCreateProfile = async (subjects: Subject[]) => {
     setCreationStatus({});
     
-    try {
-      const response = await createProfiles(subjects);
-      
-      const successCount = response.profiles.length;
-      
-      setCreationStatus({
-        success: `Successfully created ${successCount} profile${successCount !== 1 ? 's' : ''}!`,
-        errors: response.errors,
-      });
+    if (useLiveSearchMode) {
+      // Use live search mode
+      try {
+        await startSearch(subjects);
+      } catch (err) {
+        setCreationStatus({
+          errors: [err instanceof Error ? err.message : 'Failed to start live search'],
+        });
+      }
+    } else {
+      // Use traditional mode
+      try {
+        const response = await createProfiles(subjects);
+        
+        const successCount = response.profiles.length;
+        
+        setCreationStatus({
+          success: `Successfully created ${successCount} profile${successCount !== 1 ? 's' : ''}!`,
+          errors: response.errors,
+        });
 
-      // Clear success message after 5 seconds
-      setTimeout(() => {
-        setCreationStatus(prev => ({ ...prev, success: undefined }));
-      }, 5000);
-    } catch (err) {
-      setCreationStatus({
-        errors: [err instanceof Error ? err.message : 'Failed to create profile'],
-      });
+        // Clear success message after 5 seconds
+        setTimeout(() => {
+          setCreationStatus(prev => ({ ...prev, success: undefined }));
+        }, 5000);
+      } catch (err) {
+        setCreationStatus({
+          errors: [err instanceof Error ? err.message : 'Failed to create profile'],
+        });
+      }
     }
   };
 
@@ -62,7 +78,61 @@ function App() {
           </p>
         </div>
 
-        <SubjectForm onSubmit={handleCreateProfile} loading={loading} />
+        {/* Search Mode Toggle */}
+        <div className="bg-white rounded-lg shadow-md p-4 mb-6">
+          <div className="flex items-center justify-between">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800">Search Mode</h3>
+              <p className="text-sm text-gray-600">
+                {useLiveSearchMode 
+                  ? 'Live search shows real-time progress and partial results' 
+                  : 'Traditional search shows progress only after completion'
+                }
+              </p>
+            </div>
+            <label className="flex items-center cursor-pointer">
+              <input
+                type="checkbox"
+                checked={useLiveSearchMode}
+                onChange={(e) => setUseLiveSearchMode(e.target.checked)}
+                className="sr-only"
+              />
+              <div className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                useLiveSearchMode ? 'bg-blue-600' : 'bg-gray-200'
+              }`}>
+                <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                  useLiveSearchMode ? 'translate-x-6' : 'translate-x-1'
+                }`} />
+              </div>
+              <span className="ml-3 text-sm font-medium text-gray-700">
+                {useLiveSearchMode ? 'Live Search' : 'Traditional'}
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <SubjectForm onSubmit={handleCreateProfile} loading={loading || searchState.isSearching} />
+
+        {/* Live Search Progress */}
+        {searchState.isSearching && (
+          <LiveSearchProgress 
+            searchState={searchState} 
+            onStop={stopSearch}
+          />
+        )}
+
+        {/* Search Completion Status */}
+        {!searchState.isSearching && searchState.currentPhase === 'complete' && (
+          <div className="bg-green-50 border-l-4 border-green-400 p-4 mb-6">
+            <p className="text-green-800">Search completed successfully! Check the profiles below.</p>
+            <button
+              onClick={clearSearch}
+              className="mt-2 px-3 py-1 bg-green-100 text-green-700 rounded text-sm hover:bg-green-200"
+            >
+              Clear Search Results
+            </button>
+          </div>
+        )}
 
         {creationStatus.success && (
           <div className="bg-green-50 border-l-4 border-green-400 p-4 mb-6">
@@ -87,7 +157,7 @@ function App() {
           </div>
         )}
 
-        {loading && (
+        {loading && !searchState.isSearching && (
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
             <p className="text-blue-800">Processing profile... This may take several minutes.</p>
             <div className="mt-2 w-full bg-blue-200 rounded-full h-2">

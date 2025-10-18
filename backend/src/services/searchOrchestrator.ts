@@ -1,8 +1,10 @@
 import OpenAI from 'openai';
 import { config } from '../config';
-import { ProfileCreationLog, GeneratedContext, SearchLog, ValidationResult } from '../types';
+import { ProfileCreationLog, GeneratedContext, SearchLog, ValidationResult, ProgressUpdate } from '../types';
 import * as exaService from './exaService';
 import * as validationService from './validationService';
+import * as progressTracker from './progressTracker';
+import { generateProfileFromLog } from './profileGeneratorV2';
 
 const openai = new OpenAI({
   apiKey: config.openaiApiKey,
@@ -14,9 +16,14 @@ const openai = new OpenAI({
 export async function executeMultiPhaseSearch(
   name: string,
   hardContext: string,
-  softContext: string
+  softContext: string,
+  sessionId?: string
 ): Promise<ProfileCreationLog> {
   console.log(`\n=== Starting Multi-Phase Search for: ${name} ===`);
+  
+  if (sessionId) {
+    progressTracker.sendPhaseStart(sessionId, 'linkedin', 'Starting LinkedIn profile search...');
+  }
 
   const generatedContext: GeneratedContext = {
     additionalFindings: [],
@@ -24,30 +31,60 @@ export async function executeMultiPhaseSearch(
 
   const searchLogs: SearchLog[] = [];
 
-  // Phase 1: LinkedIn
-  console.log('\n--- Phase 1: LinkedIn Search ---');
-  const linkedinLog = await searchLinkedInProfile(name, hardContext, softContext, generatedContext);
-  searchLogs.push(linkedinLog);
+  try {
+    // Phase 1: LinkedIn
+    console.log('\n--- Phase 1: LinkedIn Search ---');
+    const linkedinLog = await searchLinkedInProfile(name, hardContext, softContext, generatedContext, sessionId);
+    searchLogs.push(linkedinLog);
 
-  // Phase 2: GitHub
-  console.log('\n--- Phase 2: GitHub Search ---');
-  const githubLog = await searchGitHubProfile(name, hardContext, softContext, generatedContext);
-  searchLogs.push(githubLog);
+    // Phase 2: GitHub
+    console.log('\n--- Phase 2: GitHub Search ---');
+    if (sessionId) {
+      progressTracker.sendPhaseStart(sessionId, 'github', 'Starting GitHub profile search...');
+    }
+    const githubLog = await searchGitHubProfile(name, hardContext, softContext, generatedContext, sessionId);
+    searchLogs.push(githubLog);
 
-  // Phase 3: Personal Website
-  console.log('\n--- Phase 3: Website Search ---');
-  const websiteLog = await searchPersonalWebsite(name, hardContext, softContext, generatedContext);
-  searchLogs.push(websiteLog);
+    // Phase 3: Personal Website
+    console.log('\n--- Phase 3: Website Search ---');
+    if (sessionId) {
+      progressTracker.sendPhaseStart(sessionId, 'website', 'Starting personal website search...');
+    }
+    const websiteLog = await searchPersonalWebsite(name, hardContext, softContext, generatedContext, sessionId);
+    searchLogs.push(websiteLog);
 
-  // Phase 4: General Queries
-  console.log('\n--- Phase 4: General Queries ---');
-  const generalLogs = await searchGeneralQueries(name, hardContext, softContext, generatedContext);
-  searchLogs.push(...generalLogs);
+    // Phase 4: General Queries
+    console.log('\n--- Phase 4: General Queries ---');
+    if (sessionId) {
+      progressTracker.sendPhaseStart(sessionId, 'general', 'Starting general information search...');
+    }
+    const generalLogs = await searchGeneralQueries(name, hardContext, softContext, generatedContext, sessionId);
+    searchLogs.push(...generalLogs);
+  } catch (error) {
+    if (sessionId) {
+      progressTracker.sendError(sessionId, `Search failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
+    throw error;
+  }
 
   // Collect all high-quality sources (score >= 6)
   const finalSources = collectFinalSources(searchLogs);
 
   console.log(`\n=== Search Complete: ${finalSources.length} high-quality sources found ===`);
+  
+  if (sessionId) {
+    // Generate the final profile to save with the session
+    const finalProfile = await generateProfileFromLog({
+      subjectName: name,
+      hardContext,
+      softContext,
+      generatedContext,
+      searchLogs,
+      finalSources,
+    });
+    
+    progressTracker.sendSearchComplete(sessionId, `Search completed successfully! Found ${finalSources.length} high-quality sources.`, finalProfile);
+  }
 
   return {
     subjectName: name,
@@ -66,15 +103,27 @@ async function searchLinkedInProfile(
   name: string,
   hardContext: string,
   softContext: string,
-  generatedContext: GeneratedContext
+  generatedContext: GeneratedContext,
+  sessionId?: string
 ): Promise<SearchLog> {
   const query = `${name} linkedin.com`;
   console.log(`Searching: ${query}`);
+  
+  if (sessionId) {
+    progressTracker.sendPhaseProgress(sessionId, 'linkedin', 'searching', `Searching LinkedIn for ${name}...`);
+  }
 
   const results = await exaService.searchLinkedIn(name);
   console.log(`Smart search returned ${results.length} LinkedIn profile results`);
+  
+  if (sessionId) {
+    progressTracker.sendPhaseProgress(sessionId, 'linkedin', 'searching', `Found ${results.length} LinkedIn results, validating...`);
+  }
 
   if (results.length === 0) {
+    if (sessionId) {
+      progressTracker.sendPhaseComplete(sessionId, 'linkedin', 'No LinkedIn profiles found');
+    }
     return {
       phase: 'LinkedIn',
       query,
@@ -85,6 +134,10 @@ async function searchLinkedInProfile(
   }
 
   // Validate each result
+  if (sessionId) {
+    progressTracker.sendPhaseProgress(sessionId, 'linkedin', 'validating', `Validating ${results.length} LinkedIn results...`);
+  }
+  
   const validations = await validationService.validateSourcesBatch(
     results,
     name,
@@ -105,7 +158,19 @@ async function searchLinkedInProfile(
     console.log(`Selected LinkedIn profile: ${bestProfile.url} (score: ${bestProfile.relevancyScore}, category: ${bestProfile.category})`);
     selectedUrl = bestProfile.url;
 
+    if (sessionId) {
+      progressTracker.sendPhaseProgress(sessionId, 'linkedin', 'validating', `Selected LinkedIn profile: ${bestProfile.url}`, {
+        found: results.length,
+        qualified: profileValidations.length,
+        selected: bestProfile.url,
+      });
+    }
+
     // Crawl the LinkedIn profile
+    if (sessionId) {
+      progressTracker.sendPhaseProgress(sessionId, 'linkedin', 'validating', 'Crawling LinkedIn profile content...');
+    }
+    
     const content = await exaService.crawlContent(bestProfile.url);
     if (content) {
       // Extract key information using GPT
@@ -115,12 +180,28 @@ async function searchLinkedInProfile(
       console.log(`\n=== GENERATED CONTEXT ADDED ===`);
       console.log(`LinkedIn Profile Context: ${summary}`);
       console.log(`=== END GENERATED CONTEXT ===\n`);
+      
+      if (sessionId) {
+        progressTracker.sendPhaseComplete(sessionId, 'linkedin', 'LinkedIn profile processed successfully', {
+          found: results.length,
+          qualified: profileValidations.length,
+          selected: bestProfile.url,
+          contextAdded: summary,
+        });
+      }
     }
   } else {
     console.log('No qualified LinkedIn profile found');
     // Log what categories were found instead
     const categories = validations.map(v => `${v.category || 'unknown'}: ${v.url}`).join(', ');
     console.log(`Found LinkedIn results in categories: ${categories}`);
+    
+    if (sessionId) {
+      progressTracker.sendPhaseComplete(sessionId, 'linkedin', 'No qualified LinkedIn profile found', {
+        found: results.length,
+        qualified: 0,
+      });
+    }
   }
 
   return {
@@ -141,7 +222,8 @@ async function searchGitHubProfile(
   name: string,
   hardContext: string,
   softContext: string,
-  generatedContext: GeneratedContext
+  generatedContext: GeneratedContext,
+  sessionId?: string
 ): Promise<SearchLog> {
   const query = `${name} github`;
   console.log(`Searching: ${query}`);
@@ -210,7 +292,8 @@ async function searchPersonalWebsite(
   name: string,
   hardContext: string,
   softContext: string,
-  generatedContext: GeneratedContext
+  generatedContext: GeneratedContext,
+  sessionId?: string
 ): Promise<SearchLog> {
   const query = `${name} personal website OR portfolio`;
   console.log(`Searching: ${query}`);
@@ -279,7 +362,8 @@ async function searchGeneralQueries(
   name: string,
   hardContext: string,
   softContext: string,
-  generatedContext: GeneratedContext
+  generatedContext: GeneratedContext,
+  sessionId?: string
 ): Promise<SearchLog[]> {
   // Generate 5 custom queries
   const queries = await generateCustomQueries(name, hardContext, softContext, generatedContext);

@@ -64,3 +64,53 @@ export interface ProfileResponse {
   errors?: string[];
 }
 
+export interface ProgressUpdate {
+  sessionId: string;
+  subjectName: string;
+  phase: 'linkedin' | 'github' | 'website' | 'general' | 'complete' | 'error';
+  status: 'starting' | 'searching' | 'validating' | 'completed' | 'failed';
+  message: string;
+  progress: number; // 0-100
+  results?: PhaseResults;
+  timestamp: string;
+}
+
+export interface PhaseResults {
+  found: number;
+  qualified: number;
+  selected?: string;
+  contextAdded?: string;
+  searchLog?: SearchLog;
+}
+
+export interface LiveSearchState {
+  isSearching: boolean;
+  sessionId?: string;
+  currentPhase: string;
+  progress: number;
+  message: string;
+  results: Partial<Profile>;
+  errors: string[];
+  searchLogs: SearchLog[];
+  isRecovered?: boolean;
+  startTime?: Date;
+  lastUpdate?: Date;
+}
+
+export interface SessionInfo {
+  sessionId: string;
+  subjectName: string;
+  currentPhase: string;
+  progress: number;
+  isActive: boolean;
+  isComplete: boolean;
+  startTime: string;
+  lastUpdate: string;
+  source: 'memory' | 'storage';
+  errors: string[];
+  searchLogs: SearchLog[];
+  generatedContext?: GeneratedContext;
+  partialProfile?: Partial<Profile>;
+  finalProfile?: Profile;
+}
+

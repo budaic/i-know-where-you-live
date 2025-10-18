@@ -108,9 +108,32 @@ export interface ProfileResponse {
 }
 
 export interface ProgressUpdate {
+  sessionId: string;
   subjectName: string;
-  stage: 'query_generation' | 'search' | 'extraction' | 'summarization' | 'profile_generation' | 'complete' | 'error';
+  phase: 'linkedin' | 'github' | 'website' | 'general' | 'complete' | 'error';
+  status: 'starting' | 'searching' | 'validating' | 'completed' | 'failed';
   message: string;
-  progress?: number;
+  progress: number; // 0-100
+  results?: PhaseResults;
+  timestamp: Date;
+}
+
+export interface PhaseResults {
+  found: number;
+  qualified: number;
+  selected?: string;
+  contextAdded?: string;
+  searchLog?: SearchLog;
+}
+
+export interface LiveSearchSession {
+  sessionId: string;
+  subjectName: string;
+  startTime: Date;
+  currentPhase: string;
+  progress: number;
+  partialProfile?: Partial<Profile>;
+  errors: string[];
+  isActive: boolean;
 }
 
