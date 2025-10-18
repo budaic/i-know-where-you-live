@@ -1,7 +1,49 @@
 export interface Subject {
   name: string;
-  context: string;
+  hardContext: string;  // Must be true
+  softContext: string;  // Could be true, guidance
   maxDepth?: number;
+}
+
+export interface ContextInput {
+  hardContext: string;
+  softContext: string;
+}
+
+export interface GeneratedContext {
+  linkedinData?: string;
+  githubData?: string;
+  websiteData?: string;
+  additionalFindings: string[];
+}
+
+export interface ValidationResult {
+  url: string;
+  relevancyScore: number;  // 1-10
+  isLikelyMatch: boolean;
+  reasoning: string;
+  confidence: 'high' | 'medium' | 'low';
+  samePersonElements: string[];
+  differentPersonElements: string[];
+}
+
+export interface SearchLog {
+  phase: string;
+  query: string;
+  resultsFound: number;
+  validatedResults: ValidationResult[];
+  selectedUrl?: string;
+  contextAdded?: string;
+  timestamp: Date;
+}
+
+export interface ProfileCreationLog {
+  subjectName: string;
+  hardContext: string;
+  softContext: string;
+  generatedContext: GeneratedContext;
+  searchLogs: SearchLog[];
+  finalSources: ValidationResult[];
 }
 
 export interface SearchQuery {
@@ -35,6 +77,10 @@ export interface Profile {
   aliases: string[];
   profileSummary: string;
   sources: Source[];
+  hardContext?: string;
+  softContext?: string;
+  generatedContext?: GeneratedContext;
+  searchLogs?: SearchLog[];
   createdAt?: Date;
 }
 
@@ -44,6 +90,9 @@ export interface Source {
   url: string;
   siteSummary: string;
   depth: number;
+  relevancyScore?: number;
+  validationReasoning?: string;
+  confidence?: string;
   createdAt?: Date;
 }
 

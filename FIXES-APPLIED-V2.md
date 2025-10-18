@@ -8,12 +8,12 @@
 
 **Root Cause**: Your OpenAI API key doesn't have access to GPT-4 (requires separate approval/payment tier)
 
-**Fix**: Changed all OpenAI API calls from `gpt-4` to `gpt-4o-mini`
+**Fix**: Changed all OpenAI API calls from `gpt-4` to `gpt-5-nano`
 - ✅ queryGenerator.ts - Query generation
 - ✅ summarizer.ts - Source summarization
 - ✅ profileGenerator.ts (2 locations) - Source verification and profile summary
 
-**Why gpt-4o-mini?**
+**Why gpt-5-nano?**
 - Available on all API tiers
 - Much cheaper ($0.15/1M input tokens vs $30/1M for gpt-4)
 - Fast and capable for OSINT tasks
@@ -160,9 +160,9 @@ The errors should now be different/resolved:
 | config.ts | Add Supabase flexibility | Support multiple auth methods |
 | config.ts | Reduce required vars | Only validate essentials |
 | database.ts | Prefer service_role key | Bypass RLS for server-side |
-| queryGenerator.ts | gpt-4 → gpt-4o-mini | Your API key has access |
-| summarizer.ts | gpt-4 → gpt-4o-mini | Your API key has access |
-| profileGenerator.ts | gpt-4 → gpt-4o-mini (2x) | Your API key has access |
+| queryGenerator.ts | gpt-4 → gpt-5-nano | Your API key has access |
+| summarizer.ts | gpt-4 → gpt-5-nano | Your API key has access |
+| profileGenerator.ts | gpt-4 → gpt-5-nano (2x) | Your API key has access |
 
 ---
 
@@ -174,7 +174,7 @@ The errors should now be different/resolved:
 - ❌ Supabase connection unclear
 
 ### After:
-- ✅ OpenAI calls work with gpt-4o-mini
+- ✅ OpenAI calls work with gpt-5-nano
 - ✅ Exa API key recognized (EXASEARCH_API_KEY)
 - ✅ Supabase flexible authentication
 - ✅ Profile creation should work end-to-end (once Supabase is set up)

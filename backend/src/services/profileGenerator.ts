@@ -70,7 +70,7 @@ Return ONLY a JSON array of numbers, e.g., [1, 2, 4, 5]. No other text.`;
           content: prompt,
         },
       ],
-      temperature: 0.3,
+      temperature: 1,
     });
 
     const content = response.choices[0].message.content?.trim() || '[]';
@@ -133,8 +133,8 @@ Return ONLY valid JSON. No other text.`;
           content: prompt,
         },
       ],
-      temperature: 0.5,
-      max_tokens: 1000,
+      temperature: 1,
+      max_completion_tokens: 1000,
     });
 
     const content = response.choices[0].message.content?.trim() || '{}';

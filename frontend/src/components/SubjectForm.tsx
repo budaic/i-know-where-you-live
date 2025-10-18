@@ -8,7 +8,8 @@ interface SubjectFormProps {
 
 export default function SubjectForm({ onSubmit, loading }: SubjectFormProps) {
   const [name, setName] = useState('');
-  const [context, setContext] = useState('');
+  const [hardContext, setHardContext] = useState('');
+  const [softContext, setSoftContext] = useState('');
   const maxDepth = 6; // Fixed at 6 as per specification
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -21,7 +22,8 @@ export default function SubjectForm({ onSubmit, loading }: SubjectFormProps) {
 
     const subject: Subject = {
       name: name.trim(),
-      context: context.trim(),
+      hardContext: hardContext.trim(),
+      softContext: softContext.trim(),
       maxDepth,
     };
 
@@ -29,7 +31,8 @@ export default function SubjectForm({ onSubmit, loading }: SubjectFormProps) {
     
     // Reset form
     setName('');
-    setContext('');
+    setHardContext('');
+    setSoftContext('');
   };
 
   return (
@@ -57,26 +60,45 @@ export default function SubjectForm({ onSubmit, loading }: SubjectFormProps) {
         </div>
 
         <div>
-          <label htmlFor="context" className="block text-sm font-medium text-gray-700 mb-1">
-            Context
+          <label htmlFor="hardContext" className="block text-sm font-medium text-gray-700 mb-1">
+            Hard Context (Facts that MUST be true) *
           </label>
           <textarea
-            id="context"
-            value={context}
-            onChange={(e) => setContext(e.target.value)}
-            placeholder="e.g., An engineering student at SUTD"
-            rows={3}
+            id="hardContext"
+            value={hardContext}
+            onChange={(e) => setHardContext(e.target.value)}
+            placeholder="e.g., Engineering student at SUTD in Singapore"
+            rows={2}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            disabled={loading}
+            required
+          />
+          <p className="text-sm text-gray-500 mt-1">
+            <strong>Certainties:</strong> Information that must be true (job, education, location, etc.)
+          </p>
+        </div>
+
+        <div>
+          <label htmlFor="softContext" className="block text-sm font-medium text-gray-700 mb-1">
+            Soft Context (Possible hints/guidance)
+          </label>
+          <textarea
+            id="softContext"
+            value={softContext}
+            onChange={(e) => setSoftContext(e.target.value)}
+            placeholder="e.g., Interested in AI, may have GitHub account, possibly worked at tech companies"
+            rows={2}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             disabled={loading}
           />
           <p className="text-sm text-gray-500 mt-1">
-            Additional information to help narrow down the search (job, education, location, etc.)
+            <strong>Guidance:</strong> Information that could be true - helps guide the search
           </p>
         </div>
 
         <div className="bg-blue-50 border border-blue-200 rounded-md p-3">
           <p className="text-sm text-blue-800">
-            <strong>Search Depth:</strong> Fixed at 6 levels (0-6) for optimal balance between specificity and coverage.
+            <strong>New 4-Phase System:</strong> LinkedIn → GitHub → Website → General Queries. Only sources scoring 6-10/10 are included.
           </p>
         </div>
 

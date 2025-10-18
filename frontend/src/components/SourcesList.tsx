@@ -6,71 +6,88 @@ interface SourcesListProps {
 }
 
 export default function SourcesList({ sources }: SourcesListProps) {
-  // Group sources by depth
-  const sourcesByDepth = sources.reduce((acc, source) => {
-    if (!acc[source.depth]) {
-      acc[source.depth] = [];
+  if (!sources || sources.length === 0) {
+    return (
+      <div className="mt-4 p-4 bg-gray-50 rounded-md">
+        <p className="text-gray-600 text-center">No sources found.</p>
+      </div>
+    );
+  }
+
+  const getScoreColor = (score?: number) => {
+    if (!score) return 'bg-gray-100 text-gray-800';
+    if (score >= 9) return 'bg-green-700 text-white';
+    if (score >= 7) return 'bg-green-500 text-white';
+    if (score >= 6) return 'bg-yellow-500 text-white';
+    return 'bg-gray-400 text-white';
+  };
+
+  const getConfidenceBadge = (confidence?: string) => {
+    if (!confidence) return 'bg-gray-100 text-gray-800';
+    const colors = {
+      high: 'bg-green-100 text-green-800 border-green-300',
+      medium: 'bg-yellow-100 text-yellow-800 border-yellow-300',
+      low: 'bg-red-100 text-red-800 border-red-300',
+    };
+    return colors[confidence as keyof typeof colors] || 'bg-gray-100 text-gray-800 border-gray-300';
+  };
+
+  // Sort sources by relevancy score (descending) if available
+  const sortedSources = [...sources].sort((a, b) => {
+    if (a.relevancyScore && b.relevancyScore) {
+      return b.relevancyScore - a.relevancyScore;
     }
-    acc[source.depth].push(source);
-    return acc;
-  }, {} as Record<number, Source[]>);
-
-  const depths = Object.keys(sourcesByDepth)
-    .map(Number)
-    .sort((a, b) => a - b);
-
-  const getDepthColor = (depth: number) => {
-    if (depth <= 2) return 'bg-green-100 text-green-800 border-green-300';
-    if (depth <= 4) return 'bg-yellow-100 text-yellow-800 border-yellow-300';
-    return 'bg-orange-100 text-orange-800 border-orange-300';
-  };
-
-  const getDepthLabel = (depth: number) => {
-    if (depth <= 2) return 'High Reliability';
-    if (depth <= 4) return 'Medium Reliability';
-    return 'Lower Reliability';
-  };
+    if (a.relevancyScore) return -1;
+    if (b.relevancyScore) return 1;
+    return 0;
+  });
 
   return (
     <div className="mt-4">
-      <h3 className="text-lg font-semibold mb-3">Sources</h3>
-      
-      {depths.map((depth) => (
-        <div key={depth} className="mb-4">
-          <div className="flex items-center mb-2">
-            <span className={`px-3 py-1 rounded-full text-sm font-medium border ${getDepthColor(depth)}`}>
-              Depth {depth} - {getDepthLabel(depth)}
-            </span>
-            <span className="ml-2 text-sm text-gray-600">
-              ({sourcesByDepth[depth].length} source{sourcesByDepth[depth].length !== 1 ? 's' : ''})
-            </span>
-          </div>
-          
-          <div className="space-y-2 ml-4">
-            {sourcesByDepth[depth].map((source) => (
-              <div
-                key={source.id}
-                className="border border-gray-200 rounded-md p-3 hover:bg-gray-50 transition-colors"
+      <div className="space-y-3">
+        {sortedSources.map((source) => (
+          <div 
+            key={source.id} 
+            className={`rounded-md p-4 border-2 ${
+              source.relevancyScore && source.relevancyScore >= 6 
+                ? 'bg-green-50 border-green-200' 
+                : 'bg-gray-50 border-gray-200'
+            }`}
+          >
+            <div className="flex items-start justify-between mb-2">
+              <a
+                href={source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline font-medium break-all flex-1"
               >
-                <a
-                  href={source.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 font-medium break-all"
-                >
-                  {source.url}
-                </a>
-                <p className="text-sm text-gray-700 mt-2">{source.siteSummary}</p>
+                {source.url}
+              </a>
+              <div className="flex gap-2 ml-3">
+                {source.relevancyScore && (
+                  <span className={`px-2 py-1 rounded text-xs font-bold whitespace-nowrap ${getScoreColor(source.relevancyScore)}`}>
+                    {source.relevancyScore}/10
+                  </span>
+                )}
+                {source.confidence && (
+                  <span className={`px-2 py-1 rounded text-xs font-medium border whitespace-nowrap ${getConfidenceBadge(source.confidence)}`}>
+                    {source.confidence}
+                  </span>
+                )}
               </div>
-            ))}
-          </div>
-        </div>
-      ))}
+            </div>
 
-      {sources.length === 0 && (
-        <p className="text-gray-500 italic">No sources found for this profile.</p>
-      )}
+            {source.validationReasoning && (
+              <div className="mb-2 p-2 bg-white rounded border border-gray-200">
+                <strong className="text-sm text-gray-700">Validation:</strong>
+                <p className="text-sm text-gray-600 mt-1">{source.validationReasoning}</p>
+              </div>
+            )}
+
+            <p className="text-sm text-gray-600">{source.siteSummary}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
-

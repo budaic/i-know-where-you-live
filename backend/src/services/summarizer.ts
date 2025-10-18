@@ -39,8 +39,8 @@ Summary:`;
           content: prompt,
         },
       ],
-      temperature: 0.3,
-      max_tokens: 500,
+      temperature: 1,
+      max_completion_tokens: 500,
     });
 
     const summary = response.choices[0].message.content?.trim() || 'No summary available.';

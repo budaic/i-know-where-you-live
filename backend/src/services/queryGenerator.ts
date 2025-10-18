@@ -11,10 +11,12 @@ export async function generateSearchQueries(
 ): Promise<SearchQuery[]> {
   const maxDepth = subject.maxDepth || config.maxDepth;
   
+  const contextInfo = [subject.hardContext, subject.softContext].filter(Boolean).join(' ');
+  
   const prompt = `Given a person's name and context, generate ${maxDepth + 1} search queries (depth 0 to ${maxDepth}) to find information about them online.
 
 Name: ${subject.name}
-Context: ${subject.context}
+Context: ${contextInfo}
 
 Generate queries that target:
 - Depth 0: Most specific - combining name with detailed context and specific platforms (github, linkedin, personal website, university site)
@@ -45,7 +47,7 @@ Example format:
           content: prompt,
         },
       ],
-      temperature: 0.7,
+      temperature: 1,
     });
 
     const content = response.choices[0].message.content?.trim() || '[]';
@@ -67,6 +69,7 @@ function generateFallbackQueries(subject: Subject): SearchQuery[] {
   const maxDepth = subject.maxDepth || config.maxDepth;
   const queries: SearchQuery[] = [];
   const platforms = ['github', 'linkedin', 'personal website', 'university'];
+  const contextInfo = [subject.hardContext, subject.softContext].filter(Boolean).join(' ');
 
   // Depth 0: Most specific with platforms
   for (let i = 0; i < Math.min(platforms.length, maxDepth + 1); i++) {
@@ -74,8 +77,8 @@ function generateFallbackQueries(subject: Subject): SearchQuery[] {
       uid: `${Date.now()}-${i}`,
       depth: i,
       query: i === 0 
-        ? `${subject.name} ${subject.context} ${platforms[i]}`
-        : `${subject.name} ${subject.context}`,
+        ? `${subject.name} ${contextInfo} ${platforms[i]}`
+        : `${subject.name} ${contextInfo}`,
     });
   }
 
@@ -84,7 +87,7 @@ function generateFallbackQueries(subject: Subject): SearchQuery[] {
     queries.push({
       uid: `${Date.now()}-${i}`,
       depth: i,
-      query: i === maxDepth ? subject.name : `${subject.name} ${subject.context.split(' ').slice(0, maxDepth - i).join(' ')}`,
+      query: i === maxDepth ? subject.name : `${subject.name} ${contextInfo.split(' ').slice(0, maxDepth - i).join(' ')}`,
     });
   }
 

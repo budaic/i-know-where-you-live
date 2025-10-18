@@ -26,6 +26,10 @@ export async function createProfile(profile: Profile): Promise<Profile> {
       name: profile.name,
       aliases: profile.aliases,
       profile_summary: profile.profileSummary,
+      hard_context: profile.hardContext,
+      soft_context: profile.softContext,
+      generated_context: profile.generatedContext,
+      search_logs: profile.searchLogs,
     })
     .select()
     .single();
@@ -43,6 +47,9 @@ export async function createProfile(profile: Profile): Promise<Profile> {
       url: source.url,
       site_summary: source.siteSummary,
       depth: source.depth,
+      relevancy_score: source.relevancyScore,
+      validation_reasoning: source.validationReasoning,
+      confidence: source.confidence,
     }));
 
     const { error: sourcesError } = await supabase
@@ -85,12 +92,19 @@ export async function getProfileById(id: string): Promise<Profile> {
     name: profileData.name,
     aliases: profileData.aliases || [],
     profileSummary: profileData.profile_summary,
+    hardContext: profileData.hard_context,
+    softContext: profileData.soft_context,
+    generatedContext: profileData.generated_context,
+    searchLogs: profileData.search_logs,
     sources: sourcesData.map((source) => ({
       id: source.id,
       profileId: source.profile_id,
       url: source.url,
       siteSummary: source.site_summary,
       depth: source.depth,
+      relevancyScore: source.relevancy_score,
+      validationReasoning: source.validation_reasoning,
+      confidence: source.confidence,
       createdAt: new Date(source.created_at),
     })),
     createdAt: new Date(profileData.created_at),
@@ -123,12 +137,19 @@ export async function getAllProfiles(): Promise<Profile[]> {
       name: profileData.name,
       aliases: profileData.aliases || [],
       profileSummary: profileData.profile_summary,
+      hardContext: profileData.hard_context,
+      softContext: profileData.soft_context,
+      generatedContext: profileData.generated_context,
+      searchLogs: profileData.search_logs,
       sources: (sourcesData || []).map((source) => ({
         id: source.id,
         profileId: source.profile_id,
         url: source.url,
         siteSummary: source.site_summary,
         depth: source.depth,
+        relevancyScore: source.relevancy_score,
+        validationReasoning: source.validation_reasoning,
+        confidence: source.confidence,
         createdAt: new Date(source.created_at),
       })),
       createdAt: new Date(profileData.created_at),
