@@ -59,7 +59,7 @@ Return ONLY a JSON array of numbers, e.g., [1, 2, 4, 5]. No other text.`;
 
   try {
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'gpt-5-nano',
       messages: [
         {
           role: 'system',
@@ -122,7 +122,7 @@ Return ONLY valid JSON. No other text.`;
 
   try {
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'gpt-5-nano',
       messages: [
         {
           role: 'system',
