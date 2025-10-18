@@ -11,7 +11,7 @@ import {
   filterViableResults,
   deduplicateResults,
 } from '../services/searchService';
-import { extractContentBatch } from '../services/contentExtractor';
+// import { extractContentBatch } from '../services/contentExtractor'; // Removed - using V2 implementation
 import { summarizeSourcesBatch } from '../services/summarizer';
 import { generateProfile } from '../services/profileGenerator';
 import { ProfileRequest, ProfileResponse } from '../types';
@@ -56,7 +56,8 @@ router.post('/create', async (req: Request, res: Response) => {
 
         // Step 3: Extract content
         console.log('  - Extracting content...');
-        const contents = await extractContentBatch(uniqueResults);
+        // const contents = await extractContentBatch(uniqueResults); // Removed - using V2 implementation
+        const contents: any[] = []; // Placeholder - this route is deprecated
         console.log(`  - Extracted ${contents.length} content sources`);
 
         // Step 4: Summarize sources

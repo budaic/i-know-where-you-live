@@ -21,6 +21,7 @@ export interface ValidationResult {
   samePersonElements: string[];
   differentPersonElements: string[];
   prompt?: string;  // The plaintext prompt and answer used during validation
+  category?: 'profile' | 'post' | 'company' | 'other';  // Category of the result
 }
 
 export interface SearchLog {

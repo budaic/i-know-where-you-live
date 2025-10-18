@@ -140,6 +140,16 @@ function ValidationResultCard({ result }: ValidationResultCardProps) {
     return colors[confidence as keyof typeof colors] || colors.low;
   };
 
+  const getCategoryBadge = (category: string) => {
+    const colors = {
+      profile: 'bg-blue-100 text-blue-800',
+      post: 'bg-purple-100 text-purple-800',
+      company: 'bg-orange-100 text-orange-800',
+      other: 'bg-gray-100 text-gray-800',
+    };
+    return colors[category as keyof typeof colors] || colors.other;
+  };
+
   return (
     <div className={`p-3 rounded border ${result.relevancyScore >= 6 ? 'border-green-300 bg-green-50' : 'border-gray-300 bg-gray-50'}`}>
       <div className="flex items-start justify-between mb-2">
@@ -158,6 +168,11 @@ function ValidationResultCard({ result }: ValidationResultCardProps) {
           <span className={`px-2 py-1 rounded text-xs font-medium ${getConfidenceBadge(result.confidence)}`}>
             {result.confidence}
           </span>
+          {result.category && (
+            <span className={`px-2 py-1 rounded text-xs font-medium ${getCategoryBadge(result.category)}`}>
+              {result.category}
+            </span>
+          )}
         </div>
       </div>
 

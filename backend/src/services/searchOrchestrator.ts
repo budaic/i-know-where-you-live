@@ -72,7 +72,7 @@ async function searchLinkedInProfile(
   console.log(`Searching: ${query}`);
 
   const results = await exaService.searchLinkedIn(name);
-  console.log(`Found ${results.length} LinkedIn results`);
+  console.log(`Smart search returned ${results.length} LinkedIn profile results`);
 
   if (results.length === 0) {
     return {
@@ -94,13 +94,15 @@ async function searchLinkedInProfile(
   );
 
   // Select the best LinkedIn profile (should be only one)
-  const bestProfile = validationService.selectBestProfile(validations);
+  // Only consider actual profiles (category === 'profile') for LinkedIn profile selection
+  const profileValidations = validations.filter(v => v.category === 'profile');
+  const bestProfile = validationService.selectBestProfile(profileValidations);
 
   let contextAdded: string | undefined;
   let selectedUrl: string | undefined;
 
   if (bestProfile) {
-    console.log(`Selected LinkedIn profile: ${bestProfile.url} (score: ${bestProfile.relevancyScore})`);
+    console.log(`Selected LinkedIn profile: ${bestProfile.url} (score: ${bestProfile.relevancyScore}, category: ${bestProfile.category})`);
     selectedUrl = bestProfile.url;
 
     // Crawl the LinkedIn profile
@@ -110,10 +112,15 @@ async function searchLinkedInProfile(
       const summary = await summarizeProfileContent(content, 'LinkedIn');
       generatedContext.linkedinData = summary;
       contextAdded = summary;
-      console.log(`Added to generated context: ${summary.substring(0, 100)}...`);
+      console.log(`\n=== GENERATED CONTEXT ADDED ===`);
+      console.log(`LinkedIn Profile Context: ${summary}`);
+      console.log(`=== END GENERATED CONTEXT ===\n`);
     }
   } else {
     console.log('No qualified LinkedIn profile found');
+    // Log what categories were found instead
+    const categories = validations.map(v => `${v.category || 'unknown'}: ${v.url}`).join(', ');
+    console.log(`Found LinkedIn results in categories: ${categories}`);
   }
 
   return {
@@ -177,7 +184,9 @@ async function searchGitHubProfile(
       const summary = await summarizeProfileContent(content, 'GitHub');
       generatedContext.githubData = summary;
       contextAdded = summary;
-      console.log(`Added to generated context: ${summary.substring(0, 100)}...`);
+      console.log(`\n=== GENERATED CONTEXT ADDED ===`);
+      console.log(`GitHub Profile Context: ${summary}`);
+      console.log(`=== END GENERATED CONTEXT ===\n`);
     }
   } else {
     console.log('No qualified GitHub profile found');
@@ -244,7 +253,9 @@ async function searchPersonalWebsite(
       const summary = await summarizeProfileContent(content, 'Website');
       generatedContext.websiteData = summary;
       contextAdded = summary;
-      console.log(`Added to generated context: ${summary.substring(0, 100)}...`);
+      console.log(`\n=== GENERATED CONTEXT ADDED ===`);
+      console.log(`Website Context: ${summary}`);
+      console.log(`=== END GENERATED CONTEXT ===\n`);
     }
   } else {
     console.log('No qualified website found');
@@ -315,6 +326,9 @@ async function searchGeneralQueries(
       if (content) {
         const finding = `From ${queryObj.target}: ${content.substring(0, 200)}`;
         generatedContext.additionalFindings.push(finding);
+        console.log(`\n=== GENERATED CONTEXT ADDED ===`);
+        console.log(`Additional Finding: ${finding}`);
+        console.log(`=== END GENERATED CONTEXT ===\n`);
       }
     }
 
