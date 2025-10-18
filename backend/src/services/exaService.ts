@@ -8,6 +8,8 @@ export interface ExaResult {
   title: string;
   text?: string;
   score?: number;
+  highlights?: string[];
+  summary?: string;
 }
 
 /**
@@ -27,30 +29,37 @@ function isLinkedInUrl(url: string): boolean {
 /**
  * Search LinkedIn profiles with smart filtering to ensure actual profiles
  */
-export async function searchLinkedIn(name: string): Promise<ExaResult[]> {
+export async function searchLinkedIn(name: string, hardContext?: string, softContext?: string): Promise<ExaResult[]> {
   const maxAttempts = 3;
-  const targetProfiles = 10;
+  const targetProfiles = 5; // Reduced to get fewer LinkedIn profiles
   const allResults: ExaResult[] = [];
   const seenUrls = new Set<string>();
   
   console.log(`\n=== Smart LinkedIn Search for: ${name} ===`);
+  console.log(`Hard Context: ${hardContext || 'None'}`);
+  console.log(`Soft Context: ${softContext || 'None'}`);
   
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     try {
       // Try different query variations to get more diverse results
       let query: string;
+      let includeText: string[] = [];
+      
       switch (attempt) {
         case 1:
           // Most specific: direct profile search
           query = `${name} site:linkedin.com/in/`;
+          includeText = [name];
           break;
         case 2:
           // Exact name match with quotes
           query = `"${name}" site:linkedin.com/in/`;
+          includeText = [name];
           break;
         case 3:
           // Broader search but still targeting profiles
           query = `${name} linkedin profile site:linkedin.com/in/`;
+          includeText = [name];
           break;
         default:
           // Fallback to general LinkedIn search
@@ -58,12 +67,31 @@ export async function searchLinkedIn(name: string): Promise<ExaResult[]> {
       }
       
       console.log(`Attempt ${attempt}: Searching with query: "${query}"`);
+      if (includeText.length > 0) {
+        console.log(`Include text: ${includeText.join(', ')}`);
+      }
       
-      const response = await exaClient.searchAndContents(query, {
-        numResults: 15, // Get more results to filter from
-        text: true,
+      const searchOptions: any = {
+        numResults: 10, // Get more results to filter from
         useAutoprompt: false,
-      });
+        type: 'keyword', // Use keyword search for Google-like results
+        category: 'linkedin profile', // Focus on LinkedIn profiles
+        context: true, // Format results for LLM context
+        contents: {
+          text: true, // Get full page text
+          livecrawl: 'preferred', // Always try to livecrawl for fresh data
+          livecrawlTimeout: 15000, // 15 second timeout for LinkedIn
+          highlights: true, // Get LLM-identified relevant snippets
+          summary: true, // Get webpage summary
+        },
+      };
+      
+      // Add includeText if we have it
+      if (includeText.length > 0) {
+        searchOptions.includeText = includeText;
+      }
+      
+      const response = await exaClient.searchAndContents(query, searchOptions);
 
       const newResults = response.results
         .map((result: any) => ({
@@ -71,6 +99,8 @@ export async function searchLinkedIn(name: string): Promise<ExaResult[]> {
           title: result.title || '',
           text: result.text || '',
           score: result.score,
+          highlights: result.highlights || [],
+          summary: result.summary || '',
         }))
         .filter((result: ExaResult) => {
           // Only include LinkedIn URLs we haven't seen before
@@ -81,12 +111,12 @@ export async function searchLinkedIn(name: string): Promise<ExaResult[]> {
           return isLinkedInUrl(result.url);
         });
 
-      console.log(`Found ${newResults.length} new LinkedIn results (${newResults.filter(r => isLinkedInProfile(r.url)).length} profiles)`);
+      console.log(`Found ${newResults.length} new LinkedIn results (${newResults.filter((r: ExaResult) => isLinkedInProfile(r.url)).length} profiles)`);
       
       allResults.push(...newResults);
       
       // Check if we have enough profiles
-      const profileCount = allResults.filter(r => isLinkedInProfile(r.url)).length;
+      const profileCount = allResults.filter((r: ExaResult) => isLinkedInProfile(r.url)).length;
       console.log(`Total profiles found so far: ${profileCount}/${targetProfiles}`);
       
       if (profileCount >= targetProfiles) {
@@ -106,7 +136,7 @@ export async function searchLinkedIn(name: string): Promise<ExaResult[]> {
   
   // Filter to only LinkedIn profiles and limit to target count
   let profileResults = allResults
-    .filter(result => isLinkedInProfile(result.url))
+    .filter((result: ExaResult) => isLinkedInProfile(result.url))
     .slice(0, targetProfiles);
   
   // If we still don't have enough profiles, try one final fallback search
@@ -116,8 +146,17 @@ export async function searchLinkedIn(name: string): Promise<ExaResult[]> {
       const fallbackQuery = `${name} site:linkedin.com`;
       const fallbackResponse = await exaClient.searchAndContents(fallbackQuery, {
         numResults: 20,
-        text: true,
         useAutoprompt: false,
+        type: 'keyword',
+        category: 'linkedin profile',
+        context: true,
+        contents: {
+          text: true,
+          livecrawl: 'preferred',
+          livecrawlTimeout: 15000,
+          highlights: true,
+          summary: true,
+        },
       });
       
       const fallbackResults = fallbackResponse.results
@@ -126,6 +165,8 @@ export async function searchLinkedIn(name: string): Promise<ExaResult[]> {
           title: result.title || '',
           text: result.text || '',
           score: result.score,
+          highlights: result.highlights || [],
+          summary: result.summary || '',
         }))
         .filter((result: ExaResult) => {
           if (seenUrls.has(result.url)) return false;
@@ -138,7 +179,7 @@ export async function searchLinkedIn(name: string): Promise<ExaResult[]> {
       
       // Re-filter and sort
       profileResults = allResults
-        .filter(result => isLinkedInProfile(result.url))
+        .filter((result: ExaResult) => isLinkedInProfile(result.url))
         .slice(0, targetProfiles);
         
     } catch (error) {

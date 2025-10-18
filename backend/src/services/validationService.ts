@@ -12,6 +12,7 @@ const openai = new OpenAI({
 /**
  * Sanity check to verify if the first name and last name can be found in the source text
  * Returns true if both names are found, false otherwise
+ * For LinkedIn profiles, we're more lenient - only require one name match
  */
 export function sanityCheckSource(
   source: ExaResult,
@@ -30,6 +31,12 @@ export function sanityCheckSource(
   const hasFirstName = text.includes(firstNameLower);
   const hasLastName = text.includes(lastNameLower);
   
+  // For LinkedIn profiles, be more lenient - only require one name match
+  if (source.url.includes('linkedin.com/in/')) {
+    return hasFirstName || hasLastName;
+  }
+  
+  // For other sources, require both names
   return hasFirstName && hasLastName;
 }
 
@@ -94,7 +101,41 @@ export async function validateSource(
     contextToUse = `Context: ${combinedSoftContext || 'None'}`;
   }
 
-  const prompt = `Validate if this source is about "${subjectName}".
+  // Create specialized prompt for LinkedIn profiles
+  let prompt: string;
+  if (category === 'profile' && source.url.includes('linkedin.com')) {
+    prompt = `Role: Expert LinkedIn profile validator
+Task: Determine if this is the CORRECT LinkedIn profile for "${subjectName}"
+
+Critical Checks:
+1. URL MUST contain "linkedin.com/in/" (any subdomain/format is acceptable)
+2. Profile name must match "${subjectName}" (allowing for name order variations)
+3. Hard context "${hardContext}" should ideally appear in job/education/experience
+4. Soft context "${softContext}" should align geographically/professionally
+
+${contextToUse}
+Known: ${generatedContextText || 'None'}
+
+Source: ${source.title}
+Content: ${source.text?.substring(0, 1000) || 'No content'}
+
+Scoring Guide:
+- 9-10: Perfect name match + hard context clearly confirmed
+- 7-8: Name match + hard context partially confirmed OR strong soft context alignment
+- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)
+- 1-4: Name mismatch, wrong person, or company/post page
+
+Respond with ONLY this JSON:
+{
+  "relevancyScore": 7,
+  "isLikelyMatch": true,
+  "confidence": "high",
+  "reasoning": "Brief explanation",
+  "samePersonElements": ["element1", "element2"],
+  "differentPersonElements": ["element1"]
+}`;
+  } else {
+    prompt = `Validate if this source is about "${subjectName}".
 
 ${contextToUse}
 Known: ${generatedContextText || 'None'}
@@ -113,6 +154,7 @@ Respond with ONLY this JSON:
   "samePersonElements": ["element1", "element2"],
   "differentPersonElements": ["element1"]
 }`;
+  }
 
   try {
     const response = await openai.chat.completions.create({
@@ -120,7 +162,9 @@ Respond with ONLY this JSON:
       messages: [
         {
           role: 'system',
-          content: 'You are an OSINT analyst. Respond with ONLY valid JSON. No other text.',
+          content: category === 'profile' && source.url.includes('linkedin.com') 
+            ? 'You are an expert LinkedIn profile validator. Your job is to determine if this is the correct LinkedIn profile for the given person. URL must contain "linkedin.com/in/" (any subdomain/format acceptable). Be precise about context matching. Respond with ONLY valid JSON. No other text.'
+            : 'You are a web search analyst. Respond with ONLY valid JSON. No other text.',
         },
         {
           role: 'user',
@@ -216,22 +260,47 @@ export async function validateSourcesBatch(
  * For LinkedIn/GitHub/Website, we want only ONE profile
  */
 export function selectBestProfile(validations: ValidationResult[]): ValidationResult | null {
-  // Filter to only likely matches with score >= 6
+  // Filter to only likely matches with score >= 4 for LinkedIn profiles, >= 5 for others
   const qualified = validations.filter(
-    v => v.isLikelyMatch && v.relevancyScore >= 6
+    v => v.isLikelyMatch && (
+      (v.url.includes('linkedin.com/in/') && v.relevancyScore >= 4) ||
+      (!v.url.includes('linkedin.com/in/') && v.relevancyScore >= 5)
+    )
   );
 
   if (qualified.length === 0) {
     return null;
   }
 
-  // Sort by score descending, then by confidence
+  // Sort by multiple criteria to prioritize the best profile
   qualified.sort((a, b) => {
+    // 1. Prioritize LinkedIn profiles with /in/ URLs
+    const aIsLinkedInProfile = a.url.includes('linkedin.com/in/');
+    const bIsLinkedInProfile = b.url.includes('linkedin.com/in/');
+    
+    if (aIsLinkedInProfile && !bIsLinkedInProfile) return -1;
+    if (!aIsLinkedInProfile && bIsLinkedInProfile) return 1;
+    
+    // 2. Sort by relevancy score (highest first)
     if (b.relevancyScore !== a.relevancyScore) {
       return b.relevancyScore - a.relevancyScore;
     }
+    
+    // 3. Sort by confidence level
     const confidenceOrder = { high: 3, medium: 2, low: 1 };
-    return confidenceOrder[b.confidence] - confidenceOrder[a.confidence];
+    const confidenceDiff = confidenceOrder[b.confidence] - confidenceOrder[a.confidence];
+    if (confidenceDiff !== 0) {
+      return confidenceDiff;
+    }
+    
+    // 4. For LinkedIn profiles, prioritize those with more context matches
+    if (aIsLinkedInProfile && bIsLinkedInProfile) {
+      const aContextMatches = a.samePersonElements.length;
+      const bContextMatches = b.samePersonElements.length;
+      return bContextMatches - aContextMatches;
+    }
+    
+    return 0;
   });
 
   return qualified[0];

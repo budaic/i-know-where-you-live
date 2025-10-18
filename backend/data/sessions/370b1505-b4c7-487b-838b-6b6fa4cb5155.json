@@ -1,0 +1,1092 @@
+{
+  "sessionId": "370b1505-b4c7-487b-838b-6b6fa4cb5155",
+  "subjectName": "Barna Marczali",
+  "startTime": "2025-10-18T19:51:32.946Z",
+  "currentPhase": "complete",
+  "progress": 100,
+  "errors": [],
+  "isActive": true,
+  "searchLogs": [],
+  "generatedContext": {
+    "additionalFindings": []
+  },
+  "lastUpdate": "2025-10-18T19:52:59.912Z",
+  "isComplete": true,
+  "finalProfile": {
+    "name": "Barna Marczali",
+    "aliases": [],
+    "profileSummary": "No reliable information found for Barna Marczali matching the provided context.",
+    "sources": [],
+    "hardContext": "Related to Singapore",
+    "softContext": "Cursor hackathon, engineer, likely between 18-40",
+    "generatedContext": {
+      "additionalFindings": []
+    },
+    "searchLogs": [
+      {
+        "phase": "LinkedIn",
+        "query": "Barna Marczali linkedin.com",
+        "resultsFound": 1,
+        "validatedResults": [
+          {
+            "url": "https://hu.linkedin.com/in/barnamarczali",
+            "relevancyScore": 5,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Name matches, but URL format not in https://www.linkedin.com/in/[username] (uses hu.linkedin.com). No hard Singapore context in job/education, soft context missing. Overall insufficient confirmation that this is the correct LinkedIn profile for Barna Marczali.",
+            "samePersonElements": [
+              "Name matches 'Barna Marczali'",
+              "Role as Co-Founder/CTO at Dayli (startup founder context)",
+              "CS + Econ @ Johns Hopkins / Budapest, Hungary as location"
+            ],
+            "differentPersonElements": [
+              "URL uses regional domain (hu.linkedin.com) instead of standard https://www.linkedin.com/in/username",
+              "Hard context 'Related to Singapore' not present",
+              "Soft context 'Cursor hackathon' not present",
+              "Location Singapore vs Budapest, Hungary"
+            ],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Barna Marczali\"\n\nCritical Checks:\n1. URL MUST be https://www.linkedin.com/in/[username] format\n2. Profile name must match \"Barna Marczali\" (allowing for name order variations)\n3. Hard context \"Related to Singapore\" should appear in job/education\n4. Soft context \"Cursor hackathon, engineer, likely between 18-40\" should align geographically/professionally\n\nHard Context: Related to Singapore | Soft Context: Cursor hackathon, engineer, likely between 18-40\nKnown: None\n\nSource: Barna Marczali - CS + Econ @ Johns Hopkins | Dayli\nContent: # Barna Marczali [LinkedIn URL](https://hu.linkedin.com/in/barnamarczali)\n\n\nCS + Econ @ Johns Hopkins, startups\n\n\n### Co-Founder, CTO at [Dayli](https://www.linkedin.com/company/dayliapp)\n\n\n### Budapest, Budapest, Hungary [hu]\n\n#### 1K followers 500 connections\n\n#### See your mutual connections\n\n\n## About me\n\n Hey, it’s Barna!I’m passionate about tech, business, and building. Working 24/7 on projects I find interesting. Love to connect with people and talk about startups so feel free to reach out. Worked on several projects and businesses, built websites and AI apps.Currently building Daylicheck it out below! ⬇️DM to talk :)\n\n\n\n\n\n## Work Experience\n\n- ### Co-Founder, CTO at [Dayli](https://www.linkedin.com/company/dayliapp)\n\nsaving time and relationships\nApr 2025 - Present • 5 months\n\n\n- ### Co-Founder at [Bridgeway](https://www.linkedin.com/company/bridgewayworld)\n\n\nJan 2024 - Present • 1 year 8 months\n\n\n- ### Vice President of Consulting at [Nest Strategies - Johns Hopkins American M\n\nScoring Guide:\n- 9-10: Perfect name match + hard context confirmed\n- 7-8: Name match + partial hard context or strong soft context\n- 5-6: Name match but weak/no context confirmation\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 5,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"Name matches, but URL format not in https://www.linkedin.com/in/[username] (uses hu.linkedin.com). No hard Singapore context in job/education, soft context missing. Overall insufficient confirmation that this is the correct LinkedIn profile for Barna Marczali.\",\n  \"samePersonElements\": [\n    \"Name matches 'Barna Marczali'\",\n    \"Role as Co-Founder/CTO at Dayli (startup founder context)\",\n    \"CS + Econ @ Johns Hopkins / Budapest, Hungary as location\"\n  ],\n  \"differentPersonElements\": [\n    \"URL uses regional domain (hu.linkedin.com) instead of standard https://www.linkedin.com/in/username\",\n    \"Hard context 'Related to Singapore' not present\",\n    \"Soft context 'Cursor hackathon' not present\",\n    \"Location Singapore vs Budapest, Hungary\"\n  ]\n}",
+            "category": "profile"
+          }
+        ],
+        "timestamp": "2025-10-18T19:52:01.428Z"
+      },
+      {
+        "phase": "GitHub",
+        "query": "Barna Marczali github",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://github.com/barnaste/plantinarium",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/barnacsaba/diakolimpia_11s2p2",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/Bazai/CountdownTimerBar",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://hex.pm/packages/barna",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/b-tarczynski/worldcare-new",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/l-bmara/frontend_tanfolyam",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.scribd.com/document/641950804/Germans-Hungarians-1828-land-census-Vol-13",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://dokumen.pub/international-encyclopedia-of-pseudonyms-band-6-lund-ortens-neumann-9783110935387-9783598249662.html",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/marcelbernas/gierkihazardowe",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/malybaryl/kacper-barylowicz",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T19:52:06.894Z"
+      },
+      {
+        "phase": "Website",
+        "query": "Barna Marczali personal website OR portfolio",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://www.youtube.com/watch?v=Fd3GwKjGhaM",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Tbal1mlwyPo",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=24IzPAcz_aw",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=ldwlOzRvYOU",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=g0HKvRj84Ak",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.youtube.com/watch?v=Slxdo0Dqxlk",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://marcinbanaszek.webflow.io/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://barnadesign.eu/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://bauaban.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://barnadesign.eu/rolunk",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T19:52:11.707Z"
+      },
+      {
+        "phase": "General: education records",
+        "query": "\"Barna Marczali\" education Singapore degree site:.sg OR site:.edu.sg",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://discovery.nus.edu.sg/745-timothy-p-barnard/about",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.amazon.sg/Gen-Z-2-Barna-Group/dp/1945269839",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://diploma.mediaacademy.sg/list-of-trainers",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://socsc.smu.edu.sg/taxonomy/term/1456",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.bcaa.edu.sg/what-we-offer/academic-programmes/bachelors-degree",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://beacon.edu.sg/programmes/ba-hons-international-business-management/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.nafa.edu.sg/programmes/bachelor-of-arts-honours-performance-making",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://issuu.com/nusdoa/docs/bla_handbook_2023_24_19072023",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.4icu.org/reviews/4198.htm",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://iti.edu.sg/alumni/alumni-profiles/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T19:52:38.079Z"
+      },
+      {
+        "phase": "General: publications",
+        "query": "\"Barna Marczali\" publications Singapore",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://nuspress.nus.edu.sg/products/singaporean-creatures",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.routledge.com/Scripting-Media/Barnas-Barnas/p/book/9781032229225?srsltid=AfmBOorCYT-0FuYU4TCpAKMPvbCM3yhF6TfMltTNM1SJlGOtkGx2RSf-",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://barnalab.stanford.edu/page-2/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://bme.academia.edu/EmiliaBarna",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://dblp.org/pid/93/5161.html",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.barna.com/research/global-connection-isolation/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.elitigation.sg/gd/s/2023_SGCA_27",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://nuspress.nus.edu.sg/products/natures-colony-empire-nation-and-environment-in-the-singapore-botanic-gardens",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://nuspress.nus.edu.sg/products/nature-contained?srsltid=AfmBOorpSmozjIZ_GuzL4cI48DLJHMR3saluLyt8wvKt5p4pMlQ55gt2",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://press.uchicago.edu/ucp/books/book/distributed/N/bo25991954.html",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T19:52:43.035Z"
+      },
+      {
+        "phase": "General: social media",
+        "query": "\"Barna Marczali\" Twitter Singapore",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://www.linkedin.com/posts/barna-lipics_we-had-a-crazy-exciting-ai-hackathon-at-msci-activity-7227678705333010433-LWFg",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://www.barna.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/barna-group_today-61-percent-of-us-adults-view-pornographyand-activity-7245453159890857984-C3JL",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://www.amazon.sg/Gen-Z-2-Barna-Group/dp/1945269839",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/barna-group_state-of-pastors-barna-group-activity-7172267401806336000-qXXE",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://www.barna.com/research/reviewing-global-young-adults/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.barna.com/research/churchpulse-weekly-conversations-mark-sayers-faith-crisis/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.warc.com/newsandopinion/opinion/learnings-from-singapore-government-social-media-report-engagement-strategies-for-the-public-sectors/en-gb/6239",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://balajis.com/p/network-state-conference",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://retailinasia.com/featured/v3-gourmets-maranda-barnes-on-bacha-coffees-ambitious-asia-expansion",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T19:52:48.462Z"
+      },
+      {
+        "phase": "General: professional activities",
+        "query": "\"Barna Marczali\" Cursor hackathon Singapore engineer",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://eventbrite.sg/e/build-what-sells-from-product-thinking-to-live-ai-app-in-2-days-tickets-1626893745989",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://cryptonomads.org/DevconSideEvents2024/CURSOR-AI-Hackathon",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.linkedin.com/pulse/ai-hackathon-reflections-building-fashiontopia-cursor-leo-lei-n6gaf",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://lablab.ai/blog/build-fast-ship-fast-hack-summary",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://lu.ma/759ibpob",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://luma.com/cursorcommunity",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://luma.com/dynvx08f",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://medium.com/@joblazqu/lessons-from-building-with-bolt-and-cursor-cc91c709d2e5",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://cursor.fan/de/blog",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.mas.gov.sg/-/media/mas/news/media-releases/2023/annex-a--about-global-fintech-hackcelerator-2023.pdf",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T19:52:53.583Z"
+      },
+      {
+        "phase": "General: mentions or interviews",
+        "query": "\"Barna Marczali\" interview Singapore tech",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://singaporeglobalnetwork.gov.sg/stories/tech/meet-the-romanian-tech-entrepreneur-nurturing-the-next-wave-of-talent-and-startups-from-singapore/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://singaporeglobalnetwork.gov.sg/stories/culture/meet-the-american-entrepreneur-forging-the-next-generation-of-singapore-based-startups/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.imidaily.com/interviews/clients-starting-to-think-of-80000-discount-as-a-third-official-option-anastasia-barna/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://hubbublabs.com/barna-hub/barna-hub-socialcar/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://hubbublabs.com/barna-hub/best-quotes-barna-hub-2018/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://hubbublabs.com/barna-hub/ubiqum-sebastian-barajas/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://hubbublabs.com/category/barna-hub/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://hubbublabs.com/barna-hub/sharify/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.channelnewsasia.com/the-big-spark/start-ups",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://singaporeglobalnetwork.gov.sg/stories/tech/meet-the-inventor-using-ai-to-predict-the-next-wirecard-scandal/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Barna Marczali",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Barna\" not found",
+              "Last name \"Marczali\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Barna\" or last name \"Marczali\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T19:52:58.910Z"
+      }
+    ]
+  }
+}

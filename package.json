@@ -23,6 +23,9 @@
     "concurrently": "^8.2.2"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "exa-js": "^1.10.2",
+    "openai": "^6.5.0",
     "supabase": "^2.51.0"
   }
 }

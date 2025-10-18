@@ -1,0 +1,1208 @@
+{
+  "sessionId": "3a66e041-ee28-4342-a953-abcbcad047a4",
+  "subjectName": "Arnav Salkade",
+  "startTime": "2025-10-18T21:07:34.679Z",
+  "currentPhase": "complete",
+  "progress": 100,
+  "errors": [],
+  "isActive": true,
+  "searchLogs": [],
+  "generatedContext": {
+    "additionalFindings": []
+  },
+  "lastUpdate": "2025-10-18T21:11:25.130Z",
+  "isComplete": true,
+  "finalProfile": {
+    "name": "Arnav Salkade",
+    "aliases": [],
+    "profileSummary": "Profile based on 6 high-quality source(s) with scores 6-10.",
+    "sources": [
+      {
+        "url": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+        "siteSummary": "Name matches exactly. URL includes /in/arnav-salkade-27076a201. Profile shows Singapore location and education at National University of Singapore, aligning with the hard context of being related to Singapore. Educational background in Computer Engineering supports the soft context of being an engineer; presence of Singapore-based institutions further strengthens geographic alignment. Hackathon mention is absent, but overall alignment is strong.",
+        "depth": 0,
+        "relevancyScore": 9,
+        "validationReasoning": "Name matches exactly. URL includes /in/arnav-salkade-27076a201. Profile shows Singapore location and education at National University of Singapore, aligning with the hard context of being related to Singapore. Educational background in Computer Engineering supports the soft context of being an engineer; presence of Singapore-based institutions further strengthens geographic alignment. Hackathon mention is absent, but overall alignment is strong.",
+        "confidence": "high"
+      },
+      {
+        "url": "https://www.linkedin.com/posts/national-university-of-singapore_nus120-nusglobal-nusimpact-activity-7322512892946239488--1qr",
+        "siteSummary": "The source explicitly references Arnav Salkade by name and includes his LinkedIn URL, plus education details (National University of Singapore, Computer Engineering, Stanford Summer) and location (Singapore). These elements collectively indicate the post is about the same person.",
+        "depth": 0,
+        "relevancyScore": 9,
+        "validationReasoning": "The source explicitly references Arnav Salkade by name and includes his LinkedIn URL, plus education details (National University of Singapore, Computer Engineering, Stanford Summer) and location (Singapore). These elements collectively indicate the post is about the same person.",
+        "confidence": "high"
+      },
+      {
+        "url": "https://www.linkedin.com/posts/arnav-salkade-27076a201_wildstashdental-25k-instruct-datasets-activity-7373055614043938816-WgZH",
+        "siteSummary": "The source directly references Arnav Salkade (name, LinkedIn URL) and includes education and location details (National University of Singapore, Computer Engineering, Stanford Summer, Singapore) that align with the individual in question. The presence of a LinkedIn-based post by or about Arnav Salkade further corroborates that the source concerns the same person.",
+        "depth": 0,
+        "relevancyScore": 8,
+        "validationReasoning": "The source directly references Arnav Salkade (name, LinkedIn URL) and includes education and location details (National University of Singapore, Computer Engineering, Stanford Summer, Singapore) that align with the individual in question. The presence of a LinkedIn-based post by or about Arnav Salkade further corroborates that the source concerns the same person.",
+        "confidence": "high"
+      },
+      {
+        "url": "https://www.linkedin.com/posts/arnav-salkade-27076a201_in-the-technology-entrepreneurship-course-activity-7238869614300905472--dVa",
+        "siteSummary": "Source is clearly about Arnav Salkade: the post title references his name, and the profile/link included points to an Arnav Salkade LinkedIn profile; other details (education, location) are consistent with a Singapore-related engineer profile.",
+        "depth": 0,
+        "relevancyScore": 7,
+        "validationReasoning": "Source is clearly about Arnav Salkade: the post title references his name, and the profile/link included points to an Arnav Salkade LinkedIn profile; other details (education, location) are consistent with a Singapore-related engineer profile.",
+        "confidence": "high"
+      },
+      {
+        "url": "https://www.acsinternational.edu.sg/wp-content/uploads/2019/05/Newsletter-September-2019-Compressed.pdf",
+        "siteSummary": "The source explicitly references Arnav Salkade by name and provides an LinkedIn URL and education details (NUS, Computer Engineering, Stanford Summer), indicating it is the same person; the newsletter content listed is largely unrelated extracurricular content.",
+        "depth": 0,
+        "relevancyScore": 7,
+        "validationReasoning": "The source explicitly references Arnav Salkade by name and provides an LinkedIn URL and education details (NUS, Computer Engineering, Stanford Summer), indicating it is the same person; the newsletter content listed is largely unrelated extracurricular content.",
+        "confidence": "high"
+      },
+      {
+        "url": "https://www.acsinternational.edu.sg/wp-content/uploads/2019/11/Newsletter-September-2020-Compressed.pdf",
+        "siteSummary": "The document explicitly references Arnav Salkade across multiple sections (education records, publications, professional activities, social media) and includes a LinkedIn URL for that name, aligning with the provided Arnav Salkade context. No conflicting details about another person are evident.",
+        "depth": 0,
+        "relevancyScore": 7,
+        "validationReasoning": "The document explicitly references Arnav Salkade across multiple sections (education records, publications, professional activities, social media) and includes a LinkedIn URL for that name, aligning with the provided Arnav Salkade context. No conflicting details about another person are evident.",
+        "confidence": "high"
+      }
+    ],
+    "hardContext": "related to Singapore",
+    "softContext": "engineer, hackathon, likely young (between 18-40)",
+    "generatedContext": {
+      "additionalFindings": [
+        "From education records: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll",
+        "From education records: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri",
+        "From publications: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll",
+        "From publications: \n• Christian Ministry News\n• Staff News\n• Office Holiday Hours\n• National School-Based HPV Vaccination Programme\nfor Female Students\n• ACS Echo\n• Term 4 Key Dates\n• ACS (International) 2020 IBDP Inter",
+        "From professional activities: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri",
+        "From professional activities: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll",
+        "From social media: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri",
+        "From social media: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll",
+        "From mentions or interviews: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri",
+        "From mentions or interviews: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll"
+      ],
+      "linkedinData": "",
+      "githubData": "",
+      "websiteData": ""
+    },
+    "searchLogs": [
+      {
+        "phase": "LinkedIn",
+        "query": "Arnav Salkade linkedin.com",
+        "resultsFound": 1,
+        "validatedResults": [
+          {
+            "url": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+            "relevancyScore": 9,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "Name matches exactly. URL includes /in/arnav-salkade-27076a201. Profile shows Singapore location and education at National University of Singapore, aligning with the hard context of being related to Singapore. Educational background in Computer Engineering supports the soft context of being an engineer; presence of Singapore-based institutions further strengthens geographic alignment. Hackathon mention is absent, but overall alignment is strong.",
+            "samePersonElements": [
+              "Profile name: Arnav Salkade",
+              "LinkedIn URL path includes /in/arnav-salkade-27076a201",
+              "Location: Singapore, Singapore",
+              "Education: National University of Singapore (Computer Engineering)",
+              "Education: Stanford University International Honors Programme",
+              "Education: ACS International (International BachalaureateGraduate)"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Arnav Salkade\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Arnav Salkade\" (allowing for name order variations)\n3. Hard context \"related to Singapore\" should ideally appear in job/education/experience\n4. Soft context \"engineer, hackathon, likely young (between 18-40)\" should align geographically/professionally\n\nHard Context: related to Singapore | Soft Context: engineer, hackathon, likely young (between 18-40)\nKnown: None\n\nSource: Arnav Salkade - National University of Singapore\nContent: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 followers 500 connections\n#### See your mutual connections\n## About me\nYou do not rise to the level of your goals. You fall to the level of your systems. I try to improve my systems day by day.\n## Education\n- ### Bachelor's degree || Computer Engineering at [National University of Singapore](https://www.linkedin.com/school/national-university-of-singapore/)\n2023 - 2027 •\n- ### International Honors Programme at [Stanford University](https://www.linkedin.com/school/stanford-university/)\n2024 - 2024 •\n- ### International Bachalaureate Graduate || 43 A/A at [ACS International](https://www.linkedin.com/school/acsinternational/)\n2019 - 2020 •\n## Projects\n- ### Physics Research: Magnetorheological Fluids\nConducted an in-depth investigation into how Yield Strength influences the viscosity of Magnetorh\n\nScoring Guide:\n- 9-10: Perfect name match + hard context clearly confirmed\n- 7-8: Name match + hard context partially confirmed OR strong soft context alignment\n- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 9,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Name matches exactly. URL includes /in/arnav-salkade-27076a201. Profile shows Singapore location and education at National University of Singapore, aligning with the hard context of being related to Singapore. Educational background in Computer Engineering supports the soft context of being an engineer; presence of Singapore-based institutions further strengthens geographic alignment. Hackathon mention is absent, but overall alignment is strong.\",\n  \"samePersonElements\": [\n    \"Profile name: Arnav Salkade\",\n    \"LinkedIn URL path includes /in/arnav-salkade-27076a201\",\n    \"Location: Singapore, Singapore\",\n    \"Education: National University of Singapore (Computer Engineering)\",\n    \"Education: Stanford University International Honors Programme\",\n    \"Education: ACS International (International BachalaureateGraduate)\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "profile"
+          }
+        ],
+        "selectedUrl": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+        "contextAdded": "",
+        "timestamp": "2025-10-18T21:08:09.096Z"
+      },
+      {
+        "phase": "GitHub",
+        "query": "Arnav Salkade github",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://huggingface.co/Wildstash/dental-gpt-oss-20b",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "The source describes a dental AI model (Dental-GPT-OSS-20B) with access requirements. There is no mention of Arnav Salkade, nor any biographical details or Singapore/hackathon context tied to him.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "No reference to Arnav Salkade; content is about Dental-GPT-OSS-20B model; no biographical identifiers; no Singapore/hackathon context tied to Arnav Salkade."
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Arnav Salkade\".\n\nContext: engineer, hackathon, likely young (between 18-40) | related to Singapore\nKnown: None\n\nSource: Wildstash/dental-gpt-oss-20b - Hugging Face\nContent: ## You need to agree to share your contact information to access this model\n\nThis repository is publicly accessible, but\nyou have to accept the conditions to access its files and content.\n\n[Log in](https://huggingface.co/login?next=/Wildstash/dental-gpt-oss-20b) or\n[Sign Up](https://huggingface.co/join?next=/Wildstash/dental-gpt-oss-20b) to review the conditions and access this model content.\n\n# Dental-GPT-OSS-20B: Open Source Dental AI Assistant\n\n**Dental-GPT-OSS-20B** is the first open-source large language model specifically fine-tuned for dental clinical practice. This model provides evidence-based diagnostic assistance, treatment planning, and clinical decision support for dental professionals.\n\n## Model Description\n\n- **Model Type**: Causal Language Model fine-tuned for dental clinical applications\n- **Base Architecture**: 20B parameter transformer model\n- **Fine-tuning Method**: LoRA (Low-Rank Adaptation) with PEFT\n- **Training Data**: 2,494 expert-validated synthetic dental cli\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"The source describes a dental AI model (Dental-GPT-OSS-20B) with access requirements. There is no mention of Arnav Salkade, nor any biographical details or Singapore/hackathon context tied to him.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\"No reference to Arnav Salkade; content is about Dental-GPT-OSS-20B model; no biographical identifiers; no Singapore/hackathon context tied to Arnav Salkade.\"]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/arnavk-09/avatararchives",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.hitpaw.com/gpt-tools-hunter.html",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "The source content is a generic listing of GPT tools and descriptions with no references to Arnav Salkade, Singapore context, or personal identifiers.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "No mention of Arnav Salkade; generic GPT tools content; lacks identifying details about the person."
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Arnav Salkade\".\n\nContext: engineer, hackathon, likely young (between 18-40) | related to Singapore\nKnown: None\n\nSource: GPT Tools Hunter - Share and Search GPTs - HitPaw\nContent: ## GPT Tools Hunter\n\n[WebPilot\\\n\\\nBrowse Webpage/PDF/Data. Chat & Write with one/many/none URLs. WebPilot.ai Powered.](https://chat.openai.com/g/g-pNWGgUYqS-webpilot)\n\n[API Docs\\\n\\\nOpenAI API and Documentation](https://chat.openai.com/g/g-I1XNbsyDK-api-docs)\n\n[Cosmic Dream\\\n\\\nVisionary painter of digital wonder - by ChatGPT](https://chat.openai.com/g/g-FdMHL1sNo-cosmic-dream)\n\n[DALL·E\\\n\\\nLet me turn your imagination into imagery - by ChatGPT](https://chat.openai.com/g/g-2fkFE8rbu-dall-e)\n\n[The Negotiator\\\n\\\nI'll help you advocate for yourself and get better outcomes. Become a great negotiator. - by ChatGPT](https://chat.openai.com/g/g-TTTAK9GuS-the-negotiator)\n\n[Creative Writing Coach\\\n\\\nI'm eager to read your work and give you feedback to improve your skills. - by ChatGPT](https://chat.openai.com/g/g-lN1gKFnvL-creative-writing-coach)\n\n[Math Mentor\\\n\\\nI help parents help their kids with math. Need a 9pm refresher on geometry proofs? I’m here for you. - by ChatGPT](https://chat.openai.c\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"The source content is a generic listing of GPT tools and descriptions with no references to Arnav Salkade, Singapore context, or personal identifiers.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\"No mention of Arnav Salkade; generic GPT tools content; lacks identifying details about the person.\"]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/arnav14-dev/arnav14-dev",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/FrislyCodes/Arnav-Portfolio",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://gptsaistore.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.scribd.com/document/861476870/Custom-GPT-Database",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+            "relevancyScore": 7,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "The profile shows the exact name 'Arnav Salkade', the URL is a LinkedIn /in/ path (arnav-salkade-27076a201), and the page lists Singapore as location with education at National University of Singapore (Computer Engineering) and a Stanford Summer program, which aligns with the hard context of being related to Singapore. The soft context is plausible (engineer via Computer Engineering; student status implies youth), though explicit 'hackathon' mention is absent.",
+            "samePersonElements": [
+              "Name: Arnav Salkade",
+              "URL contains '/in/arnav-salkade-27076a201'",
+              "Location: Singapore, Singapore",
+              "Education: National University of Singapore (Computer Engineering)",
+              "Education: Stanford Summer"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Arnav Salkade\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Arnav Salkade\" (allowing for name order variations)\n3. Hard context \"related to Singapore\" should ideally appear in job/education/experience\n4. Soft context \"engineer, hackathon, likely young (between 18-40)\" should align geographically/professionally\n\nHard Context: related to Singapore | Soft Context: engineer, hackathon, likely young (between 18-40)\nKnown: None\n\nSource: Arnav Salkade - National University of Singapore | Stanford Summer\nContent: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 followers 500 connections\n#### See your mutual connections\n## About me\nYou do not rise to the level of your goals. You fall to the level of your systems. I try to improve my systems day by day.\n## Education\n- ### Bachelor's degree || Computer Engineering at [National University of Singapore](https://www.linkedin.com/school/national-university-of-singapore/)\n2023 - 2027 •\n- ### International Honors Programme at [Stanford University](https://www.linkedin.com/school/stanford-university/)\n2024 - 2024 •\n- ### International Bachalaureate Graduate || 43 A/A at [ACS International](https://www.linkedin.com/school/acsinternational/)\n2019 - 2020 •\n## Projects\n- ### Physics Research: Magnetorheological Fluids\nConducted an in-depth investigation into how Yield Strength influences the viscosity of Magnetorh\n\nScoring Guide:\n- 9-10: Perfect name match + hard context clearly confirmed\n- 7-8: Name match + hard context partially confirmed OR strong soft context alignment\n- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"The profile shows the exact name 'Arnav Salkade', the URL is a LinkedIn /in/ path (arnav-salkade-27076a201), and the page lists Singapore as location with education at National University of Singapore (Computer Engineering) and a Stanford Summer program, which aligns with the hard context of being related to Singapore. The soft context is plausible (engineer via Computer Engineering; student status implies youth), though explicit 'hackathon' mention is absent.\",\n  \"samePersonElements\": [\n    \"Name: Arnav Salkade\",\n    \"URL contains '/in/arnav-salkade-27076a201'\",\n    \"Location: Singapore, Singapore\",\n    \"Education: National University of Singapore (Computer Engineering)\",\n    \"Education: Stanford Summer\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "profile"
+          },
+          {
+            "url": "https://openai.devpost.com/project-gallery",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/arnavjain2503/arnavjain2503",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "selectedUrl": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+        "contextAdded": "",
+        "timestamp": "2025-10-18T21:08:35.626Z"
+      },
+      {
+        "phase": "Website",
+        "query": "Arnav Salkade personal website OR portfolio",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+            "relevancyScore": 7,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "URL uses /in/ subpath; profile name matches Arnav Salkade; profile shows Singapore location and Singapore-based education (National University of Singapore) and Stanford Summer, aligning with the hard context; soft context (engineer/engineering track, young profile) is consistent with the studentship at NUS and ongoing education.",
+            "samePersonElements": [
+              "Name: Arnav Salkade",
+              "URL: sg.linkedin.com/in/arnav-salkade-27076a201",
+              "Location: Singapore, Singapore",
+              "Affiliation: National University of Singapore (Computer Engineering)",
+              "Affiliation: Stanford Summer"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Arnav Salkade\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Arnav Salkade\" (allowing for name order variations)\n3. Hard context \"related to Singapore\" should ideally appear in job/education/experience\n4. Soft context \"engineer, hackathon, likely young (between 18-40)\" should align geographically/professionally\n\nHard Context: related to Singapore | Soft Context: engineer, hackathon, likely young (between 18-40)\nKnown: None\n\nSource: Arnav Salkade - National University of Singapore | Stanford Summer\nContent: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 followers 500 connections\n#### See your mutual connections\n## About me\nYou do not rise to the level of your goals. You fall to the level of your systems. I try to improve my systems day by day.\n## Education\n- ### Bachelor's degree || Computer Engineering at [National University of Singapore](https://www.linkedin.com/school/national-university-of-singapore/)\n2023 - 2027 •\n- ### International Honors Programme at [Stanford University](https://www.linkedin.com/school/stanford-university/)\n2024 - 2024 •\n- ### International Bachalaureate Graduate || 43 A/A at [ACS International](https://www.linkedin.com/school/acsinternational/)\n2019 - 2020 •\n## Projects\n- ### Physics Research: Magnetorheological Fluids\nConducted an in-depth investigation into how Yield Strength influences the viscosity of Magnetorh\n\nScoring Guide:\n- 9-10: Perfect name match + hard context clearly confirmed\n- 7-8: Name match + hard context partially confirmed OR strong soft context alignment\n- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"URL uses /in/ subpath; profile name matches Arnav Salkade; profile shows Singapore location and Singapore-based education (National University of Singapore) and Stanford Summer, aligning with the hard context; soft context (engineer/engineering track, young profile) is consistent with the studentship at NUS and ongoing education.\",\n  \"samePersonElements\": [\n    \"Name: Arnav Salkade\",\n    \"URL: sg.linkedin.com/in/arnav-salkade-27076a201\",\n    \"Location: Singapore, Singapore\",\n    \"Affiliation: National University of Singapore (Computer Engineering)\",\n    \"Affiliation: Stanford Summer\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "profile"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/arnav-salkade-27076a201_in-the-technology-entrepreneurship-course-activity-7238869614300905472--dVa",
+            "relevancyScore": 7,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "Source is clearly about Arnav Salkade: the post title references his name, and the profile/link included points to an Arnav Salkade LinkedIn profile; other details (education, location) are consistent with a Singapore-related engineer profile.",
+            "samePersonElements": [
+              "Post title includes the name 'Arnav Salkade'",
+              "LinkedIn profile URL contains 'arnav-salkade'",
+              "Education/affiliation line 'National University of Singapore | Computer Engineering | Stanford Summer'"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nValidate if this source is about \"Arnav Salkade\".\n\nContext: engineer, hackathon, likely young (between 18-40) | related to Singapore\nKnown: None\n\nSource: Arnav Salkade's Post - LinkedIn\nContent: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and [Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n\n [Skip to main content](https://www.linkedin.com/www.linkedin.com#main-content)\n\n# Arnav Salkade’s Post\n\n[Arnav Salkade](https://sg.linkedin.com/in/arnav-salkade-27076a201?trk=public_post_feed-actor-name)\n\nNational University of Singapore \\| Computer Engineering \\| Stanford Summer\n\n1y\n\n- [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Farnav-salkade-27076a201_in-the-technology-entrepreneurship-course-activity-7238869614300905472--dVa&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Source is clearly about Arnav Salkade: the post title references his name, and the profile/link included points to an Arnav Salkade LinkedIn profile; other details (education, location) are consistent with a Singapore-related engineer profile.\",\n  \"samePersonElements\": [\n    \"Post title includes the name 'Arnav Salkade'\",\n    \"LinkedIn profile URL contains 'arnav-salkade'\",\n    \"Education/affiliation line 'National University of Singapore | Computer Engineering | Stanford Summer'\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "post"
+          },
+          {
+            "url": "https://gptsaistore.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://openai.devpost.com/project-gallery",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://arnavsastry.com/about/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://arnavshah.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://arnavgrg.github.io/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.arnav.codes/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.arnavchand.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.aarnav.me/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "selectedUrl": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+        "contextAdded": "",
+        "timestamp": "2025-10-18T21:08:50.543Z"
+      },
+      {
+        "phase": "General: education records",
+        "query": "Arnav Salkade education Singapore engineering degree",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+            "relevancyScore": 9,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "Name matches Arnav Salkade; URL is a LinkedIn /in/ page; profile location and education show strong Singapore context (NUS, Singapore) with a Stanford Summer program; soft context aligned with a young engineer/student profile.",
+            "samePersonElements": [
+              "Profile name matches 'Arnav Salkade'",
+              "URL contains '/in/arnav-salkade-27076a201' (linkedin.com/in/...)",
+              "Location indicates Singapore (Singapore, Singapore)",
+              "Education includes National University of Singapore (Computer Engineering) and Stanford Summer"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Arnav Salkade\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Arnav Salkade\" (allowing for name order variations)\n3. Hard context \"related to Singapore\" should ideally appear in job/education/experience\n4. Soft context \"engineer, hackathon, likely young (between 18-40)\" should align geographically/professionally\n\nHard Context: related to Singapore | Soft Context: engineer, hackathon, likely young (between 18-40)\nKnown: None\n\nSource: Arnav Salkade - National University of Singapore | Stanford Summer\nContent: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 followers 500 connections\n#### See your mutual connections\n## About me\nYou do not rise to the level of your goals. You fall to the level of your systems. I try to improve my systems day by day.\n## Education\n- ### Bachelor's degree || Computer Engineering at [National University of Singapore](https://www.linkedin.com/school/national-university-of-singapore/)\n2023 - 2027 •\n- ### International Honors Programme at [Stanford University](https://www.linkedin.com/school/stanford-university/)\n2024 - 2024 •\n- ### International Bachalaureate Graduate || 43 A/A at [ACS International](https://www.linkedin.com/school/acsinternational/)\n2019 - 2020 •\n## Projects\n- ### Physics Research: Magnetorheological Fluids\nConducted an in-depth investigation into how Yield Strength influences the viscosity of Magnetorh\n\nScoring Guide:\n- 9-10: Perfect name match + hard context clearly confirmed\n- 7-8: Name match + hard context partially confirmed OR strong soft context alignment\n- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 9,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Name matches Arnav Salkade; URL is a LinkedIn /in/ page; profile location and education show strong Singapore context (NUS, Singapore) with a Stanford Summer program; soft context aligned with a young engineer/student profile.\",\n  \"samePersonElements\": [\n    \"Profile name matches 'Arnav Salkade'\",\n    \"URL contains '/in/arnav-salkade-27076a201' (linkedin.com/in/...)\",\n    \"Location indicates Singapore (Singapore, Singapore)\",\n    \"Education includes National University of Singapore (Computer Engineering) and Stanford Summer\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "profile"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/arnav-salkade-27076a201_in-the-technology-entrepreneurship-course-activity-7238869614300905472--dVa",
+            "relevancyScore": 9,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "The source centers on 'Arnav Salkade' with a post title 'Arnav Salkade’s Post' and a LinkedIn profile link specific to arnav-salkade, indicating the same individual. The contextual hints (Singapore-related LinkedIn URL, Singapore) further support identification.",
+            "samePersonElements": [
+              "Post title includes 'Arnav Salkade'",
+              "LinkedIn profile URL contains 'arnav-salkade' and 'sg' (Singapore)"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nValidate if this source is about \"Arnav Salkade\".\n\nContext: engineer, hackathon, likely young (between 18-40) | related to Singapore\nKnown: None\n\nSource: Arnav Salkade's Post - LinkedIn\nContent: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and [Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n\n [Skip to main content](https://www.linkedin.com/www.linkedin.com#main-content)\n\n# Arnav Salkade’s Post\n\n[Arnav Salkade](https://sg.linkedin.com/in/arnav-salkade-27076a201?trk=public_post_feed-actor-name)\n\nNational University of Singapore \\| Computer Engineering \\| Stanford Summer\n\n1y\n\n- [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Farnav-salkade-27076a201_in-the-technology-entrepreneurship-course-activity-7238869614300905472--dVa&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 9,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"The source centers on 'Arnav Salkade' with a post title 'Arnav Salkade’s Post' and a LinkedIn profile link specific to arnav-salkade, indicating the same individual. The contextual hints (Singapore-related LinkedIn URL, Singapore) further support identification.\",\n  \"samePersonElements\": [\n    \"Post title includes 'Arnav Salkade'\",\n    \"LinkedIn profile URL contains 'arnav-salkade' and 'sg' (Singapore)\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "post"
+          },
+          {
+            "url": "https://issuu.com/nus-cde/docs/cde_5_computer_web",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.scribd.com/document/861476870/Custom-GPT-Database",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.sutd.edu.sg/education/undergraduate/special-programmes/sharp/who-we-are/students/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://issuu.com/nus-cde/docs/nus_engineering_ar2020",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://issuu.com/nus-cde/docs/cde_16_mechanical_web_v2",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://issuu.com/nus-cde/docs/cde_7_engineering_science_web",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://issuu.com/nus-cde/docs/cde_9_electrical_web",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://issuu.com/avantgardemediaarts/docs/sst_yearbook_2024",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T21:09:21.084Z"
+      },
+      {
+        "phase": "General: publications",
+        "query": "Arnav Salkade research publications Singapore engineering",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+            "relevancyScore": 9,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "Header shows 'Arnav Salkade'; URL contains '/in/'; Singapore-related education and location (National University of Singapore, Singapore; Stanford Summer); accounts for engineer-oriented field (Computer Engineering) and plausible age range based on 2023-2027 undergrad timeline.",
+            "samePersonElements": [
+              "Header name: Arnav Salkade",
+              "URL path contains '/in/arnav-salkade-27076a201'",
+              "Location: Singapore, Singapore",
+              "Education: National University of Singapore — Computer Engineering",
+              "Education: Stanford International Honors Programme (Summer)"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Arnav Salkade\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Arnav Salkade\" (allowing for name order variations)\n3. Hard context \"related to Singapore\" should ideally appear in job/education/experience\n4. Soft context \"engineer, hackathon, likely young (between 18-40)\" should align geographically/professionally\n\nHard Context: related to Singapore | Soft Context: engineer, hackathon, likely young (between 18-40)\nKnown: Additional: From education records: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From education records: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri\n\nSource: Arnav Salkade - National University of Singapore\nContent: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 followers 500 connections\n#### See your mutual connections\n## About me\nYou do not rise to the level of your goals. You fall to the level of your systems. I try to improve my systems day by day.\n## Education\n- ### Bachelor's degree || Computer Engineering at [National University of Singapore](https://www.linkedin.com/school/national-university-of-singapore/)\n2023 - 2027 •\n- ### International Honors Programme at [Stanford University](https://www.linkedin.com/school/stanford-university/)\n2024 - 2024 •\n- ### International Bachalaureate Graduate || 43 A/A at [ACS International](https://www.linkedin.com/school/acsinternational/)\n2019 - 2020 •\n## Projects\n- ### Physics Research: Magnetorheological Fluids\nConducted an in-depth investigation into how Yield Strength influences the viscosity of Magnetorh\n\nScoring Guide:\n- 9-10: Perfect name match + hard context clearly confirmed\n- 7-8: Name match + hard context partially confirmed OR strong soft context alignment\n- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 9,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Header shows 'Arnav Salkade'; URL contains '/in/'; Singapore-related education and location (National University of Singapore, Singapore; Stanford Summer); accounts for engineer-oriented field (Computer Engineering) and plausible age range based on 2023-2027 undergrad timeline.\",\n  \"samePersonElements\": [\n    \"Header name: Arnav Salkade\",\n    \"URL path contains '/in/arnav-salkade-27076a201'\",\n    \"Location: Singapore, Singapore\",\n    \"Education: National University of Singapore — Computer Engineering\",\n    \"Education: Stanford International Honors Programme (Summer)\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "profile"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/medilogix-technology-solutions_from-3-hour-charting-marathons-to-30-minute-activity-7363873976080576513-qZI6",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://gptsaistore.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://arxiv.org/html/2411.06804v1",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://arxiv.org/abs/2412.11538",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://ink.library.smu.edu.sg/sis_research/9177/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.scribd.com/document/861476870/Custom-GPT-Database",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.acsinternational.edu.sg/wp-content/uploads/2019/05/Newsletter-September-2019-Compressed.pdf",
+            "relevancyScore": 7,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "The source explicitly references Arnav Salkade by name and provides an LinkedIn URL and education details (NUS, Computer Engineering, Stanford Summer), indicating it is the same person; the newsletter content listed is largely unrelated extracurricular content.",
+            "samePersonElements": [
+              "Arnav Salkade",
+              "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+              "National University of Singapore",
+              "Computer Engineering",
+              "Stanford Summer",
+              "Singapore, Singapore [sg]"
+            ],
+            "differentPersonElements": [
+              "Newsletter September 2019 - ACS (International)",
+              "Christian Ministry News",
+              "Staff News",
+              "Office Holiday Hours",
+              "National School-Based HPV Vaccination Programme for Female Students",
+              "ACS Echo",
+              "Term 4 Key Dates",
+              "ACS (International) 2020 IBDP Internal Scholarships",
+              "Holiday Revision Classes",
+              "Setting up Notifications for Parent Portal",
+              "Study Nights",
+              "Request for Testimonials/Transcripts",
+              "Term 3 Commendation Awards",
+              "Archery Tournament in Poland",
+              "Inter-House Netball & Football Competitions",
+              "Inter-House Quiz",
+              "Africa CAS Trip",
+              "Language Week 2019",
+              "Green Up with Choice to Run 2019",
+              "A Memorable Week with Yamate Gakuin High School Students",
+              "The Harmony Games 2019",
+              "Commemorating the Singapore Bicentennial During National Day Celebration",
+              "International Day",
+              "Year 1 Visits to the Bicentennial Experience",
+              "Year 5 IB Geography Field Trip",
+              "Model United Nation Conference at NPS",
+              "All are Winners at Viva La Musica!",
+              "Interact Club at the Methodist Missions Society Banquet 2019",
+              "Term 3 Parent-Teacher Meetings",
+              "Term 3 Careers Talks",
+              "Jo"
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Arnav Salkade\".\n\nContext: engineer, hackathon, likely young (between 18-40) | related to Singapore\nKnown: Additional: From education records: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From education records: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri\n\nSource: Newsletter September 2019 - ACS (International)\nContent: • Christian Ministry News\n• Staff News\n• Office Holiday Hours\n• National School-Based HPV Vaccination Programme\nfor Female Students\n• ACS Echo\n• Term 4 Key Dates\n• ACS (International) 2020 IBDP Internal Scholarships\n• Holiday Revision Classes\n• Setting up Notifications for Parent Portal\n• Study Nights\n• Request for Testimonials/Transcripts\n• Term 3 Commendation Awards\n• Archery Tournament in Poland\n• Inter-House Netball & Football Competitions\n• Inter-House Quiz\n• Africa CAS Trip\n• Language Week 2019\n• Green Up with Choice to Run 2019\n• A Memorable Week with Yamate Gakuin High School\nStudents\n• The Harmony Games 2019\n• Commemorating the Singapore Bicentennial During\nNational Day Celebration\n• International Day\n• Year 1 Visits to the Bicentennial Experience\n• Year 5 IB Geography Field Trip\n• Model United Nation Conference at NPS\n• All are Winners at Viva La Musica!\n• Interact Club at the Methodist Missions Society\nBanquet 2019\n• Term 3 Parent-Teacher Meetings\n• Term 3 Careers Talks\n• Jo\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"The source explicitly references Arnav Salkade by name and provides an LinkedIn URL and education details (NUS, Computer Engineering, Stanford Summer), indicating it is the same person; the newsletter content listed is largely unrelated extracurricular content.\",\n  \"samePersonElements\": [\"Arnav Salkade\", \"https://sg.linkedin.com/in/arnav-salkade-27076a201\", \"National University of Singapore\", \"Computer Engineering\", \"Stanford Summer\", \"Singapore, Singapore [sg]\"],\n  \"differentPersonElements\": [\"Newsletter September 2019 - ACS (International)\", \"Christian Ministry News\", \"Staff News\", \"Office Holiday Hours\", \"National School-Based HPV Vaccination Programme for Female Students\", \"ACS Echo\", \"Term 4 Key Dates\", \"ACS (International) 2020 IBDP Internal Scholarships\", \"Holiday Revision Classes\", \"Setting up Notifications for Parent Portal\", \"Study Nights\", \"Request for Testimonials/Transcripts\", \"Term 3 Commendation Awards\", \"Archery Tournament in Poland\", \"Inter-House Netball & Football Competitions\", \"Inter-House Quiz\", \"Africa CAS Trip\", \"Language Week 2019\", \"Green Up with Choice to Run 2019\", \"A Memorable Week with Yamate Gakuin High School Students\", \"The Harmony Games 2019\", \"Commemorating the Singapore Bicentennial During National Day Celebration\", \"International Day\", \"Year 1 Visits to the Bicentennial Experience\", \"Year 5 IB Geography Field Trip\", \"Model United Nation Conference at NPS\", \"All are Winners at Viva La Musica!\", \"Interact Club at the Methodist Missions Society Banquet 2019\", \"Term 3 Parent-Teacher Meetings\", \"Term 3 Careers Talks\", \"Jo\"]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://arxiv.org/html/2406.01056v1",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://browse.arxiv.org/html/2312.14665v1",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T21:09:57.242Z"
+      },
+      {
+        "phase": "General: professional activities",
+        "query": "Arnav Salkade hackathon Singapore engineer",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://www.linkedin.com/posts/arnav-salkade-27076a201_wildstashdental-25k-instruct-datasets-activity-7373055614043938816-WgZH",
+            "relevancyScore": 8,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "The source directly references Arnav Salkade (name, LinkedIn URL) and includes education and location details (National University of Singapore, Computer Engineering, Stanford Summer, Singapore) that align with the individual in question. The presence of a LinkedIn-based post by or about Arnav Salkade further corroborates that the source concerns the same person.",
+            "samePersonElements": [
+              "Name: Arnav Salkade",
+              "LinkedIn URL: sg.linkedin.com/in/arnav-salkade-27076a201",
+              "Education: National University of Singapore | Computer Engineering | Stanford Summer",
+              "Location: Singapore, Singapore",
+              "Post reference: Open-Source AI for Dentists post mentions Arnav Salkade and links to their LinkedIn profile"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nValidate if this source is about \"Arnav Salkade\".\n\nContext: engineer, hackathon, likely young (between 18-40) | related to Singapore\nKnown: Additional: From education records: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From education records: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From publications: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From publications: \n• Christian Ministry News\n• Staff News\n• Office Holiday Hours\n• National School-Based HPV Vaccination Programme\nfor Female Students\n• ACS Echo\n• Term 4 Key Dates\n• ACS (International) 2020 IBDP Inter\n\nSource: Open-Source AI for Dentists: A Game Changer for Global Health\nContent: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and [Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n\n [Skip to main content](https://www.linkedin.com/www.linkedin.com#main-content)\n\n# Open-Source AI for Dentists: A Game Changer for Global Health\n\nThis title was summarized by AI from the post below.\n\n[Arnav Salkade](https://sg.linkedin.com/in/arnav-salkade-27076a201?trk=public_post_feed-actor-name)\n\nNational University of Singapore \\| Computer Engineering \\| Stanford Summer\n\n1mo\nEdited\n\n- [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Farnav-salkade-27076a201_wildstashdental-25k-instruct-datasets-activity-73730556140\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 8,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"The source directly references Arnav Salkade (name, LinkedIn URL) and includes education and location details (National University of Singapore, Computer Engineering, Stanford Summer, Singapore) that align with the individual in question. The presence of a LinkedIn-based post by or about Arnav Salkade further corroborates that the source concerns the same person.\",\n  \"samePersonElements\": [\n    \"Name: Arnav Salkade\",\n    \"LinkedIn URL: sg.linkedin.com/in/arnav-salkade-27076a201\",\n    \"Education: National University of Singapore | Computer Engineering | Stanford Summer\",\n    \"Location: Singapore, Singapore\",\n    \"Post reference: Open-Source AI for Dentists post mentions Arnav Salkade and links to their LinkedIn profile\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "post"
+          },
+          {
+            "url": "https://github.com/arnavsm/smart-energy-grid-optimization",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://medium.com/singapore-gds/from-concept-to-reality-our-journey-as-top-25-teams-in-apacs-first-ai-hackathon-53d97b37d1a2",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://devpost.com/arnav-deepaware/achievements",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+            "relevancyScore": 7,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "URL contains /in/ and domain is sg.linkedin.com (acceptable). The profile name exactly matches 'Arnav Salkade'. There is explicit Singapore context in education/location (National University of Singapore, Singapore). The field shown is Computer Engineering (engineer), and the timeline suggests a young adult ages 18-40. While 'hackathon' is not explicitly mentioned, the strong Singapore-based engineering context supports a likely match.",
+            "samePersonElements": [
+              "name matches 'Arnav Salkade'",
+              "URL contains '/in/'",
+              "Singapore-based education/location (NUS, Singapore)"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Arnav Salkade\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Arnav Salkade\" (allowing for name order variations)\n3. Hard context \"related to Singapore\" should ideally appear in job/education/experience\n4. Soft context \"engineer, hackathon, likely young (between 18-40)\" should align geographically/professionally\n\nHard Context: related to Singapore | Soft Context: engineer, hackathon, likely young (between 18-40)\nKnown: Additional: From education records: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From education records: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From publications: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From publications: \n• Christian Ministry News\n• Staff News\n• Office Holiday Hours\n• National School-Based HPV Vaccination Programme\nfor Female Students\n• ACS Echo\n• Term 4 Key Dates\n• ACS (International) 2020 IBDP Inter\n\nSource: Arnav Salkade - National University of Singapore\nContent: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 followers 500 connections\n#### See your mutual connections\n## About me\nYou do not rise to the level of your goals. You fall to the level of your systems. I try to improve my systems day by day.\n## Education\n- ### Bachelor's degree || Computer Engineering at [National University of Singapore](https://www.linkedin.com/school/national-university-of-singapore/)\n2023 - 2027 •\n- ### International Honors Programme at [Stanford University](https://www.linkedin.com/school/stanford-university/)\n2024 - 2024 •\n- ### International Bachalaureate Graduate || 43 A/A at [ACS International](https://www.linkedin.com/school/acsinternational/)\n2019 - 2020 •\n## Projects\n- ### Physics Research: Magnetorheological Fluids\nConducted an in-depth investigation into how Yield Strength influences the viscosity of Magnetorh\n\nScoring Guide:\n- 9-10: Perfect name match + hard context clearly confirmed\n- 7-8: Name match + hard context partially confirmed OR strong soft context alignment\n- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"URL contains /in/ and domain is sg.linkedin.com (acceptable). The profile name exactly matches 'Arnav Salkade'. There is explicit Singapore context in education/location (National University of Singapore, Singapore). The field shown is Computer Engineering (engineer), and the timeline suggests a young adult ages 18-40. While 'hackathon' is not explicitly mentioned, the strong Singapore-based engineering context supports a likely match.\",\n  \"samePersonElements\": [\"name matches 'Arnav Salkade'\", \"URL contains '/in/'\", \"Singapore-based education/location (NUS, Singapore)\"],\n  \"differentPersonElements\": []\n}",
+            "category": "profile"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/dcnsakthi_microsoft-global-hackathon-2024-award-winner-activity-7260072364351107072-POEM",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://www.sutd.edu.sg/media-releases-listing/first-temasek-sutd-generative-ai-hackathon-gives-rise-to-enterprise-ready-digital-solutions",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.ntu.edu.sg/computing/news-events/news/detail/grand-prize-winners-hack-singapore-2023",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://angelhack.com/hackglobal/singapore",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://sauvc.org/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T21:10:23.656Z"
+      },
+      {
+        "phase": "General: social media",
+        "query": "Arnav Salkade Instagram Singapore",
+        "resultsFound": 9,
+        "validatedResults": [
+          {
+            "url": "https://www.linkedin.com/posts/national-university-of-singapore_nus120-nusglobal-nusimpact-activity-7322512892946239488--1qr",
+            "relevancyScore": 9,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "The source explicitly references Arnav Salkade by name and includes his LinkedIn URL, plus education details (National University of Singapore, Computer Engineering, Stanford Summer) and location (Singapore). These elements collectively indicate the post is about the same person.",
+            "samePersonElements": [
+              "Mentions name: Arnav Salkade",
+              "LinkedIn URL: sg.linkedin.com/in/arnav-salkade-27076a201",
+              "Education: National University of Singapore; Computer Engineering; Stanford Summer",
+              "Location: Singapore, Singapore"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nValidate if this source is about \"Arnav Salkade\".\n\nContext: engineer, hackathon, likely young (between 18-40) | related to Singapore\nKnown: Additional: From education records: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From education records: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From publications: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From publications: \n• Christian Ministry News\n• Staff News\n• Office Holiday Hours\n• National School-Based HPV Vaccination Programme\nfor Female Students\n• ACS Echo\n• Term 4 Key Dates\n• ACS (International) 2020 IBDP Inter; From professional activities: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From professional activities: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll\n\nSource: National University of Singapore's Post - LinkedIn\nContent: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and [Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n\n [Skip to main content](https://www.linkedin.com/www.linkedin.com#main-content)\n\n# National University of Singapore’s Post\n\n[National University of Singapore](https://sg.linkedin.com/school/national-university-of-singapore/?trk=public_post_feed-actor-name)\n\n689,658 followers\n\n5mo\n\n- [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fnational-university-of-singapore_nus120-nusglobal-nusimpact-activity-7322512892946239488--1qr&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&_f=guest-re\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 9,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"The source explicitly references Arnav Salkade by name and includes his LinkedIn URL, plus education details (National University of Singapore, Computer Engineering, Stanford Summer) and location (Singapore). These elements collectively indicate the post is about the same person.\",\n  \"samePersonElements\": [\n    \"Mentions name: Arnav Salkade\",\n    \"LinkedIn URL: sg.linkedin.com/in/arnav-salkade-27076a201\",\n    \"Education: National University of Singapore; Computer Engineering; Stanford Summer\",\n    \"Location: Singapore, Singapore\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "post"
+          },
+          {
+            "url": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+            "relevancyScore": 7,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "The URL contains '/in/' and includes 'arnav-salkade', the profile name is Arnav Salkade, and the profile lists Singapore-based education and institutions (National University of Singapore, Stanford Summer) which align with the hard context 'related to Singapore'. The profile centers on Computer Engineering, supporting the soft context 'engineer' and a young academic timeline making age 18-40 likely. No conflicting information suggesting a different person is present.",
+            "samePersonElements": [
+              "URL contains /in/ path with arnav-salkade-27076a201",
+              "Profile name is Arnav Salkade",
+              "Location shows Singapore, Singapore",
+              "Education: National University of Singapore - Computer Engineering",
+              "Education: Stanford Summer (International Honors Programme)",
+              "Education: ACS International ( IB )"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Arnav Salkade\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Arnav Salkade\" (allowing for name order variations)\n3. Hard context \"related to Singapore\" should ideally appear in job/education/experience\n4. Soft context \"engineer, hackathon, likely young (between 18-40)\" should align geographically/professionally\n\nHard Context: related to Singapore | Soft Context: engineer, hackathon, likely young (between 18-40)\nKnown: Additional: From education records: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From education records: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From publications: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From publications: \n• Christian Ministry News\n• Staff News\n• Office Holiday Hours\n• National School-Based HPV Vaccination Programme\nfor Female Students\n• ACS Echo\n• Term 4 Key Dates\n• ACS (International) 2020 IBDP Inter; From professional activities: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From professional activities: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll\n\nSource: Arnav Salkade - National University of Singapore | Stanford Summer\nContent: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 followers 500 connections\n#### See your mutual connections\n## About me\nYou do not rise to the level of your goals. You fall to the level of your systems. I try to improve my systems day by day.\n## Education\n- ### Bachelor's degree || Computer Engineering at [National University of Singapore](https://www.linkedin.com/school/national-university-of-singapore/)\n2023 - 2027 •\n- ### International Honors Programme at [Stanford University](https://www.linkedin.com/school/stanford-university/)\n2024 - 2024 •\n- ### International Bachalaureate Graduate || 43 A/A at [ACS International](https://www.linkedin.com/school/acsinternational/)\n2019 - 2020 •\n## Projects\n- ### Physics Research: Magnetorheological Fluids\nConducted an in-depth investigation into how Yield Strength influences the viscosity of Magnetorh\n\nScoring Guide:\n- 9-10: Perfect name match + hard context clearly confirmed\n- 7-8: Name match + hard context partially confirmed OR strong soft context alignment\n- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"The URL contains '/in/' and includes 'arnav-salkade', the profile name is Arnav Salkade, and the profile lists Singapore-based education and institutions (National University of Singapore, Stanford Summer) which align with the hard context 'related to Singapore'. The profile centers on Computer Engineering, supporting the soft context 'engineer' and a young academic timeline making age 18-40 likely. No conflicting information suggesting a different person is present.\",\n  \"samePersonElements\": [\n    \"URL contains /in/ path with arnav-salkade-27076a201\",\n    \"Profile name is Arnav Salkade\",\n    \"Location shows Singapore, Singapore\",\n    \"Education: National University of Singapore - Computer Engineering\",\n    \"Education: Stanford Summer (International Honors Programme)\",\n    \"Education: ACS International ( IB )\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "profile"
+          },
+          {
+            "url": "https://www.scribd.com/document/861476870/Custom-GPT-Database",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://gptsaistore.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://unsplash.com/@arnav_arw?amp",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://unsplash.com/@arifinsalleh",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/arnavk-09/avatararchives",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://arnavdhamija.com/2019/02/18/singapore/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/navishkashah_digital-2024-we-are-social-singapore-activity-7165982136145985536-L5Gy",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "post"
+          }
+        ],
+        "timestamp": "2025-10-18T21:10:41.163Z"
+      },
+      {
+        "phase": "General: mentions or interviews",
+        "query": "Arnav Salkade interview Singapore tech news",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://www.linkedin.com/posts/arnav-salkade-27076a201_in-the-technology-entrepreneurship-course-activity-7238869614300905472--dVa",
+            "relevancyScore": 7,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "The source repeatedly references Arnav Salkade, includes a LinkedIn URL slug for that name, and lists institutions and location (National University of Singapore, Computer Engineering, Stanford Summer, Singapore) consistent with the context.",
+            "samePersonElements": [
+              "Name: Arnav Salkade",
+              "LinkedIn URL slug: arnav-salkade-27076a201",
+              "Education: National University of Singapore | Computer Engineering | Stanford Summer",
+              "Location: Singapore, Singapore",
+              "Post header: 'Arnav Salkade’s Post'"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nValidate if this source is about \"Arnav Salkade\".\n\nContext: engineer, hackathon, likely young (between 18-40) | related to Singapore\nKnown: Additional: From education records: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From education records: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From publications: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From publications: \n• Christian Ministry News\n• Staff News\n• Office Holiday Hours\n• National School-Based HPV Vaccination Programme\nfor Female Students\n• ACS Echo\n• Term 4 Key Dates\n• ACS (International) 2020 IBDP Inter; From professional activities: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From professional activities: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From social media: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From social media: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll\n\nSource: Arnav Salkade's Post - LinkedIn\nContent: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Privacy Policy](https://www.linkedin.com/legal/privacy-policy?trk=linkedin-tc_auth-button_privacy-policy), and [Cookie Policy](https://www.linkedin.com/legal/cookie-policy?trk=linkedin-tc_auth-button_cookie-policy).\n\n [Skip to main content](https://www.linkedin.com/www.linkedin.com#main-content)\n\n# Arnav Salkade’s Post\n\n[Arnav Salkade](https://sg.linkedin.com/in/arnav-salkade-27076a201?trk=public_post_feed-actor-name)\n\nNational University of Singapore \\| Computer Engineering \\| Stanford Summer\n\n1y\n\n- [Report this post](https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Farnav-salkade-27076a201_in-the-technology-entrepreneurship-course-activity-7238869614300905472--dVa&trk=public_post_ellipsis-menu-semaphore-sign-in-redirect&guestReportContentType=POST&\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"The source repeatedly references Arnav Salkade, includes a LinkedIn URL slug for that name, and lists institutions and location (National University of Singapore, Computer Engineering, Stanford Summer, Singapore) consistent with the context.\",\n  \"samePersonElements\": [\n    \"Name: Arnav Salkade\",\n    \"LinkedIn URL slug: arnav-salkade-27076a201\",\n    \"Education: National University of Singapore | Computer Engineering | Stanford Summer\",\n    \"Location: Singapore, Singapore\",\n    \"Post header: 'Arnav Salkade’s Post'\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "post"
+          },
+          {
+            "url": "https://sg.linkedin.com/in/arnav-salkade-27076a201",
+            "relevancyScore": 9,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "Name matches exactly; URL uses a '/in/' path under sg.linkedin.com with the expected handle; Singapore-related education and location present; soft context aligns with engineer trajectory and a young professional.",
+            "samePersonElements": [
+              "Profile name: Arnav Salkade",
+              "URL path contains '/in/arnav-salkade-27076a201' under sg.linkedin.com",
+              "Education entries include National University of Singapore (Computer Engineering) and Stanford Summer",
+              "Location: Singapore, Singapore"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Arnav Salkade\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Arnav Salkade\" (allowing for name order variations)\n3. Hard context \"related to Singapore\" should ideally appear in job/education/experience\n4. Soft context \"engineer, hackathon, likely young (between 18-40)\" should align geographically/professionally\n\nHard Context: related to Singapore | Soft Context: engineer, hackathon, likely young (between 18-40)\nKnown: Additional: From education records: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From education records: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From publications: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From publications: \n• Christian Ministry News\n• Staff News\n• Office Holiday Hours\n• National School-Based HPV Vaccination Programme\nfor Female Students\n• ACS Echo\n• Term 4 Key Dates\n• ACS (International) 2020 IBDP Inter; From professional activities: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From professional activities: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From social media: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From social media: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll\n\nSource: Arnav Salkade - National University of Singapore | Stanford Summer\nContent: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 followers 500 connections\n#### See your mutual connections\n## About me\nYou do not rise to the level of your goals. You fall to the level of your systems. I try to improve my systems day by day.\n## Education\n- ### Bachelor's degree || Computer Engineering at [National University of Singapore](https://www.linkedin.com/school/national-university-of-singapore/)\n2023 - 2027 •\n- ### International Honors Programme at [Stanford University](https://www.linkedin.com/school/stanford-university/)\n2024 - 2024 •\n- ### International Bachalaureate Graduate || 43 A/A at [ACS International](https://www.linkedin.com/school/acsinternational/)\n2019 - 2020 •\n## Projects\n- ### Physics Research: Magnetorheological Fluids\nConducted an in-depth investigation into how Yield Strength influences the viscosity of Magnetorh\n\nScoring Guide:\n- 9-10: Perfect name match + hard context clearly confirmed\n- 7-8: Name match + hard context partially confirmed OR strong soft context alignment\n- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 9,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Name matches exactly; URL uses a '/in/' path under sg.linkedin.com with the expected handle; Singapore-related education and location present; soft context aligns with engineer trajectory and a young professional.\",\n  \"samePersonElements\": [\n    \"Profile name: Arnav Salkade\",\n    \"URL path contains '/in/arnav-salkade-27076a201' under sg.linkedin.com\",\n    \"Education entries include National University of Singapore (Computer Engineering) and Stanford Summer\",\n    \"Location: Singapore, Singapore\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "profile"
+          },
+          {
+            "url": "https://gptsaistore.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.acsinternational.edu.sg/wp-content/uploads/2019/11/Newsletter-September-2020-Compressed.pdf",
+            "relevancyScore": 7,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "The document explicitly references Arnav Salkade across multiple sections (education records, publications, professional activities, social media) and includes a LinkedIn URL for that name, aligning with the provided Arnav Salkade context. No conflicting details about another person are evident.",
+            "samePersonElements": [
+              "Name explicitly referenced: Arnav Salkade",
+              "LinkedIn URL present: https://sg.linkedin.com/in/arnav-salkade-27076a201",
+              "Education record: National University of Singapore | Computer Engineering | Stanford Summer",
+              "Location tag: Singapore, Singapore [sg]"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nValidate if this source is about \"Arnav Salkade\".\n\nContext: engineer, hackathon, likely young (between 18-40) | related to Singapore\nKnown: Additional: From education records: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From education records: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From publications: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From publications: \n• Christian Ministry News\n• Staff News\n• Office Holiday Hours\n• National School-Based HPV Vaccination Programme\nfor Female Students\n• ACS Echo\n• Term 4 Key Dates\n• ACS (International) 2020 IBDP Inter; From professional activities: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From professional activities: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll; From social media: Agree & Join LinkedIn\n\nBy clicking Continue to join or sign in, you agree to LinkedIn’s [User Agreement](https://www.linkedin.com/legal/user-agreement?trk=linkedin-tc_auth-button_user-agreement), [Pri; From social media: # Arnav Salkade [LinkedIn URL](https://sg.linkedin.com/in/arnav-salkade-27076a201)\nNational University of Singapore | Computer Engineering | Stanford Summer\n### Singapore, Singapore [sg]\n#### 718 foll\n\nSource: [PDF] Newsletter | September 2020 | ACS (International)\nContent: NEWSLETTER | September 2020\nB\nTerm 3 Commendation Awards\nInformation for Parents on Firefly\nThree IGCSE Top in the World Awards\nStaff News\nSafe Distancing Observance in Holland Village\nSchool Break Matters\nTerm 4 Staggering Arrivals & Dismissals\nTerm 4 Key Dates\n2020 Leadership Colours Awards\nStep-Up Dengue Prevention Measures\nEnd-of-Year Exams and Progression to Next Year\nACS (International) 2021 IBDP Internal \nScholarships\nStudy Nights\nTranscripts & Testimonials\nACS Echo\nStay Home If Unwell\nHoliday Revision Classes\nInternational Day 2020\nVirtual Parent-Teacher Conferences\nACS (Independent) Boarding School News\nUniversity Application Session 2020\nJob Shadowing\nAlumni News\nUpcoming Events \nDear Parents, Students and Friends\nThree Top in the World awards for IGCSE! These outstanding results from last year’s\nNovember examinations were recently announced – very late this year but better late than\nnever! Our congratulations to Wu Yanyu and Wei Yu on their 100% scores and attaining\nthe Best\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"The document explicitly references Arnav Salkade across multiple sections (education records, publications, professional activities, social media) and includes a LinkedIn URL for that name, aligning with the provided Arnav Salkade context. No conflicting details about another person are evident.\",\n  \"samePersonElements\": [\n    \"Name explicitly referenced: Arnav Salkade\",\n    \"LinkedIn URL present: https://sg.linkedin.com/in/arnav-salkade-27076a201\",\n    \"Education record: National University of Singapore | Computer Engineering | Stanford Summer\",\n    \"Location tag: Singapore, Singapore [sg]\"\n  ],\n  \"differentPersonElements\": []\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://www.straitstimes.com/singapore/parenting-education/ntu-expands-intake-for-flagship-ai-scholar-programme-named-after-wwii-codebreaker-alan-turing",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.scribd.com/document/861476870/Custom-GPT-Database",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.cdotrends.com/story/4592/singapores-practical-ai-push",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.temasek.com.sg/en/news-and-resources/stories/values-and-people/these-tech-upstarts-want-to-make-the-world-a-better-place",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://vulcanpost.com/897578/heartbeat-senior-wellbeing-platform/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.straitstimes.com/business/companies-markets/the-crypto-bros-are-still-partying-but-builders-in-singapore-havent-slept-either",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Arnav Salkade",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Arnav\" not found",
+              "Last name \"Salkade\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Arnav\" or last name \"Salkade\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T21:11:17.983Z"
+      }
+    ]
+  }
+}

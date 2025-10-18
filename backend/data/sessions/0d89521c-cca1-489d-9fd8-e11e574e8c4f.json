@@ -1,0 +1,1108 @@
+{
+  "sessionId": "0d89521c-cca1-489d-9fd8-e11e574e8c4f",
+  "subjectName": "Csanad Budai",
+  "startTime": "2025-10-18T20:02:00.310Z",
+  "currentPhase": "complete",
+  "progress": 100,
+  "errors": [],
+  "isActive": true,
+  "searchLogs": [],
+  "generatedContext": {
+    "additionalFindings": []
+  },
+  "lastUpdate": "2025-10-18T20:04:04.542Z",
+  "isComplete": true,
+  "finalProfile": {
+    "name": "Csanad Budai",
+    "aliases": [],
+    "profileSummary": "Profile based on 1 high-quality source(s) with scores 6-10.",
+    "sources": [
+      {
+        "url": "https://hu.linkedin.com/in/csan%C3%A1d-budai-0a2bba25a",
+        "siteSummary": "URL includes /in/ and subdomain; profile name matches 'Csanád Budai' (variation 'Csanad Budai' accepted). The profile shows a Hungarian location (Budapest) and an Information Technology Intern at Henkel with Computer Engineering education, which confirms identity. There is no Singapore-related context (hard context missing), and no explicit hackathon mention (soft context not clearly present). Therefore partial alignment.",
+        "depth": 0,
+        "relevancyScore": 6,
+        "validationReasoning": "URL includes /in/ and subdomain; profile name matches 'Csanád Budai' (variation 'Csanad Budai' accepted). The profile shows a Hungarian location (Budapest) and an Information Technology Intern at Henkel with Computer Engineering education, which confirms identity. There is no Singapore-related context (hard context missing), and no explicit hackathon mention (soft context not clearly present). Therefore partial alignment.",
+        "confidence": "high"
+      }
+    ],
+    "hardContext": "related to Singapore",
+    "softContext": "hackathon, engineer, likely young (between 18-40)",
+    "generatedContext": {
+      "additionalFindings": [],
+      "linkedinData": ""
+    },
+    "searchLogs": [
+      {
+        "phase": "LinkedIn",
+        "query": "Csanad Budai linkedin.com",
+        "resultsFound": 1,
+        "validatedResults": [
+          {
+            "url": "https://hu.linkedin.com/in/csan%C3%A1d-budai-0a2bba25a",
+            "relevancyScore": 6,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "URL includes /in/ and subdomain; profile name matches 'Csanád Budai' (variation 'Csanad Budai' accepted). The profile shows a Hungarian location (Budapest) and an Information Technology Intern at Henkel with Computer Engineering education, which confirms identity. There is no Singapore-related context (hard context missing), and no explicit hackathon mention (soft context not clearly present). Therefore partial alignment.",
+            "samePersonElements": [
+              "Name: Csanád Budai (variation: Csanad Budai)",
+              "Current role: Information Technology Intern at Henkel",
+              "Location: Budapest, Hungary",
+              "Education: Computer Engineering / Pázmány Péter Katolikus Egyetem"
+            ],
+            "differentPersonElements": [
+              "Singapore-related context (none found)",
+              "Hackathon involvement (not mentioned)",
+              "Singapore-based education or employment (none found)"
+            ],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Csanad Budai\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Csanad Budai\" (allowing for name order variations)\n3. Hard context \"related to Singapore\" should appear in job/education\n4. Soft context \"hackathon, engineer, likely young (between 18-40)\" should align geographically/professionally\n\nHard Context: related to Singapore | Soft Context: hackathon, engineer, likely young (between 18-40)\nKnown: None\n\nSource: Csanád Budai - Information Technology Intern - Henkel\nContent: # Csanád Budai [LinkedIn URL](https://hu.linkedin.com/in/csan%C3%A1d-budai-0a2bba25a)\nStudent at Pázmány Péter Katolikus Egyetem\n### Information Technology Intern at [Henkel](https://www.linkedin.com/company/henkel)\n### Budapest, Budapest, Hungary [hu]\n#### 70 followers 70 connections\n#### See your mutual connections\n## About me\n## Work Experience\n- ### Information Technology Intern at [Henkel](https://www.linkedin.com/company/henkel)\nJan 2023 - Present • 2 years 8 months\nBudapest, Hungary\n## Education\n- ### Communication and Media Studies at [Pázmány Péter Katolikus Egyetem](https://www.linkedin.com/school/pazmanyegyetem/)\n2022 - 2026 •\n- ### Bachelor's degree || Computer Engineering at [Obuda University - John von Neumann Faculty of Informatics](https://www.linkedin.com/school/oe-nik/)\n2021 - 2022 •\n## Languages\n- ### Hungarian\nNative or bilingual proficiency\n- ### English\nProfessional working proficiency\n## Volunteering\n- ### Wekerlei Társaskör Egyesület\nJan 2004 - Present • 21 year\n\nScoring Guide:\n- 9-10: Perfect name match + hard context confirmed\n- 7-8: Name match + partial hard context or strong soft context\n- 5-6: Name match but weak/no context confirmation\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 6,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"URL includes /in/ and subdomain; profile name matches 'Csanád Budai' (variation 'Csanad Budai' accepted). The profile shows a Hungarian location (Budapest) and an Information Technology Intern at Henkel with Computer Engineering education, which confirms identity. There is no Singapore-related context (hard context missing), and no explicit hackathon mention (soft context not clearly present). Therefore partial alignment.\",\n  \"samePersonElements\": [\n    \"Name: Csanád Budai (variation: Csanad Budai)\",\n    \"Current role: Information Technology Intern at Henkel\",\n    \"Location: Budapest, Hungary\",\n    \"Education: Computer Engineering / Pázmány Péter Katolikus Egyetem\"\n  ],\n  \"differentPersonElements\": [\n    \"Singapore-related context (none found)\",\n    \"Hackathon involvement (not mentioned)\",\n    \"Singapore-based education or employment (none found)\"\n  ]\n}",
+            "category": "profile"
+          }
+        ],
+        "selectedUrl": "https://hu.linkedin.com/in/csan%C3%A1d-budai-0a2bba25a",
+        "contextAdded": "",
+        "timestamp": "2025-10-18T20:02:28.422Z"
+      },
+      {
+        "phase": "GitHub",
+        "query": "Csanad Budai github",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://autodrive-ecosystem.github.io/competitions/f1tenth-sim-racing-cdc-2024/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/budaop/budaop",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/nerzid/budgie",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/BudEcosystem",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://blog.novak.net.nz/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://css.paperplaza.net/conferences/conferences/ACC25/program/ACC25_ContentListWeb_1.html",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "There is no reference to Csanad Budai in the provided ACC 2025 program content; it describes a generic conference program (Denver, ACC) with no author name or personal identifiers associated with Csanad Budai.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "No mention of Csanad Budai in the content",
+              "Event is about the American Control Conference (ACC) in Denver, USA, not Singapore or a hackathon",
+              "No author index or abstract listing Csanad Budai"
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Csanad Budai\".\n\nContext: hackathon, engineer, likely young (between 18-40) | related to Singapore\nKnown: None\n\nSource: ACC 2025 Program | Tuesday July 8, 2025 - PaperPlaza\nContent: | |\n| --- |\n| **2025 American Control Conference****July 8-10, 2025 \\|\\| Denver, CO, USA** |\n\n| | |\n| --- | --- |\n| [**2025 American Control Conference (ACC)**](http://acc2025.a2c2.org)**July 8-10, 2025, Denver, CO, USA**\n\n[Program at a Glance](https://css.paperplaza.net/ACC25_ProgramAtAGlanceWeb.html) [Tuesday](https://css.paperplaza.net/ACC25_ContentListWeb_1.html) [Wednesday](https://css.paperplaza.net/ACC25_ContentListWeb_2.html) [Thursday](https://css.paperplaza.net/ACC25_ContentListWeb_3.html) [Author Index](https://css.paperplaza.net/ACC25_AuthorIndexWeb.html) [Keyword Index](https://css.paperplaza.net/ACC25_KeywordIndexWeb.html) [My Program](https://css.paperplaza.net/css.paperplaza.net#TheTop)\n\nLast updated on July 15, 2025. This conference program is tentative and subject to change\n\n### Technical Program for Tuesday July 8, 2025\n\nTo show or hide the keywords and abstract (text summary) of a paper (if available), click on the paper title [Open all abstracts](javascript:openAll\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 1,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"There is no reference to Csanad Budai in the provided ACC 2025 program content; it describes a generic conference program (Denver, ACC) with no author name or personal identifiers associated with Csanad Budai.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\n    \"No mention of Csanad Budai in the content\",\n    \"Event is about the American Control Conference (ACC) in Denver, USA, not Singapore or a hackathon\",\n    \"No author index or abstract listing Csanad Budai\"\n  ]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/laetitia-tanqueray-404358a4_what-an-honour-to-be-visiting-openai-which-activity-7229336584691630080-HMtU",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://arxiv.org/pdf/2508.09722",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/bendy1234/cansat",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/davidfegyver/cansat-firmware",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T20:02:43.120Z"
+      },
+      {
+        "phase": "Website",
+        "query": "Csanad Budai personal website OR portfolio",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://thebudaimedia.com/about-us/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://peterbudai.eu/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://scholar.google.hu/citations?user=7jH-USMAAAAJ&hl=hu",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://ar.linkedin.com/company/budaimedia?trk=public_profile_topcard-current-company",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "company"
+          },
+          {
+            "url": "https://rolandbudai.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://ra.co/dj/budai",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://thebudaimedia.com/podcast/15/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://hu.linkedin.com/in/icsanady",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "The visible URL path is /in/icsanady which does not align with the expected name 'Csanad Budai'. The content contains only cookie-policy text in Hungarian with no mention of a Singapore-related role or education, nor any explicit name that matches 'Csanad Budai'.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "URL slug 'icsanady' does not match expected name slug for 'Csanad Budai'",
+              "No Singapore-related job/education information present in the provided snippet",
+              "No explicit name 'Csanad Budai' in the content"
+            ],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Csanad Budai\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Csanad Budai\" (allowing for name order variations)\n3. Hard context \"related to Singapore\" should appear in job/education\n4. Soft context \"hackathon, engineer, likely young (between 18-40)\" should align geographically/professionally\n\nHard Context: related to Singapore | Soft Context: hackathon, engineer, likely young (between 18-40)\nKnown: None\n\nSource: Apple Silicon is here and it's changing the game\nContent: A LinkedIn és harmadik felek alapvető és nem alapvető sütiket használnak a Szolgáltatásaink nyújtása, biztosítása, elemzése és továbbfejlesztése, valamint releváns hirdetések (a **szakmai és álláshirdetéseket** is beleértve) megjelenítése érdekében, mind a LinkedIn felületén, mind azon kívül. További információkért tekintse meg a [Sütiszabályzatunkat](https://www.linkedin.com/legal/cookie-policy).\n\nVálassza az Elfogadás lehetőséget a hozzájáruláshoz, vagy az Elutasítás lehetőséget az ilyen célra használt, nem alapvető sütik elutasításához. A [beállításokban](https://www.linkedin.com/mypreferences/g/guest-cookies) bármikor frissítheti a kiválasztottakat.\n\nElfogadás\n\nElutasítás\n\n [Ugrás a fő tartalomra](https://hu.linkedin.com/in/icsanady#main-content)\n\n![](https://media.licdn.com/dms/image/v2/D4D16AQFBuRdhO3Na6g/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1700051404965?e=2147483647&v=beta&t=3WdAVMecRweZK3zQKmS32FZ06Ke8j2XTtSrf2Dq9VjM)\n\n#\n\nScoring Guide:\n- 9-10: Perfect name match + hard context confirmed\n- 7-8: Name match + partial hard context or strong soft context\n- 5-6: Name match but weak/no context confirmation\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"The visible URL path is /in/icsanady which does not align with the expected name 'Csanad Budai'. The content contains only cookie-policy text in Hungarian with no mention of a Singapore-related role or education, nor any explicit name that matches 'Csanad Budai'.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\n    \"URL slug 'icsanady' does not match expected name slug for 'Csanad Budai'\",\n    \"No Singapore-related job/education information present in the provided snippet\",\n    \"No explicit name 'Csanad Budai' in the content\"\n  ]\n}",
+            "category": "profile"
+          },
+          {
+            "url": "https://cs.ubbcluj.ro/sandor-csanad-doktori-ertekezesenek-vedese-optimization-of-convolutional-neural-networks-by-pruning-and-architecture-design",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://forum.freecodecamp.org/t/personal-portfolio-webpage-build-a-personal-portfolio-webpage/667774",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T20:03:00.506Z"
+      },
+      {
+        "phase": "General: education records",
+        "query": "\"Csanad Budai\" education Singapore university engineering",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://sciengineer.com/members/csanad-ors-boros/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://cde.nus.edu.sg/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.sutd.edu.sg/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.sutd.edu.sg/esd",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.sutd.edu.sg/campus-life/student-life/student-awards/honours-list/esd/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.sutd.edu.sg/profile/michael-budig",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.sutd.edu.sg/about/happenings/publicity/brochures/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://scholar.google.co.uk/citations?user=7jH-USMAAAAJ&hl=en",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://competence.bme.hu/researchers/119-dr-csaba-budai/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://issuu.com/nus-cde/docs/cde_7_engineering_science_web",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T20:03:25.507Z"
+      },
+      {
+        "phase": "General: professional activities",
+        "query": "\"Csanad Budai\" Singapore engineer hackathon",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://angelhack.com/hackglobal/singapore",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://build.tech.gov.sg/projects",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.sutd.edu.sg/media-releases-listing/first-temasek-sutd-generative-ai-hackathon-gives-rise-to-enterprise-ready-digital-solutions",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://angelhack.com/case-study/heineken-sg-gp-innovation-hacksingapore",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://medium.com/singapore-gds/from-concept-to-reality-our-journey-as-top-25-teams-in-apacs-first-ai-hackathon-53d97b37d1a2",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://ethglobal.medium.com/ethglobal-singapore-2024-recap-ce128f7a800f",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.ntu.edu.sg/admissions/undergraduate/premier-scholar-programmes/renaissance-engineering-programme/achievements/year-2024/ethglobal-singapore-2024",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.ntu.edu.sg/computing/news-events/news/detail/grand-prize-winners-hack-singapore-2023",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://dorahacks.io/hackathon/polkadot-2024-singapore/hackers",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://nccs.gov.sg/files/docs/default-source/news-documents/hackathon_annexa.pdf",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T20:03:30.733Z"
+      },
+      {
+        "phase": "General: publications",
+        "query": "\"Csanad Budai\" publications",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://m2.mtmt.hu/api/author/10042848",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://cs.ubbcluj.ro/sandor-csanad-doktori-ertekezesenek-vedese-optimization-of-convolutional-neural-networks-by-pruning-and-architecture-design",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://cs.ubbcluj.ro/sustinere-teza-de-doctorat-drd-sandor-csanad-optimization-of-convolutional-neural-networks-by-pruning-and-architecture-design",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://elte.academia.edu/CsanadBodo",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://scholar.google.com/citations?user=gcRJf_gAAAAJ&hl=en",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://imusic.fr/books/9789633865774/maria-csanadi-2022-dynamics-of-an-authoritarian-system-hungary-2010-2021-hardcover-book?srsltid=AfmBOooRAo99G1Ec4c4piRv4rIoxD11kXX5Q_LeGqXvaQ7Ct9IC-V3Zo",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://akjournals.com/view/journals/096/50/3-4/article-p271.xml",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://csh.why.dev/publication/no-country-for-asylum-seekers-how-short-term-exposure-to-refugees-influences-attitudes-and-voting-behavior-in-hungary",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://scholar.google.hu/citations?user=7jH-USMAAAAJ&hl=hu",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://mogi.bme.hu/oktatoi_oldal.php?lepes=4&oid=50",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T20:03:35.853Z"
+      },
+      {
+        "phase": "General: social media",
+        "query": "\"Csanad Budai\" Twitter",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://www.linkedin.com/posts/laetitia-tanqueray-404358a4_what-an-honour-to-be-visiting-openai-which-activity-7229336584691630080-HMtU",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://lead.dev/bkrisa",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/budaidaney_if-i-could-start-a-business-all-over-again-activity-7283519191716933632-u_N0",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/budaidaney_email-vs-sms-marketing-while-sms-has-a-great-activity-7262500138013675522-CVrA",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://csudapest.hu/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://cs.ubbcluj.ro/sandor-csanad-doktori-ertekezesenek-vedese-optimization-of-convolutional-neural-networks-by-pruning-and-architecture-design",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://bud-legal.hu/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://linkedin.com/in/icsanady",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Name on profile is István Csanády, not Csanad Budai. The profile shows Budapest, Hungary and a role as Founder & CEO of Shapr3D, with no indication of Singapore context. While the URL is a valid linkedin.com/in/ path, it points to a different person.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "Name: István Csanády vs target name Csanad Budai",
+              "Location: Budapest, Hungary",
+              "Role/Company: Founder & CEO at Shapr3D",
+              "URL slug: /in/icsanady (different individual)"
+            ],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Csanad Budai\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Csanad Budai\" (allowing for name order variations)\n3. Hard context \"related to Singapore\" should appear in job/education\n4. Soft context \"hackathon, engineer, likely young (between 18-40)\" should align geographically/professionally\n\nHard Context: related to Singapore | Soft Context: hackathon, engineer, likely young (between 18-40)\nKnown: None\n\nSource: István Csanády - Making CAD fantastic since 2016\nContent: # István Csanády [LinkedIn URL](https://linkedin.com/in/icsanady)\nMaking CAD fantastic since 2016\n### Founder & CEO at [Shapr3D](https://www.linkedin.com/company/shapr3d/)\n### Budapest, Budapest, Hungary [hu]\n#### 6k followers 500 connections\n#### See your mutual connections\n## About me\nOur ambition at Shapr3D is to increase global GDP by 1%.How?16% of the world's GDP is in manufacturing. The current manufacturing software stack is old and inefficient. We believe that with better software we can increase manufacturing companies' efficiency by 6%.Which would lead to increasing the world's GDP by 1%.And I think we can build that next generation manufacturing software stack with just a few hundred people.We are hiring.\n## Work Experience\n- ### Founder & CEO at [Shapr3D](https://www.linkedin.com/company/shapr3d/)\nShapr3D is a revolutionary design tool.\nOct 2015 - Present • 9 years 10 months\n- ### Bootstrapping at [Bootstrapping]()\nI was trying to figure out how to build a revolutionary des\n\nScoring Guide:\n- 9-10: Perfect name match + hard context confirmed\n- 7-8: Name match + partial hard context or strong soft context\n- 5-6: Name match but weak/no context confirmation\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"Name on profile is István Csanády, not Csanad Budai. The profile shows Budapest, Hungary and a role as Founder & CEO of Shapr3D, with no indication of Singapore context. While the URL is a valid linkedin.com/in/ path, it points to a different person.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\n    \"Name: István Csanády vs target name Csanad Budai\",\n    \"Location: Budapest, Hungary\",\n    \"Role/Company: Founder & CEO at Shapr3D\",\n    \"URL slug: /in/icsanady (different individual)\"\n  ]\n}",
+            "category": "profile"
+          },
+          {
+            "url": "https://scholar.google.co.uk/citations?user=7jH-USMAAAAJ&hl=en",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://mogi.bme.hu/oktatoi_oldal.php?lepes=4&oid=50",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T20:03:51.240Z"
+      },
+      {
+        "phase": "General: mentions or interviews",
+        "query": "\"Csanad Budai\" interview Singapore",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://xpatloop.com/interviews/2024/betty-budai-massage-house.html",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://keepoptimising.com/daniel-budai-email-marketing-podcast/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.marketing-interactive.com/mas-founded-non-profit-elevandi-hands-bud-pr-duties-for-fintech-festival",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/budaidaney_the-future-of-ai-in-marketing-and-design-activity-7204486497197035520-M0TH",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/budaidaney_20myear-entrepreneur-from-slovakia-turning-activity-7214601450121809920-gDYW",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/budaidaney_how-desert-does-it-dominates-one-segment-activity-7176995003381018624-Y1B7",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://www.linkedin.com/posts/budaidaney_ecommerce-retentionmarketing-activity-7239671565821374465-dkh3",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "post"
+          },
+          {
+            "url": "https://thebudaimedia.com/podcasts/208-cody-tyler-from-viscap-media-how-to-make-e-commerce-ads-stand-out/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://thebudaimedia.com/podcasts/108-jure-knehtl-growth-hacks-for-ecommerce-businesses/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.channelnewsasia.com/watch/buskers-say-high-costs-and-strict-policies-among-issues-restricting-innovation-4820726",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Csanad Budai",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Csanad\" not found",
+              "Last name \"Budai\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Csanad\" or last name \"Budai\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T20:03:56.551Z"
+      }
+    ]
+  }
+}

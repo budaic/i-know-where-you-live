@@ -113,7 +113,7 @@ async function searchLinkedInProfile(
     progressTracker.sendPhaseProgress(sessionId, 'linkedin', 'searching', `Searching LinkedIn for ${name}...`);
   }
 
-  const results = await exaService.searchLinkedIn(name);
+  const results = await exaService.searchLinkedIn(name, hardContext, softContext);
   console.log(`Smart search returned ${results.length} LinkedIn profile results`);
   
   if (sessionId) {
@@ -153,10 +153,19 @@ async function searchLinkedInProfile(
 
   let contextAdded: string | undefined;
   let selectedUrl: string | undefined;
+  let finalValidations: ValidationResult[] = [];
 
   if (bestProfile) {
     console.log(`Selected LinkedIn profile: ${bestProfile.url} (score: ${bestProfile.relevancyScore}, category: ${bestProfile.category})`);
     selectedUrl = bestProfile.url;
+
+    // Filter out other LinkedIn profiles - keep only the selected one and non-LinkedIn sources
+    // This ensures only ONE LinkedIn profile (linkedin.com/in/) is included in final results
+    finalValidations = validations.filter(v => 
+      v.url === bestProfile.url || !v.url.includes('linkedin.com/in/')
+    );
+    
+    console.log(`Filtered validations: ${validations.length} -> ${finalValidations.length} (removed ${validations.length - finalValidations.length} other LinkedIn profiles)`);
 
     if (sessionId) {
       progressTracker.sendPhaseProgress(sessionId, 'linkedin', 'validating', `Selected LinkedIn profile: ${bestProfile.url}`, {
@@ -166,28 +175,50 @@ async function searchLinkedInProfile(
       });
     }
 
-    // Crawl the LinkedIn profile
+    // Use the LinkedIn profile content that's already available from search results
     if (sessionId) {
-      progressTracker.sendPhaseProgress(sessionId, 'linkedin', 'validating', 'Crawling LinkedIn profile content...');
+      progressTracker.sendPhaseProgress(sessionId, 'linkedin', 'validating', 'Processing LinkedIn profile content...');
     }
     
-    const content = await exaService.crawlContent(bestProfile.url);
-    if (content) {
-      // Extract key information using GPT
-      const summary = await summarizeProfileContent(content, 'LinkedIn');
-      generatedContext.linkedinData = summary;
-      contextAdded = summary;
-      console.log(`\n=== GENERATED CONTEXT ADDED ===`);
-      console.log(`LinkedIn Profile Context: ${summary}`);
-      console.log(`=== END GENERATED CONTEXT ===\n`);
+    // Find the original result that matches the selected profile
+    const originalResult = results.find(r => r.url === bestProfile.url);
+    if (originalResult && (originalResult.text || originalResult.summary)) {
+      // Use the content from search results (text, summary, or highlights)
+      const content = originalResult.text || originalResult.summary || '';
+      const highlights = originalResult.highlights || [];
       
-      if (sessionId) {
-        progressTracker.sendPhaseComplete(sessionId, 'linkedin', 'LinkedIn profile processed successfully', {
-          found: results.length,
-          qualified: profileValidations.length,
-          selected: bestProfile.url,
-          contextAdded: summary,
-        });
+      // Combine content and highlights for better context
+      const fullContent = content + (highlights.length > 0 ? '\n\nKey highlights:\n' + highlights.join('\n') : '');
+      
+      if (fullContent) {
+        // Extract key information using GPT
+        const summary = await summarizeProfileContent(fullContent, 'LinkedIn');
+        generatedContext.linkedinData = summary;
+        contextAdded = summary;
+        console.log(`\n=== GENERATED CONTEXT ADDED ===`);
+        console.log(`LinkedIn Profile Context: ${summary}`);
+        console.log(`=== END GENERATED CONTEXT ===\n`);
+        
+        if (sessionId) {
+          progressTracker.sendPhaseComplete(sessionId, 'linkedin', 'LinkedIn profile processed successfully', {
+            found: results.length,
+            qualified: profileValidations.length,
+            selected: bestProfile.url,
+            contextAdded: summary,
+          });
+        }
+      }
+    } else {
+      // Fallback to crawling if content not available
+      console.log('Content not available from search results, falling back to crawling...');
+      const content = await exaService.crawlContent(bestProfile.url);
+      if (content) {
+        const summary = await summarizeProfileContent(content, 'LinkedIn');
+        generatedContext.linkedinData = summary;
+        contextAdded = summary;
+        console.log(`\n=== GENERATED CONTEXT ADDED ===`);
+        console.log(`LinkedIn Profile Context: ${summary}`);
+        console.log(`=== END GENERATED CONTEXT ===\n`);
       }
     }
   } else {
@@ -195,6 +226,9 @@ async function searchLinkedInProfile(
     // Log what categories were found instead
     const categories = validations.map(v => `${v.category || 'unknown'}: ${v.url}`).join(', ');
     console.log(`Found LinkedIn results in categories: ${categories}`);
+    
+    // If no LinkedIn profile found, keep all validations (including other LinkedIn sources like posts/companies)
+    finalValidations = validations;
     
     if (sessionId) {
       progressTracker.sendPhaseComplete(sessionId, 'linkedin', 'No qualified LinkedIn profile found', {
@@ -208,7 +242,7 @@ async function searchLinkedInProfile(
     phase: 'LinkedIn',
     query,
     resultsFound: results.length,
-    validatedResults: validations,
+    validatedResults: finalValidations,
     selectedUrl,
     contextAdded,
     timestamp: new Date(),
