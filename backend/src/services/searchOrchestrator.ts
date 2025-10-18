@@ -68,7 +68,7 @@ async function searchLinkedInProfile(
   softContext: string,
   generatedContext: GeneratedContext
 ): Promise<SearchLog> {
-  const query = `${name} site:linkedin.com`;
+  const query = `${name} linkedin.com`;
   console.log(`Searching: ${query}`);
 
   const results = await exaService.searchLinkedIn(name);

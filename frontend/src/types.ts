@@ -20,6 +20,7 @@ export interface ValidationResult {
   confidence: 'high' | 'medium' | 'low';
   samePersonElements: string[];
   differentPersonElements: string[];
+  prompt?: string;  // The plaintext prompt and answer used during validation
 }
 
 export interface SearchLog {

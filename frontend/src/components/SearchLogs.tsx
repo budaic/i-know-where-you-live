@@ -169,6 +169,15 @@ function ValidationResultCard({ result }: ValidationResultCardProps) {
         <strong>Reasoning:</strong> {result.reasoning}
       </div>
 
+      {result.prompt && (
+        <div className="text-sm mt-2">
+          <strong className="text-gray-700">Prompt:</strong>
+          <div className="mt-1 p-2 bg-gray-100 border border-gray-200 rounded text-xs font-mono whitespace-pre-wrap max-h-40 overflow-y-auto">
+            {result.prompt}
+          </div>
+        </div>
+      )}
+
       {result.samePersonElements && result.samePersonElements.length > 0 && (
         <div className="text-sm mt-2">
           <strong className="text-green-600">Same Person Indicators:</strong>

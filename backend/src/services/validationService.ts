@@ -18,51 +18,61 @@ export async function validateSource(
   softContext: string,
   generatedContext: GeneratedContext
 ): Promise<ValidationResult> {
+  console.log('\n' + '='.repeat(80));
+  console.log('🔍 VALIDATION SERVICE DEBUG - START');
+  console.log('='.repeat(80));
+  
+  console.log('\n📋 INPUT PARAMETERS:');
+  console.log('Subject Name:', subjectName);
+  console.log('Hard Context:', hardContext);
+  console.log('Soft Context:', softContext);
+  console.log('Generated Context:', JSON.stringify(generatedContext, null, 2));
+  
+  console.log('\n📄 SOURCE DATA:');
+  console.log('URL:', source.url);
+  console.log('Title:', source.title);
+  console.log('Text Length:', source.text?.length || 0);
+  console.log('Text Preview:', source.text?.substring(0, 200) + '...');
+  
   const generatedContextText = formatGeneratedContext(generatedContext);
 
-  const prompt = `You are validating whether a source is about the subject "${subjectName}".
+  const prompt = `Validate if this source is about "${subjectName}".
 
-Hard Context (MUST be true): ${hardContext || 'None provided'}
-Soft Context (guidance): ${softContext || 'None provided'}
-Generated Context (known facts): ${generatedContextText || 'None yet'}
+Context: ${hardContext || 'None'} | ${softContext || 'None'}
+Known: ${generatedContextText || 'None'}
 
-Source URL: ${source.url}
-Source Title: ${source.title}
-Source Content: ${source.text?.substring(0, 2000) || 'No content available'}
+Source: ${source.title}
+Content: ${source.text?.substring(0, 1000) || 'No content'}
 
-Score this source 1-10:
-- 1-3: Only name or partial name matches
-- 4-5: Name + some context matches
-- 6-8: Name + professional background matches
-- 9-10: Name + professional + multiple context points match
+Score 1-10, determine if same person, list matching/conflicting elements.
 
-Identify:
-1. Elements suggesting SAME person (list them)
-2. Elements suggesting DIFFERENT person (list them)
-
-Compare the two lists and determine:
-- Is this likely the same person? (true/false)
-- Relevancy score (1-10)
-- Confidence (high/medium/low)
-- Reasoning (2-3 sentences)
-
-Return ONLY valid JSON:
+Respond with ONLY this JSON:
 {
   "relevancyScore": 7,
   "isLikelyMatch": true,
   "confidence": "high",
-  "reasoning": "...",
+  "reasoning": "Brief explanation",
   "samePersonElements": ["element1", "element2"],
   "differentPersonElements": ["element1"]
 }`;
 
+  console.log('\n📝 PROMPT GENERATION:');
+  console.log('Generated Context Text:', generatedContextText);
+  console.log('Prompt Length:', prompt.length);
+  console.log('Prompt Preview (first 500 chars):', prompt.substring(0, 500) + '...');
+  
+  console.log('\n🚀 MAKING API CALL:');
+  console.log('Model: gpt-5-nano');
+  console.log('Temperature: 1');
+  console.log('Max Completion Tokens: 4000');
+  
   try {
     const response = await openai.chat.completions.create({
       model: 'gpt-5-nano',
       messages: [
         {
           role: 'system',
-          content: 'You are an expert OSINT analyst who validates sources. Always respond with valid JSON only.',
+          content: 'You are an OSINT analyst. Respond with ONLY valid JSON. No other text.',
         },
         {
           role: 'user',
@@ -70,11 +80,81 @@ Return ONLY valid JSON:
         },
       ],
       temperature: 1,
-      max_completion_tokens: 500,
+      max_completion_tokens: 4000,
     });
 
-    const content = response.choices[0].message.content?.trim() || '{}';
-    const result = JSON.parse(content);
+    console.log('\n📥 API RESPONSE RECEIVED:');
+    console.log('Response ID:', response.id);
+    console.log('Model Used:', response.model);
+    console.log('Finish Reason:', response.choices[0].finish_reason);
+    
+    console.log('\n🔢 DETAILED TOKEN USAGE:');
+    console.log('Prompt Tokens:', response.usage.prompt_tokens);
+    console.log('Completion Tokens:', response.usage.completion_tokens);
+    console.log('Total Tokens:', response.usage.total_tokens);
+    console.log('Max Completion Tokens Limit:', 4000);
+    console.log('Tokens Remaining:', 4000 - response.usage.completion_tokens);
+    console.log('Token Usage Percentage:', Math.round((response.usage.completion_tokens / 4000) * 100) + '%');
+    
+    console.log('\n🧠 REASONING TOKEN BREAKDOWN:');
+    console.log('Reasoning Tokens:', response.usage.completion_tokens_details?.reasoning_tokens || 'N/A');
+    console.log('Accepted Prediction Tokens:', response.usage.completion_tokens_details?.accepted_prediction_tokens || 'N/A');
+    console.log('Rejected Prediction Tokens:', response.usage.completion_tokens_details?.rejected_prediction_tokens || 'N/A');
+    
+    if (response.usage.completion_tokens_details?.reasoning_tokens) {
+      const reasoningTokens = response.usage.completion_tokens_details.reasoning_tokens;
+      const totalCompletion = response.usage.completion_tokens;
+      const outputTokens = totalCompletion - reasoningTokens;
+      console.log('Output Tokens (for response):', outputTokens);
+      console.log('Reasoning vs Output Ratio:', Math.round((reasoningTokens / totalCompletion) * 100) + '% reasoning, ' + Math.round((outputTokens / totalCompletion) * 100) + '% output');
+    }
+    
+    console.log('\n🔍 RESPONSE CONTENT ANALYSIS:');
+    const rawContent = response.choices[0].message.content?.trim() || '{}';
+    console.log('Raw Content Type:', typeof response.choices[0].message.content);
+    console.log('Raw Content Length:', response.choices[0].message.content?.length || 0);
+    console.log('Raw Content is null:', response.choices[0].message.content === null);
+    console.log('Raw Content is undefined:', response.choices[0].message.content === undefined);
+    console.log('Raw Content is empty string:', response.choices[0].message.content === '');
+    console.log('Raw Content after trim:', rawContent);
+    console.log('Final processed content:', rawContent);
+    
+    console.log('\n🔧 JSON PARSING:');
+    let result;
+    try {
+      result = JSON.parse(rawContent);
+      console.log('✅ JSON parsing successful');
+      console.log('Parsed result:', JSON.stringify(result, null, 2));
+    } catch (parseError) {
+      console.log('❌ JSON parsing failed:', parseError.message);
+      console.log('Raw content that failed to parse:', rawContent);
+      
+      // Try to extract JSON from the response if it's wrapped in other text
+      const jsonMatch = rawContent.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        console.log('🔍 Attempting to extract JSON from response...');
+        console.log('Extracted JSON:', jsonMatch[0]);
+        result = JSON.parse(jsonMatch[0]);
+        console.log('✅ JSON extraction successful');
+      } else {
+        console.log('❌ No valid JSON found in response');
+        throw new Error('No valid JSON found in response');
+      }
+    }
+
+    console.log('\n📤 RETURNING RESULT:');
+    console.log('URL:', source.url);
+    console.log('Relevancy Score:', result.relevancyScore || 1);
+    console.log('Is Likely Match:', result.isLikelyMatch || false);
+    console.log('Confidence:', result.confidence || 'low');
+    console.log('Reasoning:', result.reasoning || 'Unable to determine');
+    
+    // Create the prompt field with both the prompt and the response
+    const promptWithResponse = `PROMPT:\n${prompt}\n\nRESPONSE:\n${rawContent}`;
+
+    console.log('\n' + '='.repeat(80));
+    console.log('✅ VALIDATION SERVICE DEBUG - COMPLETE');
+    console.log('='.repeat(80) + '\n');
 
     return {
       url: source.url,
@@ -84,10 +164,19 @@ Return ONLY valid JSON:
       reasoning: result.reasoning || 'Unable to determine',
       samePersonElements: result.samePersonElements || [],
       differentPersonElements: result.differentPersonElements || [],
+      prompt: promptWithResponse,
     };
   } catch (error) {
-    console.error(`Error validating source ${source.url}:`, error);
+    console.log('\n' + '='.repeat(80));
+    console.log('❌ VALIDATION SERVICE ERROR');
+    console.log('='.repeat(80));
+    console.log('Error validating source:', source.url);
+    console.log('Error message:', error instanceof Error ? error.message : 'Unknown error');
+    console.log('Error stack:', error instanceof Error ? error.stack : 'No stack trace');
+    console.log('='.repeat(80) + '\n');
+    
     // Return low-confidence result on error
+    const promptWithError = `PROMPT:\n${prompt}\n\nRESPONSE:\nError: ${error instanceof Error ? error.message : 'Unknown error'}`;
     return {
       url: source.url,
       relevancyScore: 1,
@@ -96,6 +185,7 @@ Return ONLY valid JSON:
       reasoning: 'Validation failed',
       samePersonElements: [],
       differentPersonElements: [],
+      prompt: promptWithError,
     };
   }
 }
