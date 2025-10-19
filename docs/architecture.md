@@ -1,4 +1,4 @@
-# OSINT Profiler - Architecture Documentation
+# Architecture Documentation
 
 ## System Overview
 
@@ -463,4 +463,3 @@ Total:                 ~2-5 minutes per profile
 ---
 
 This architecture supports the educational goal of demonstrating OSINT capabilities while maintaining code quality, security, and scalability.
-

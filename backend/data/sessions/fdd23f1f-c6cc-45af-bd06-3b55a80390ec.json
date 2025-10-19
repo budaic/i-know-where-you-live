@@ -1,0 +1,15 @@
+{
+  "sessionId": "fdd23f1f-c6cc-45af-bd06-3b55a80390ec",
+  "subjectName": "Biebel Botond",
+  "startTime": "2025-10-19T00:47:10.183Z",
+  "currentPhase": "general",
+  "progress": 75,
+  "errors": [],
+  "isActive": true,
+  "searchLogs": [],
+  "generatedContext": {
+    "additionalFindings": []
+  },
+  "lastUpdate": "2025-10-19T00:48:07.457Z",
+  "isComplete": false
+}
