@@ -213,6 +213,8 @@ export default function TerminalCommandLine({ onSubmit, disabled, onShowInputFor
       {/* Help text - always visible */}
       <div className="terminal-text text-sm mb-4 opacity-75">
         (type "profile_target --name=NAME --hard-context=CONTEXT --soft-context=CONTEXT" to profile anyone)
+        <br />
+        (type "--help" for all commands)
       </div>
 
       {/* Command input */}
