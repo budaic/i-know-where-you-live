@@ -6,7 +6,7 @@ The tool was created for the [Cursor Hackathon](https://cursor.com/community) [S
 
 The creators of the tool are [Barna Marczali](https://github.com/barnamarczali) and [Csanad Budai](https://github.com/budaic).
 
-The name of the project is a joke. ... or is it?
+The name of the project is a joke. ... or is it? Also, this was very heavily vibe-coded (using cursor).
 
 **⚠️ WARNING: This tool is for educational purposes only. Always respect privacy and obtain consent before researching individuals.**
 
