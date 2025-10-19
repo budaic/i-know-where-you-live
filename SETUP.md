@@ -12,7 +12,6 @@ Before you begin, ensure you have:
   - [OpenAI](https://platform.openai.com/) - For AI-powered query generation and summarization
   - [Supabase](https://supabase.com/) - For database storage
   - [Exa.ai](https://exa.ai/) - For web search
-  - [Browserbase](https://browserbase.com/) - For web content extraction
 
 ## Step 1: Clone the Repository
 
@@ -52,11 +51,6 @@ cd ..
 3. Generate an API key
 4. Copy the key
 
-### Browserbase API Key
-1. Sign up at [browserbase.com](https://browserbase.com/)
-2. Go to Settings → API Keys
-3. Create a new API key
-4. Copy the key (starts with `bb_`)
 
 ### Supabase Credentials
 1. Go to [supabase.com](https://supabase.com/)
@@ -96,9 +90,6 @@ OPENAI_API_KEY=sk-...
 # Exa Search (required)
 EXASEARCH_API_KEY=your_exa_api_key
 
-# Browserbase (required)
-BROWSERBASE_API_KEY=bb_...
-
 # Supabase (required)
 SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_ANON_KEY=eyJ...
@@ -107,28 +98,8 @@ SUPABASE_ANON_KEY=eyJ...
 PORT=3001
 ```
 
-## Step 6: Set Up MCP Servers (Smithery)
 
-The application uses Smithery to manage MCP servers for Exa and Browserbase.
-
-### Install Smithery CLI
-```bash
-npm install -g @smithery/cli
-```
-
-### Authenticate with Smithery
-```bash
-smithery login
-```
-
-### Verify MCP Setup
-```bash
-smithery status
-```
-
-Exa and Browserbase MCP servers should already be installed in your Cursor environment. If not, they will be automatically configured through Smithery.
-
-## Step 7: Start the Application
+## Step 6: Start the Application
 
 Open TWO terminal windows:
 
@@ -148,7 +119,7 @@ npm start
 
 Browser should open to: `http://localhost:3000`
 
-## Step 8: Verify Setup
+## Step 7: Verify Setup
 
 ### Check Backend Health
 ```bash
@@ -180,14 +151,10 @@ Should return: `{"status":"ok"}`
 - Ensure the SQL schema has been run in Supabase SQL Editor
 - Check that Row Level Security policies are properly set
 
-### Browserbase connection errors
-- Verify your Browserbase API key is correct
-- Check your Browserbase account has active credits
-- Ensure the Browserbase MCP server is properly configured in Smithery
-
 ### Exa search errors
-- Exa should work through Smithery without additional setup
-- If issues persist, check Smithery MCP server status
+- Verify your Exa API key is correct and has credits
+- Check your Exa account usage limits
+- Test Exa API directly if needed
 
 ### Rate limiting
 - The application includes built-in delays to avoid rate limits

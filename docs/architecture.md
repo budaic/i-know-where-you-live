@@ -31,13 +31,13 @@
 │  │                                                     │          │
 │  │  ┌─────────────────┐        ┌─────────────────┐  │          │
 │  │  │ Query Generator │───────→│  Search Service │  │          │
-│  │  │   (OpenAI)      │        │   (Exa MCP)     │  │          │
+│  │  │   (OpenAI)      │        │   (Exa.js)      │  │          │
 │  │  └─────────────────┘        └─────────────────┘  │          │
 │  │           │                           │            │          │
 │  │           ↓                           ↓            │          │
 │  │  ┌─────────────────┐        ┌─────────────────┐  │          │
 │  │  │   Summarizer    │←───────│Content Extractor│  │          │
-│  │  │   (OpenAI)      │        │ (Browserbase)   │  │          │
+│  │  │   (OpenAI)      │        │   (Exa.js)      │  │          │
 │  │  └─────────────────┘        └─────────────────┘  │          │
 │  │           │                                        │          │
 │  │           ↓                                        │          │
@@ -53,14 +53,14 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │                    EXTERNAL SERVICES                             │
 │                                                                   │
-│  ┌──────────┐  ┌──────────┐  ┌────────────┐  ┌──────────┐     │
-│  │ OpenAI   │  │ Exa.ai   │  │ Browserbase│  │ Supabase │     │
-│  │ GPT-4    │  │  Search  │  │  Browser   │  │ Database │     │
-│  └──────────┘  └──────────┘  └────────────┘  └──────────┘     │
-│       ↑              ↑              ↑              ↑             │
-│       │              │              │              │             │
-│    Direct      Via Smithery    Via Smithery    Direct           │
-│     API            MCP             MCP           API             │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐     │
+│  │ OpenAI   │  │ Exa.ai   │  │ Supabase │     │
+│  │ GPT-4    │  │  Search  │  │ Database │     │
+│  └──────────┘  └──────────┘  └──────────┘     │
+│       ↑              ↑              ↑             │
+│       │              │              │             │
+│    Direct         Direct         Direct           │
+│     API            API            API             │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -145,13 +145,13 @@
 │  ├─ executeSearchBatch()                            │
 │  ├─ filterViableResults()                           │
 │  ├─ deduplicateResults()                            │
-│  └─ Exa.ai integration                              │
+│  └─ Exa.js integration                              │
 │                                                       │
 │  contentExtractor.ts                                 │
 │  ├─ extractContent()                                 │
 │  ├─ extractContentBatch()                           │
 │  ├─ extractContentSimple() [fallback]              │
-│  └─ Browserbase integration                         │
+│  └─ Exa.js content extraction                       │
 │                                                       │
 │  summarizer.ts                                       │
 │  ├─ summarizeSource()                               │
@@ -276,7 +276,7 @@ Indexes:
 │                                                       │
 │  Required Variables:                                 │
 │  ├─ OPENAI_API_KEY                                  │
-│  ├─ BROWSERBASE_API_KEY                             │
+│  ├─ EXASEARCH_API_KEY                               │
 │  ├─ SUPABASE_URL                                    │
 │  ├─ SUPABASE_ANON_KEY                               │
 │  └─ PORT (optional, default: 3001)                  │
@@ -395,7 +395,7 @@ Total:                 ~2-5 minutes per profile
 ```
 
 ### Bottlenecks
-1. **Content Extraction** - Browser automation is slow
+1. **Content Extraction** - Exa.js content extraction
 2. **API Rate Limits** - External service constraints
 3. **OpenAI Processing** - Token processing time
 
@@ -423,8 +423,7 @@ Total:                 ~2-5 minutes per profile
 │  Backend Server(s) (Railway/Render)                 │
 │       │                                               │
 │       ├─→ OpenAI API                                │
-│       ├─→ Exa (via Smithery)                        │
-│       ├─→ Browserbase (via Smithery)                │
+│       ├─→ Exa.ai API                                │
 │       └─→ Supabase                                  │
 │                                                       │
 └─────────────────────────────────────────────────────┘
@@ -440,9 +439,7 @@ Total:                 ~2-5 minutes per profile
 **Supabase**: Easy setup, real-time, PostgreSQL-based
 **Tailwind**: Rapid development, consistent design
 **OpenAI**: Best-in-class LLM for text generation
-**Exa**: Semantic search, better than keyword search
-**Browserbase**: Headless browser, handles JS-heavy sites
-**Smithery**: MCP management, standardized integrations
+**Exa.js**: Direct API integration for semantic search and content extraction
 
 ## Maintenance
 

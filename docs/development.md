@@ -30,7 +30,7 @@ i-know-where-you-live/
 │   │   ├── services/          # Business logic
 │   │   │   ├── queryGenerator.ts      # OpenAI query generation
 │   │   │   ├── searchService.ts       # Exa search
-│   │   │   ├── contentExtractor.ts    # Browserbase scraping
+│   │   │   ├── contentExtractor.ts    # Exa.js content extraction
 │   │   │   ├── summarizer.ts          # OpenAI summarization
 │   │   │   ├── profileGenerator.ts    # Profile creation
 │   │   │   └── database.ts            # Supabase operations

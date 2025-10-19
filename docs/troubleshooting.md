@@ -114,22 +114,8 @@ This guide covers common issues and their solutions.
    ```bash
    curl -H "Authorization: Bearer YOUR_KEY" https://api.exa.ai/search
    ```
-4. Ensure Smithery MCP server is properly configured
+4. Check your Exa account usage limits
 
-### Browserbase connection issues
-
-**Symptoms:**
-- "Failed to connect to Browserbase" errors
-- Content extraction fails
-
-**Solutions:**
-1. Verify your Browserbase API key is correct
-2. Check your Browserbase account has active credits
-3. Test Browserbase connection:
-   ```bash
-   curl "wss://connect.browserbase.com?apiKey=YOUR_KEY"
-   ```
-4. Ensure the Browserbase MCP server is running in Smithery
 
 ### Rate limiting
 
@@ -143,7 +129,6 @@ This guide covers common issues and their solutions.
 3. Check your API usage limits:
    - OpenAI: Check usage dashboard
    - Exa: Check account limits
-   - Browserbase: Check credit usage
 4. Implement longer delays between requests if needed
 
 ## Frontend Issues
@@ -215,7 +200,6 @@ This guide covers common issues and their solutions.
 2. Check API response times:
    - OpenAI: Should be < 10 seconds per request
    - Exa: Should be < 5 seconds per request
-   - Browserbase: Should be < 30 seconds per page
 3. Monitor network connectivity
 4. Check for rate limiting delays
 
