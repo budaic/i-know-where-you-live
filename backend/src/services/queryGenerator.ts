@@ -79,6 +79,8 @@ function generateFallbackQueries(subject: Subject): SearchQuery[] {
       query: i === 0 
         ? `${subject.name} ${contextInfo} ${platforms[i]}`
         : `${subject.name} ${contextInfo}`,
+      type: 'simple',
+      priority: i + 1,
     });
   }
 
@@ -88,6 +90,8 @@ function generateFallbackQueries(subject: Subject): SearchQuery[] {
       uid: `${Date.now()}-${i}`,
       depth: i,
       query: i === maxDepth ? subject.name : `${subject.name} ${contextInfo.split(' ').slice(0, maxDepth - i).join(' ')}`,
+      type: 'simple',
+      priority: i + 1,
     });
   }
 

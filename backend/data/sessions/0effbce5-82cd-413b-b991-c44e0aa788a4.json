@@ -1,0 +1,55 @@
+{
+  "sessionId": "0effbce5-82cd-413b-b991-c44e0aa788a4",
+  "subjectName": "Tamás Széles",
+  "startTime": "2025-10-18T23:39:45.466Z",
+  "currentPhase": "error",
+  "progress": 0,
+  "errors": [
+    "Revamped search failed: Failed to create sources: invalid input syntax for type integer: \"0.7\""
+  ],
+  "isActive": true,
+  "searchLogs": [],
+  "generatedContext": {
+    "additionalFindings": []
+  },
+  "lastUpdate": "2025-10-18T23:41:37.409Z",
+  "isComplete": false,
+  "partialProfile": {
+    "name": "Tamás Széles",
+    "aliases": [],
+    "profileSummary": "",
+    "sources": [],
+    "searchLogs": [
+      {
+        "phase": "general",
+        "query": "Tamás Széles; Tamás Széles Budapest University of Technology and Economics",
+        "resultsFound": 33,
+        "validatedResults": [],
+        "selectedUrl": "https://autonom.nemzetilabor.hu/news?page=2",
+        "timestamp": "2025-10-18T23:40:14.012Z",
+        "searchRound": 1,
+        "totalRounds": 3
+      },
+      {
+        "phase": "general",
+        "query": "Tamás Széles; Tamás Széles Budapest University of Technology and Economics; Tamás Széles Source 1 (https://autonom.nemzetilabor.hu/news?page=2):\n• Tamás Széles promoted automotive engineering education at the Budapest University of Technology and Economics (BME) during an Open Day event on November 29, 2024, which attracted over 6,000 students.\n• He is affiliated with HUN-REN SZTAKI, which collaborates with BME, indicating his active involvement in initiatives that bridge research and education in automotive engineering.\n• Széles participated in a career guidance program at BME, highlighting his commitment to mentoring and guiding students interested in pursuing careers in automotive engineering and autonomous systems.\n\nSource 2 (https://mhte.hu/pdf/hegesztestechnika_2023-2_merged_compressed_cropped.pdf):\n• The text mentions the welding engineering training program at the Budapest University of Technology and Economics (BME), where Tamás Széles is affiliated, indicating his involvement in advancing education in welding technology.\n• It highlights the collaboration between the Hungarian Association of Welding Technology and Material Testing and BME, suggesting that Széles plays a role in facilitating professional events and educational initiatives in the welding field.\n• The publication emphasizes the importance of educational initiatives at BME in enhancing the skills and knowledge of welding engineers, which directly relates to Széles's contributions to the training and development of professionals in the industry.\n",
+        "resultsFound": 63,
+        "validatedResults": [],
+        "selectedUrl": "https://autonom.nemzetilabor.hu/news?page=2",
+        "timestamp": "2025-10-18T23:40:48.770Z",
+        "searchRound": 2,
+        "totalRounds": 3
+      },
+      {
+        "phase": "general",
+        "query": "Tamás Széles; Tamás Széles Budapest University of Technology and Economics; Tamás Széles Source 1 (https://autonom.nemzetilabor.hu/news?page=2):\n• Tamás Széles promoted automotive engineering education at the Budapest University of Technology and Economics (BME) during an Open Day event on November 29, 2024, which attracted over 6,000 students.\n• He is affiliated with HUN-REN SZTAKI, which collaborates with BME, indicating his active involvement in initiatives that bridge research and education in automotive engineering.\n• Széles participated in a career guidance program at BME, highlighting his commitment to mentoring and guiding students interested in pursuing careers in automotive engineering and autonomous systems.\n\nSource 2 (https://mhte.hu/pdf/hegesztestechnika_2023-2_merged_compressed_cropped.pdf):\n• The text mentions the welding engineering training program at the Budapest University of Technology and Economics (BME), where Tamás Széles is affiliated, indicating his involvement in advancing education in welding technology.\n• It highlights the collaboration between the Hungarian Association of Welding Technology and Material Testing and BME, suggesting that Széles plays a role in facilitating professional events and educational initiatives in the welding field.\n• The publication emphasizes the importance of educational initiatives at BME in enhancing the skills and knowledge of welding engineers, which directly relates to Széles's contributions to the training and development of professionals in the industry.\n\nSource 3 (https://autonom.nemzetilabor.hu/news?page=2):\n• Tamás Széles represented the ARNL at the 22nd F1TENTH Autonomous Grand Prix in Milan, showcasing his research work in autonomous systems during the IEEE Conference on Decision and Control, which aligns with his affiliation with the Budapest University of Technology and Economics (BME).\n• He actively promoted automotive engineering education at BME during an Open Day event on November 29, 2024, which successfully attracted over 6,000 students, demonstrating his commitment to inspiring future engineers.\n• Széles participated in a career guidance program at BME, emphasizing his role in mentoring students interested in careers related to automotive engineering and autonomous systems.\n\nSource 4 (https://mhte.hu/pdf/hegesztestechnika_2023-2_merged_compressed_cropped.pdf):\n• The text identifies Tamás Széles as an integral part of the welding engineering training program at the Budapest University of Technology and Economics (BME), highlighting his role in advancing education in welding technology.\n• It mentions Széles's involvement in organizing professional programs in collaboration with the Hungarian Association of Welding Technology and Material Testing, indicating his active participation in enhancing the field.\n• The publication underscores the significance of educational initiatives at BME, which directly relates to Széles's contributions in developing the skills and knowledge of future welding engineers.\n",
+        "resultsFound": 64,
+        "validatedResults": [],
+        "selectedUrl": "https://mhte.hu/pdf/hegesztestechnika_2023-2_merged_compressed_cropped.pdf",
+        "timestamp": "2025-10-18T23:41:30.965Z",
+        "searchRound": 3,
+        "totalRounds": 3
+      }
+    ]
+  }
+}

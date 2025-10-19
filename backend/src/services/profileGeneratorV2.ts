@@ -35,6 +35,18 @@ export async function generateProfileFromLog(log: ProfileCreationLog): Promise<P
   );
 
   // Convert ValidationResults to Sources
+  console.log('\n=== DEBUG: Converting Final Sources ===');
+  console.log(`Number of final sources: ${log.finalSources.length}`);
+  log.finalSources.forEach((source, index) => {
+    console.log(`Source ${index + 1}:`, {
+      url: source.url,
+      reasoning: source.reasoning,
+      relevancyScore: source.relevancyScore,
+      confidence: source.confidence,
+      samePersonElements: source.samePersonElements
+    });
+  });
+
   const sources: Source[] = log.finalSources.map(source => ({
     url: source.url,
     siteSummary: source.reasoning,
@@ -43,6 +55,9 @@ export async function generateProfileFromLog(log: ProfileCreationLog): Promise<P
     validationReasoning: source.reasoning,
     confidence: source.confidence,
   }));
+
+  console.log('Converted sources:', sources);
+  console.log('=== END DEBUG ===\n');
 
   return {
     name: log.subjectName,
@@ -64,14 +79,24 @@ async function createProfileSummary(
   sources: any[],
   generatedContext: any
 ): Promise<{ aliases: string[]; profileSummary: string }> {
+  console.log('\n=== DEBUG: Generated Context Structure ===');
+  console.log('Generated Context:', JSON.stringify(generatedContext, null, 2));
+  console.log('LinkedIn Data:', generatedContext.linkedinData);
+  console.log('GitHub Data:', generatedContext.githubData);
+  console.log('Website Data:', generatedContext.websiteData);
+  console.log('Additional Findings:', generatedContext.additionalFindings);
+  console.log('=== END DEBUG ===\n');
+
   const generatedContextText = [
     generatedContext.linkedinData,
     generatedContext.githubData,
     generatedContext.websiteData,
-    ...generatedContext.additionalFindings,
+    ...(generatedContext.additionalFindings || []),
   ]
     .filter(Boolean)
     .join(' | ');
+
+  console.log('Final Generated Context Text:', generatedContextText);
 
   const sourcesText = sources
     .map((s, i) => `[Source ${i + 1}] (Score: ${s.relevancyScore}/10)\nURL: ${s.url}\nReasoning: ${s.reasoning}`)

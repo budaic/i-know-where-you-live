@@ -1,0 +1,50 @@
+{
+  "sessionId": "3e90fc20-c001-4011-8548-d522d4f8e129",
+  "subjectName": "Kolos Orosz",
+  "startTime": "2025-10-18T22:59:32.971Z",
+  "currentPhase": "general",
+  "progress": 100,
+  "errors": [],
+  "isActive": true,
+  "searchLogs": [],
+  "generatedContext": {
+    "additionalFindings": []
+  },
+  "lastUpdate": "2025-10-18T23:00:40.545Z",
+  "isComplete": false,
+  "partialProfile": {
+    "name": "Kolos Orosz",
+    "aliases": [],
+    "profileSummary": "",
+    "sources": [],
+    "searchLogs": [
+      {
+        "phase": "general",
+        "query": "Kolos Orosz; Kolos Orosz Budapest University of Technology and Economics",
+        "resultsFound": 6,
+        "validatedResults": [],
+        "timestamp": "2025-10-18T22:59:53.538Z",
+        "searchRound": 1,
+        "totalRounds": 3
+      },
+      {
+        "phase": "general",
+        "query": "Kolos Orosz; Kolos Orosz Budapest University of Technology and Economics",
+        "resultsFound": 6,
+        "validatedResults": [],
+        "timestamp": "2025-10-18T23:00:15.557Z",
+        "searchRound": 2,
+        "totalRounds": 3
+      },
+      {
+        "phase": "general",
+        "query": "Kolos Orosz; Kolos Orosz Budapest University of Technology and Economics",
+        "resultsFound": 6,
+        "validatedResults": [],
+        "timestamp": "2025-10-18T23:00:40.543Z",
+        "searchRound": 3,
+        "totalRounds": 3
+      }
+    ]
+  }
+}

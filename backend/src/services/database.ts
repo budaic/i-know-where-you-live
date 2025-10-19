@@ -41,6 +41,10 @@ export async function createProfile(profile: Profile): Promise<Profile> {
   const profileId = profileData.id;
 
   // Insert sources
+  console.log('\n=== DEBUG: Database Source Insertion ===');
+  console.log(`Profile ID: ${profileId}`);
+  console.log(`Number of sources to insert: ${profile.sources.length}`);
+  
   if (profile.sources.length > 0) {
     const sourcesData = profile.sources.map((source) => ({
       profile_id: profileId,
@@ -52,14 +56,22 @@ export async function createProfile(profile: Profile): Promise<Profile> {
       confidence: source.confidence,
     }));
 
+    console.log('Sources data to insert:', sourcesData);
+
     const { error: sourcesError } = await supabase
       .from('sources')
       .insert(sourcesData);
 
     if (sourcesError) {
+      console.error('Sources insertion error:', sourcesError);
       throw new Error(`Failed to create sources: ${sourcesError.message}`);
+    } else {
+      console.log('✅ Sources inserted successfully');
     }
+  } else {
+    console.log('⚠️ No sources to insert');
   }
+  console.log('=== END DEBUG ===\n');
 
   return getProfileById(profileId);
 }

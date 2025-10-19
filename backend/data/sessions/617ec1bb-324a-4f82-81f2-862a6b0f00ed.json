@@ -1,0 +1,1150 @@
+{
+  "sessionId": "617ec1bb-324a-4f82-81f2-862a6b0f00ed",
+  "subjectName": "Tamás Széles",
+  "startTime": "2025-10-18T23:38:22.815Z",
+  "currentPhase": "linkedin",
+  "progress": 15,
+  "errors": [],
+  "isActive": true,
+  "searchLogs": [],
+  "generatedContext": {
+    "additionalFindings": []
+  },
+  "lastUpdate": "2025-10-18T23:41:47.718Z",
+  "isComplete": true,
+  "finalProfile": {
+    "name": "Tamás Széles",
+    "aliases": [],
+    "profileSummary": "Profile based on 4 high-quality source(s) with scores 6-10.",
+    "sources": [
+      {
+        "url": "https://ninjago.fandom.com/hu/wiki/Sz%C3%A9les_Tam%C3%A1s",
+        "siteSummary": "The page title 'Széles Tamás' corresponds to the target 'Tamás Széles'. The content shows category indicators for Budapest-born individuals, aligning with the provided Budapest context. However, the page additionally lists Hungarian actors/voice actors, which conflicts with the provided software engineer identity.",
+        "depth": 0,
+        "relevancyScore": 8,
+        "validationReasoning": "The page title 'Széles Tamás' corresponds to the target 'Tamás Széles'. The content shows category indicators for Budapest-born individuals, aligning with the provided Budapest context. However, the page additionally lists Hungarian actors/voice actors, which conflicts with the provided software engineer identity.",
+        "confidence": "high"
+      },
+      {
+        "url": "https://linkedin.com/in/tamas-szt",
+        "siteSummary": "URL is linkedin.com/in/...; profile name is Tamás Szeles (close to Tamás Széles); location shown as Budapest, Hungary aligns with soft context; job titles in cybersecurity in Hungary provide strong professional context. Hard context about Budapest University of Technology and Economics is not evidenced in education/experience, and the listed roles are cybersecurity rather than software engineering, which reduces alignment with the soft context.",
+        "depth": 0,
+        "relevancyScore": 7,
+        "validationReasoning": "URL is linkedin.com/in/...; profile name is Tamás Szeles (close to Tamás Széles); location shown as Budapest, Hungary aligns with soft context; job titles in cybersecurity in Hungary provide strong professional context. Hard context about Budapest University of Technology and Economics is not evidenced in education/experience, and the listed roles are cybersecurity rather than software engineering, which reduces alignment with the soft context.",
+        "confidence": "high"
+      },
+      {
+        "url": "https://hvg.hu/cimke/Sz%C3%A9les%20Tam%C3%A1s",
+        "siteSummary": "The page title shows 'Széles Tamás', which strongly indicates the subject is Tamás Széles. HVG is a Hungarian news outlet that would host a profile or article about him.",
+        "depth": 0,
+        "relevancyScore": 7,
+        "validationReasoning": "The page title shows 'Széles Tamás', which strongly indicates the subject is Tamás Széles. HVG is a Hungarian news outlet that would host a profile or article about him.",
+        "confidence": "high"
+      },
+      {
+        "url": "https://cinematheque.cia.edu/movies/the-tragedy-of-man/",
+        "siteSummary": "Tamás Széles is listed in the cast (Starring) of The Tragedy of Man on the page, indicating the source references this person.",
+        "depth": 0,
+        "relevancyScore": 7,
+        "validationReasoning": "Tamás Széles is listed in the cast (Starring) of The Tragedy of Man on the page, indicating the source references this person.",
+        "confidence": "high"
+      }
+    ],
+    "hardContext": "Budapest University of Technology and Ecoonomics",
+    "softContext": "Hungary, Software engineer, student",
+    "generatedContext": {
+      "additionalFindings": [
+        "From social media: \n \n \n \n \n \n \n \n \n \n Dates with showtimes for The Tragedy of Man Sat, Sep 27 \n \n \n \n Sat, Sep 27 \n \n \n Sun, Sep 28 \n \n \n \n \n \n \n \n5:40 pm\n \n \n \n Midnite weekend screenings happen on Friday &amp; Saturd"
+      ],
+      "linkedinData": "",
+      "websiteData": ""
+    },
+    "searchLogs": [
+      {
+        "phase": "LinkedIn",
+        "query": "Tamás Széles linkedin.com",
+        "resultsFound": 5,
+        "validatedResults": [
+          {
+            "url": "https://linkedin.com/in/tamas-szt",
+            "relevancyScore": 7,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "URL is linkedin.com/in/...; profile name is Tamás Szeles (close to Tamás Széles); location shown as Budapest, Hungary aligns with soft context; job titles in cybersecurity in Hungary provide strong professional context. Hard context about Budapest University of Technology and Economics is not evidenced in education/experience, and the listed roles are cybersecurity rather than software engineering, which reduces alignment with the soft context.",
+            "samePersonElements": [
+              "URL contains '/in/'",
+              "Profile name: Tamás Szeles (close to Tamás Széles)",
+              "Location: Budapest, Hungary",
+              "Cybersecurity-related roles in Hungary (MBH Bank, Magyar Bankholding, Takarékbank)"
+            ],
+            "differentPersonElements": [
+              "Education section is empty; no explicit mention of Budapest University of Technology and Economics",
+              "Hard context 'Budapest University of Technology and Ecoonomics' not confirmed in education/experience",
+              "Soft context lists 'software engineer' which does not precisely match the cybersecurity roles shown"
+            ],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Tamás Széles\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Tamás Széles\" (allowing for name order variations)\n3. Hard context \"Budapest University of Technology and Ecoonomics\" should ideally appear in job/education/experience\n4. Soft context \"Hungary, Software engineer, student\" should align geographically/professionally\n\nHard Context: Budapest University of Technology and Ecoonomics | Soft Context: Hungary, Software engineer, student\nKnown: None\n\nSource: Tamás Szeles - MBH Bank\nContent: # Tamás Szeles [LinkedIn URL](https://linkedin.com/in/tamas-szt)\nDouble-hatting cybersecurity specialist at MKB Group & Magyar Bankholding Zrt.\n### Cyber Security Architect at [MBH Bank](https://www.linkedin.com/company/mbh-bank/)\n### Budapest, Budapest, Hungary [hu]\n#### 129 followers 125 connections\n#### See your mutual connections\n## About me\n## Work Experience\n- ### Cyber Security Architect at [MBH Bank](https://www.linkedin.com/company/mbh-bank/)\nMay 2023 - Mar 2024 • 11 months\nBudapest, Hungary\n- ### Cyber Security Professional at [Magyar Bankholding](https://www.linkedin.com/company/magyarbankholding/)\nFeb 2022 - May 2023 • 1 year 4 months\n- ### Information Security Specialist at [Takarékbank](https://www.linkedin.com/company/takar%C3%A9kbank/)\nDec 2020 - Mar 2022 • 1 year 4 months\n- ### Information Technology Security Consultant at [FORTIX Consulting](https://www.linkedin.com/company/fortixconsulting/)\nFeb 2019 - Dec 2020 • 1 year 11 months\nBudapest, Hungary\n## Education\n- ### \n\nScoring Guide:\n- 9-10: Perfect name match + hard context clearly confirmed\n- 7-8: Name match + hard context partially confirmed OR strong soft context alignment\n- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"URL is linkedin.com/in/...; profile name is Tamás Szeles (close to Tamás Széles); location shown as Budapest, Hungary aligns with soft context; job titles in cybersecurity in Hungary provide strong professional context. Hard context about Budapest University of Technology and Economics is not evidenced in education/experience, and the listed roles are cybersecurity rather than software engineering, which reduces alignment with the soft context.\",\n  \"samePersonElements\": [\n    \"URL contains '/in/'\",\n    \"Profile name: Tamás Szeles (close to Tamás Széles)\",\n    \"Location: Budapest, Hungary\",\n    \"Cybersecurity-related roles in Hungary (MBH Bank, Magyar Bankholding, Takarékbank)\"\n  ],\n  \"differentPersonElements\": [\n    \"Education section is empty; no explicit mention of Budapest University of Technology and Economics\",\n    \"Hard context 'Budapest University of Technology and Ecoonomics' not confirmed in education/experience\",\n    \"Soft context lists 'software engineer' which does not precisely match the cybersecurity roles shown\"\n  ]\n}",
+            "category": "profile"
+          }
+        ],
+        "selectedUrl": "https://linkedin.com/in/tamas-szt",
+        "contextAdded": "",
+        "timestamp": "2025-10-18T23:38:59.567Z"
+      },
+      {
+        "phase": "GitHub",
+        "query": "Tamás Széles github",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://autodrive-ecosystem.github.io/competitions/f1tenth-sim-racing-cdc-2024/",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "The source discusses the F1TENTH Sim Racing League at CDC 2024 and the AutoDRIVE Ecosystem, with no references to Tamás Széles or any identifiable personal details.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "Content topic (F1TENTH Sim Racing League @ CDC 2024) and AutoDRIVE Ecosystem; no mention of Tamás Széles, Hungary, software engineer, or Budapest University of Technology and Economics."
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Tamás Széles\".\n\nContext: Hungary, Software engineer, student | Budapest University of Technology and Ecoonomics\nKnown: None\n\nSource: F1TENTH Sim Racing League @ CDC 2024 - AutoDRIVE Ecosystem\nContent: [Skip to content](https://autodrive-ecosystem.github.io/autodrive-ecosystem.github.io#f1tenth-sim-racing-league-cdc-2024)\n\n# F1TENTH Sim Racing League @ CDC 2024 [¶](https://autodrive-ecosystem.github.io/autodrive-ecosystem.github.io\\#f1tenth-sim-racing-league-cdc-2024)\n\n## About [¶](https://autodrive-ecosystem.github.io/autodrive-ecosystem.github.io\\#about)\n\n**F1TENTH Autonomous Racing** is a semi-regular competition organized by an international community of researchers, engineers, and autonomous systems enthusiasts. The teams participating in the **22nd F1TENTH Autonomous Grand Prix** at [CDC 2024](https://cdc2024.ieeecss.org) will write software for a 1:10 scaled autonomous racecar to fulfill the objectives of the competition: **_drive fast but don’t crash!_**\n\nThis time, we are organizing the second **F1TENTH Sim Racing League**, which leverages [AutoDRIVE Ecosystem](https://autodrive-ecosystem.github.io) to model and simulate the digital twin of an F1TENTH racecar within a virtua\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"The source discusses the F1TENTH Sim Racing League at CDC 2024 and the AutoDRIVE Ecosystem, with no references to Tamás Széles or any identifiable personal details.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\"Content topic (F1TENTH Sim Racing League @ CDC 2024) and AutoDRIVE Ecosystem; no mention of Tamás Széles, Hungary, software engineer, or Budapest University of Technology and Economics.\"]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/tamas-ferenci/nszr-lekerdezo",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/brtamas0/11_szft3_bt_mr_on_rpg_adventure",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/tizoma/4.-felev",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/schlemmergabor/pmp-labor_2024_osz",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/tamasszekeres/nav-evat-v1-php",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://es.linkedin.com/in/tamasszeker",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "profile"
+          },
+          {
+            "url": "https://rdrr.io/github/zwdzwd/sesame/src/R/tissue.R",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://rdrr.io/github/e-sensing/sits/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://css.paperplaza.net/conferences/conferences/ACC25/program/ACC25_ContentListWeb_1.html",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T23:39:09.430Z"
+      },
+      {
+        "phase": "Website",
+        "query": "Tamás Széles personal website OR portfolio",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://ninjago.fandom.com/hu/wiki/Sz%C3%A9les_Tam%C3%A1s",
+            "relevancyScore": 8,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "The page title 'Széles Tamás' corresponds to the target 'Tamás Széles'. The content shows category indicators for Budapest-born individuals, aligning with the provided Budapest context. However, the page additionally lists Hungarian actors/voice actors, which conflicts with the provided software engineer identity.",
+            "samePersonElements": [
+              "Name order matches: Széles Tamás vs Tamás Széles",
+              "Budapest-born indicator via 'Budapesten született személyek' category"
+            ],
+            "differentPersonElements": [
+              "Occupation: software engineer (not reflected on the page)",
+              "Field: actor/voice actor vs software engineering"
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Tamás Széles\".\n\nContext: Hungary, Software engineer, student | Budapest University of Technology and Ecoonomics\nKnown: None\n\nSource: Széles Tamás - Ninjago Wiki - Fandom\nContent: [Ninjago-wiki](https://ninjago.fandom.com/hu)\n\n[Sign In](https://auth.fandom.com/signin?source=mw&redirect=https%3A%2F%2Fninjago.fandom.com%2Fhu%2Fwiki%2FSz%25C3%25A9les_Tam%25C3%25A1s&selang=hu)\n\nDon't have an account?\n\n[Register](https://auth.fandom.com/register?source=mw&redirect=https%3A%2F%2Fninjago.fandom.com%2Fhu%2Fwiki%2FSz%25C3%25A9les_Tam%25C3%25A1s&selang=hu) [Sign In](https://auth.fandom.com/signin?source=mw&redirect=https%3A%2F%2Fninjago.fandom.com%2Fhu%2Fwiki%2FSz%25C3%25A9les_Tam%25C3%25A1s&selang=hu)\n\nAdvertisement\n\n[Skip to content](https://ninjago.fandom.com/ninjago.fandom.com#page-header)\n\nin: [Magyar színészek](https://ninjago.fandom.com/hu/wiki/Kateg%C3%B3ria:Magyar_sz%C3%ADn%C3%A9szek), [Magyar szinkronszínészek](https://ninjago.fandom.com/hu/wiki/Kateg%C3%B3ria:Magyar_szinkronsz%C3%ADn%C3%A9szek), [Magyar díszlettervezők](https://ninjago.fandom.com/hu/wiki/Kateg%C3%B3ria:Magyar_d%C3%ADszlettervez%C5%91k),\n\nand35 more\n\n- [Budapesten született személyek](https://ni\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 8,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"The page title 'Széles Tamás' corresponds to the target 'Tamás Széles'. The content shows category indicators for Budapest-born individuals, aligning with the provided Budapest context. However, the page additionally lists Hungarian actors/voice actors, which conflicts with the provided software engineer identity.\",\n  \"samePersonElements\": [\n    \"Name order matches: Széles Tamás vs Tamás Széles\",\n    \"Budapest-born indicator via 'Budapesten született személyek' category\"\n  ],\n  \"differentPersonElements\": [\n    \"Occupation: software engineer (not reflected on the page)\",\n    \"Field: actor/voice actor vs software engineering\"\n  ]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://hvg.hu/cimke/Sz%C3%A9les%20Tam%C3%A1s",
+            "relevancyScore": 7,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "The page title shows 'Széles Tamás', which strongly indicates the subject is Tamás Széles. HVG is a Hungarian news outlet that would host a profile or article about him.",
+            "samePersonElements": [
+              "Page title contains the exact name 'Széles Tamás'",
+              "Source domain 'hvg.hu' suggests a profile/article about a person named Tamás Széles"
+            ],
+            "differentPersonElements": [
+              "Content body includes a generic newsletter prompt and a NASA-related science snippet, with no explicit biographical details about the described software engineer student at Budapest University of Technology and Economics"
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Tamás Széles\".\n\nContext: Hungary, Software engineer, student | Budapest University of Technology and Ecoonomics\nKnown: None\n\nSource: Széles Tamás | hvg.hu\nContent: ![HVG fontos hírek](https://hvg.hu/Content/redesign/i/hvg-push-logo.png)\n\n### Szeretne azonnal értesülni a legfontosabb hírekről?\n\nNem kéremKérem\n\n#### Az értesítések bekapcsolásához kattintson a **\"Kérem\"** gombra!\n\nAz értesítés funkció az alábbi böngészőkben érhető el:\n\nChrome 61+, Firefox 57+, Safari 10.1+\n\n#### Köszönjük, hogy feliratkozott!\n\n#### Hoppá!\n\nValami hiba történt a feliratkozás során, az oldal frissítése után kérjük próbálja meg újra a fejlécben található csengő ikonnal.\n\n#### Már feliratkozott!\n\n#### A böngészőjében az értesítés funkció le van tiltva!\n\nHa értesítéseket szeretne, kérjük engedélyezze a böngésző beállításai között, majd az oldal frissítése után kérjük próbálja meg újra a fejlécben található csengő ikonnal.\n\n\\[{\"available\":true,\"c\\_guid\":\"1363f3b5-afe2-4fa8-9123-e382c21ab9f9\",\"c\\_author\":\"HVG\",\"category\":\"tudomany\",\"description\":\"Egy 3D-nyomtatott rakétahajtóművel, a készülő eredeti másával teszteli a NASA azt, hogy milyen lesz landolni a Holdon a jövőbeni\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"The page title shows 'Széles Tamás', which strongly indicates the subject is Tamás Széles. HVG is a Hungarian news outlet that would host a profile or article about him.\",\n  \"samePersonElements\": [\n    \"Page title contains the exact name 'Széles Tamás'\",\n    \"Source domain 'hvg.hu' suggests a profile/article about a person named Tamás Széles\"\n  ],\n  \"differentPersonElements\": [\n    \"Content body includes a generic newsletter prompt and a NASA-related science snippet, with no explicit biographical details about the described software engineer student at Budapest University of Technology and Economics\"\n  ]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://eelisa.eu/the-3rd-eelisa-scientific-student-competition-an-international-success/",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "The content relates to the EELISA competition and site navigation; there is no mention of Tamás Széles or any personal identifiers linking to him.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "No mention of Tamás Széles; content is about EELISA organization and events."
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Tamás Széles\".\n\nContext: Hungary, Software engineer, student | Budapest University of Technology and Ecoonomics\nKnown: None\n\nSource: The 3rd EELISA Scientific Student Competition, an ...\nContent: [Skip to content](https://eelisa.eu/eelisa.eu#content)\n\n- [About](https://eelisa.eu/eelisa.eu)\n - [What Is EELISA](https://eelisa.eu/what-is-eelisa-2/)\n - [Our Building Blocks](https://eelisa.eu/what-is-eelisa-2/our-building-blocks/)\n - [Our Vision into Practice](https://eelisa.eu/what-is-eelisa-2/our-vision-into-practice/)\n - [Gender Equality & Diversity](https://eelisa.eu/what-is-eelisa-2/gender-equality-diversity/)\n - [People](https://eelisa.eu/people/)\n - [Partners](https://eelisa.eu/partners/)\n- [Education](https://eelisa.eu/eelisa.eu)\n - [The EELISA European Engineer](https://eelisa.eu/the-eelisa-european-engineer-2/)\n - [The Profile](https://eelisa.eu/the-eelisa-european-engineer-2/)\n - [JEDI](https://eelisa.eu/jedi/)\n - [Innovative Teaching & Learning](https://eelisa.eu/innovative-teaching-learning/)\n - [Learning opportunities](https://eelisa.eu/learning-opportunities/)\n - [EELISA Joint Programmes](https://eelisa.eu/learning-opportunities/eelisa-joint-programmes/)\n - [SDG Orien\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"The content relates to the EELISA competition and site navigation; there is no mention of Tamás Széles or any personal identifiers linking to him.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\"No mention of Tamás Széles; content is about EELISA organization and events.\"]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://autodrive-ecosystem.github.io/competitions/f1tenth-sim-racing-cdc-2024/",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Source discusses the F1TENTH Sim Racing League at CDC 2024 with no reference to Tamás Széles in the content provided.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "Content centers on F1TENTH Autonomous Racing, CDC 2024, and AutoDRIVE Ecosystem; no mention of Tamás Széles."
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Tamás Széles\".\n\nContext: Hungary, Software engineer, student | Budapest University of Technology and Ecoonomics\nKnown: None\n\nSource: F1TENTH Sim Racing League @ CDC 2024\nContent: [Skip to content](https://autodrive-ecosystem.github.io/autodrive-ecosystem.github.io#f1tenth-sim-racing-league-cdc-2024)\n\n# F1TENTH Sim Racing League @ CDC 2024 [¶](https://autodrive-ecosystem.github.io/autodrive-ecosystem.github.io\\#f1tenth-sim-racing-league-cdc-2024)\n\n## About [¶](https://autodrive-ecosystem.github.io/autodrive-ecosystem.github.io\\#about)\n\n**F1TENTH Autonomous Racing** is a semi-regular competition organized by an international community of researchers, engineers, and autonomous systems enthusiasts. The teams participating in the **22nd F1TENTH Autonomous Grand Prix** at [CDC 2024](https://cdc2024.ieeecss.org) will write software for a 1:10 scaled autonomous racecar to fulfill the objectives of the competition: **_drive fast but don’t crash!_**\n\nThis time, we are organizing the second **F1TENTH Sim Racing League**, which leverages [AutoDRIVE Ecosystem](https://autodrive-ecosystem.github.io) to model and simulate the digital twin of an F1TENTH racecar within a virtua\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"Source discusses the F1TENTH Sim Racing League at CDC 2024 with no reference to Tamás Széles in the content provided.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\"Content centers on F1TENTH Autonomous Racing, CDC 2024, and AutoDRIVE Ecosystem; no mention of Tamás Széles.\"]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://tamasguitarmaniaproduction.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.tamasolasz.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.flashscore.com/player/szeles-tamas/6aHPbpV7/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://webseta.hu/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://szeptamas.com/the-budapester",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://thththt.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "selectedUrl": "https://ninjago.fandom.com/hu/wiki/Sz%C3%A9les_Tam%C3%A1s",
+        "contextAdded": "",
+        "timestamp": "2025-10-18T23:39:38.889Z"
+      },
+      {
+        "phase": "General: education records",
+        "query": "Tamás Széles Budapest University of Technology and Economics student profile",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://www.elte.hu/en/meet-our-students",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://it.sze.hu/temaajanlat",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://se.sze.hu/kezdooldal",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://admissions.sze.hu/paris-2024-two-sze-students-to-compete-in-the-olympics",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://szenergy.hu/en/home-page/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.transfermarkt.com/tamas-szeles/profil/spieler/238896",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://educom.net/university/ad/budapesti-muszaki-es-gazdasagtudomanyi-egyetem,7726",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://icpc.kattis.com/affiliations/bme.hu",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://sdgsuniversities.org/listing/budapest-technology-economics/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://btk.kre.hu/emlex/emlex-students",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T23:40:06.230Z"
+      },
+      {
+        "phase": "General: publications",
+        "query": "Tamás Széles publications software engineering Hungary",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://www.sed.inf.u-szeged.hu/biblio?page=14&f%5Bauthor%5D=368&s=type&o=desc",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://szabta89.github.io/publications.html",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://scholar.google.com/scholar?q=%22Tam%C3%A1s+Szekeres%22",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://ppke.academia.edu/TamasZsedrovits",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://bizarro.dev.to/tamas",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://scholar.google.co.uk/citations?user=C0mAXLMAAAAJ&hl=pt-BR",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://scholar.google.com/citations?user=-AcEb5kAAAAJ&hl=en",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://scholar.google.com/citations?user=EU5mIF8AAAAJ&hl=en",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://vm.mtmt.hu/search/slist.php?lang=0&AuthorID=10075895",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://hu.linkedin.com/in/tam%C3%A1s-fogd-33806287",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "The profile is for Tamás Fogd, not Tamás Széles. The LinkedIn URL slug and the displayed name reflect Tamás Fogd. The hard context Budapest University of Technology and Ecoonomics is not present; soft context shows Hungary and engineering roles, but not enough to confirm a match.",
+            "samePersonElements": [
+              "Hungary (location)",
+              "software engineer/programmer",
+              "engineer at KFKI Research Institute For Particle and Nuclear Physics"
+            ],
+            "differentPersonElements": [
+              "profile name Tamás Fogd vs Tamás Széles",
+              "URL slug tam%C3%A1s-fogd",
+              "Budapest University of Technology and Ecoonomics not mentioned"
+            ],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Tamás Széles\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Tamás Széles\" (allowing for name order variations)\n3. Hard context \"Budapest University of Technology and Ecoonomics\" should ideally appear in job/education/experience\n4. Soft context \"Hungary, Software engineer, student\" should align geographically/professionally\n\nHard Context: Budapest University of Technology and Ecoonomics | Soft Context: Hungary, Software engineer, student\nKnown: None\n\nSource: Tamás Fogd - programmer, 2D/3D graphic designer ...\nContent: # Tamás Fogd [LinkedIn URL](https://hu.linkedin.com/in/tam%C3%A1s-fogd-33806287)\nprogrammer, 2D/3D graphic designer engineer at KFKI Research Institute For Particle and Nuclear Physics\n### programmer, 2D/3D graphic designer engineer at [KFKI Research Institute For Particle and Nuclear Physics](https://www.linkedin.com/company/kfki-research-institute-for-particle-and-nuclear-physics)\n### Hungary [hu]\n#### 76 followers 76 connections\n#### See your mutual connections\n## About me\n## Work Experience\n- ### programmer, 2D/3D graphic designer engineer at [KFKI Research Institute For Particle and Nuclear Physics](https://www.linkedin.com/company/kfki-research-institute-for-particle-and-nuclear-physics)\nApr 2014 - Present • 11 years 4 months\n- ### Hardware Testlab Admin and coordinator at [Ericsson](https://www.linkedin.com/company/ericsson)\nMain tasks: Testlab operation, Innovating laboratory installation\tStanding order of inventory, components, toolsCoordination with Building operation at rebu\n\nScoring Guide:\n- 9-10: Perfect name match + hard context clearly confirmed\n- 7-8: Name match + hard context partially confirmed OR strong soft context alignment\n- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"The profile is for Tamás Fogd, not Tamás Széles. The LinkedIn URL slug and the displayed name reflect Tamás Fogd. The hard context Budapest University of Technology and Ecoonomics is not present; soft context shows Hungary and engineering roles, but not enough to confirm a match.\",\n  \"samePersonElements\": [\"Hungary (location)\", \"software engineer/programmer\", \"engineer at KFKI Research Institute For Particle and Nuclear Physics\"],\n  \"differentPersonElements\": [\"profile name Tamás Fogd vs Tamás Széles\", \"URL slug tam%C3%A1s-fogd\", \"Budapest University of Technology and Ecoonomics not mentioned\"]\n}",
+            "category": "profile"
+          }
+        ],
+        "timestamp": "2025-10-18T23:40:23.799Z"
+      },
+      {
+        "phase": "General: social media",
+        "query": "Tamás Széles Twitter Hungary",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Tam%C3%A1s_Szeles",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.transfermarkt.com/tamas-szeles/profil/spieler/238896",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.flashscore.com.ng/player/szeles-tamas/6aHPbpV7/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.soccer24.com/player/szeles-tamas/6aHPbpV7/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.flashscore.com/player/szeles-tamas/6aHPbpV7/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "http://www.theplayersagent.com/profile/50642/tamas_szeles",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "http://ada1bank.mlsz.hu/player?itemId=294354",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://dockets.justia.com/docket/california/cacdce/2:2023cv09189/904064",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://cinematheque.cia.edu/movies/the-tragedy-of-man/",
+            "relevancyScore": 7,
+            "isLikelyMatch": true,
+            "confidence": "high",
+            "reasoning": "Tamás Széles is listed in the cast (Starring) of The Tragedy of Man on the page, indicating the source references this person.",
+            "samePersonElements": [
+              "Starring: Tamás Széles",
+              "Tamás Széles listed among cast"
+            ],
+            "differentPersonElements": [],
+            "prompt": "PROMPT:\nValidate if this source is about \"Tamás Széles\".\n\nContext: Hungary, Software engineer, student | Budapest University of Technology and Ecoonomics\nKnown: None\n\nSource: The Tragedy of Man - Cleveland Cinematheque\nContent: \n \n \n \n \n \n \n \n \n \n Dates with showtimes for The Tragedy of Man Sat, Sep 27 \n \n \n \n Sat, Sep 27 \n \n \n Sun, Sep 28 \n \n \n \n \n \n \n \n5:40 pm\n \n \n \n Midnite weekend screenings happen on Friday &amp; Saturday nights,. so please be sure to arrive on Friday and/or Saturday night by 11:45pm for seating and the screening will start after midnight. \n \n \n \n Director: Marcell Jankovics Run Time: 166 min. \n Format: DCP \n Release Year: \n2011 \n \n Language: Hungarian \n Starring: Ágnes Bertalan, Mátyás Usztics, Piroska Molnár, Tamás Széles, Tibor Szilágyi Jankovics’s adaptation of the eponymous play is divided into multiple parts, and depicts the creation and fall of Man throughout history. \n \n \n \n \n \n Trailer \n \n \n \n \n \n \n\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Tamás Széles is listed in the cast (Starring) of The Tragedy of Man on the page, indicating the source references this person.\",\n  \"samePersonElements\": [\"Starring: Tamás Széles\", \"Tamás Széles listed among cast\"],\n  \"differentPersonElements\": []\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://dailynewshungary.com/new-list-of-the-wealthiest-hungarians-emerged/",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "The article discusses the wealthiest Hungarians and mentions Lőrinc Mészáros and István Tiborcz; there is no reference to Tamás Széles, so it is not about him.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "Lőrinc Mészáros",
+              "István Tiborcz"
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Tamás Széles\".\n\nContext: Hungary, Software engineer, student | Budapest University of Technology and Ecoonomics\nKnown: None\n\nSource: New list of the 100 wealthiest Hungarians: PM Orbán's son-in-law ...\nContent: [Skip to content](https://dailynewshungary.com/dailynewshungary.com#main)\n\nNo results\n\n#### [Follow our Facebook page to get the latest news about Hungary!](https://facebook.com/dailynewshungary)\n\n#### [Follow our X (Twitter) page to get the latest news about Hungary!](https://x.com/dnewshungary)\n\n#### [Subscribe to our Telegram channel to get the latest news about Hungary!](https://t.me/dailynewshungary)\n\nwhatsapp\n\n#### [Subscribe to our WhatsApp channel to get the latest news about Hungary!](https://whatsapp.com/channel/0029Vb1zD97C6ZvpeGjezE1Y)\n\n### [Official: Long-planned train to Budapest Airport finally on track!](https://dailynewshungary.com/budapest-airport-rail-link-concession/)\n\nPhoto: MTI\n\n**Lőrinc Mészáros, a Hungarian businessman who was a mediocre entrepreneur until the 2010s, sits on top of the list of the wealthiest Hungarians with a wealth reaching 1.6% of the entire Hungarian GDP. István Tiborcz, who married the prime minister’s eldest daughter, Ráhel (active in the t\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"The article discusses the wealthiest Hungarians and mentions Lőrinc Mészáros and István Tiborcz; there is no reference to Tamás Széles, so it is not about him.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\"Lőrinc Mészáros\", \"István Tiborcz\"]\n}",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T23:40:45.988Z"
+      },
+      {
+        "phase": "General: professional activities",
+        "query": "Tamás Széles software engineer projects Budapest Hungary",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://bizarro.dev.to/tamas",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://tamasdeak.me/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://github.com/tamas-ferenci/nszr-lekerdezo",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.deloitte.com/hu/en/about/governance.html",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "The provided source is a Deloitte Hungary 'Our Leaders' page about organizational leadership; it does not mention Tamás Széles, and contains likely conflicting or unrelated information (corporate leadership) rather than a bio or data about a software engineer student named Tamás Széles.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "The source discusses Leaders of the Hungarian Deloitte member firms and governance, not Tamás Széles.",
+              "No biographical details or identifiers for Tamás Széles are present in the source.",
+              "No connection to Budapest University of Technology and Economics or software engineering."
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Tamás Széles\".\n\nContext: Hungary, Software engineer, student | Budapest University of Technology and Ecoonomics\nKnown: Additional: From social media: \n \n \n \n \n \n \n \n \n \n Dates with showtimes for The Tragedy of Man Sat, Sep 27 \n \n \n \n Sat, Sep 27 \n \n \n Sun, Sep 28 \n \n \n \n \n \n \n \n5:40 pm\n \n \n \n Midnite weekend screenings happen on Friday &amp; Saturd\n\nSource: Our Leaders | Deloitte Hungary\nContent: Link opens in a new tabopens in new window\n\n- [English](https://www.deloitte.com/www.deloitte.com)\n- [Magyar](https://www.deloitte.com/hu/hu/about/governance.html?icid=toggle_hu_hu_hu)\n\n# Our leaders\n\n## Leaders of the Hungarian Deloitte member firms\n\n## Explore our organisational structure\n\nLearn more about the integrity and strength of our organisational structure and how we work across our **[network, brands and alliances](https://www.deloitte.com/hu/en/about/governance/network-brand-alliances.html)**.\n\n### Building better futures\n\n#### 2023 Deloitte Global Impact Report\n\nDuring this dynamic, unpredictable year, Deloitte people worked with business, government and society to help advance toward a more sustainable, equitable and prosperous world.\n\n[Explore the report](https://www.deloitte.com/hu/en/about/governance/global-impact-report.html)\n\n### Delivering on expectations\n\n##### [For our stakeholders](https://www.deloitte.com/hu/en/about/governance.html)\n\nWe run a sustainable and re\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"The provided source is a Deloitte Hungary 'Our Leaders' page about organizational leadership; it does not mention Tamás Széles, and contains likely conflicting or unrelated information (corporate leadership) rather than a bio or data about a software engineer student named Tamás Széles.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\n    \"The source discusses Leaders of the Hungarian Deloitte member firms and governance, not Tamás Széles.\",\n    \"No biographical details or identifiers for Tamás Széles are present in the source.\",\n    \"No connection to Budapest University of Technology and Economics or software engineering.\"\n  ]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://hacusa.org/wp-content/uploads/2024/03/HAC_webPDF.pdf",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://mernokakademia.hu/archive/szervezet/executives.htm",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "The source discusses Prof. Ernő Rubik (Rubik's Cube inventor) with biographical details; there is no reference to Tamás Széles.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "Name mismatch: Tamás Széles vs Ernő Rubik",
+              "Biographical content describes Ernő Rubik's career (inventor, professor) rather than a software engineer/student named Tamás Széles",
+              "Occupation and context do not align with 'Tamás Széles' profile"
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Tamás Széles\".\n\nContext: Hungary, Software engineer, student | Budapest University of Technology and Ecoonomics\nKnown: Additional: From social media: \n \n \n \n \n \n \n \n \n \n Dates with showtimes for The Tragedy of Man Sat, Sep 27 \n \n \n \n Sat, Sep 27 \n \n \n Sun, Sep 28 \n \n \n \n \n \n \n \n5:40 pm\n \n \n \n Midnite weekend screenings happen on Friday &amp; Saturd\n\nSource: Executives - Magyar Mérnökakadémia (MMA)\nContent: | |\n| --- |\n| | |\n| --- |\n| ## **Executives** |\n\n. **Prof. Ernő RUBIK**\n\nFounding Member, Honorary President\n\nGraduated in 1967 from the Faculty of Architecture at the Technical University of Budapest. Subsequently he earned a second degree in interior design at the Hungarian Academy of Crafts and Design where he was Associate Professor and Director of postgraduate studies up until 1986. He is an architect and designer, and best known for his Magic puzzle series, which is led by \"The Cube\". However, from 1982 he has been active in experiments to revitalize the Hungarian economy. In order to move beyond the toy field and to join various kind of industrial activities, he opened the Rubik Studio in 1983, a business center involved in product design and development. Presently, he is working on joining international circles both in business and finance. In order to help both student and practitioner inventors and designers, he founded two Rubik Foundations. He is an Honorary Professor at th\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"The source discusses Prof. Ernő Rubik (Rubik's Cube inventor) with biographical details; there is no reference to Tamás Széles.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\n    \"Name mismatch: Tamás Széles vs Ernő Rubik\",\n    \"Biographical content describes Ernő Rubik's career (inventor, professor) rather than a software engineer/student named Tamás Széles\",\n    \"Occupation and context do not align with 'Tamás Széles' profile\"\n  ]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://tomzorz.me/cv.html",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://es.linkedin.com/in/tamasszeker",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "profile"
+          },
+          {
+            "url": "https://tamasstephen.com/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://hu.linkedin.com/in/tam%C3%A1s-szab%C3%B3-7b876793",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "The LinkedIn URL and profile name indicate Tamás Szabó, not Tamás Széles. The hard context Budapest University of Technology and Economics is not present in education/experience, and the soft context includes 'student' which is not evidenced. Some elements like location (Budapest, Hungary) and role (Software Engineer) align but are not sufficient for a positive match.",
+            "samePersonElements": [
+              "Location: Budapest, Hungary",
+              "Role: Software Engineer"
+            ],
+            "differentPersonElements": [
+              "Profile name: Tamás Szabó (not Tamás Széles)",
+              "URL slug indicates Szabó not Széles",
+              "Education/experience lacking Budapest University of Technology and Economics",
+              "Soft context includes 'student' which is not evidenced"
+            ],
+            "prompt": "PROMPT:\nRole: Expert LinkedIn profile validator\nTask: Determine if this is the CORRECT LinkedIn profile for \"Tamás Széles\"\n\nCritical Checks:\n1. URL MUST contain \"linkedin.com/in/\" (any subdomain/format is acceptable)\n2. Profile name must match \"Tamás Széles\" (allowing for name order variations)\n3. Hard context \"Budapest University of Technology and Ecoonomics\" should ideally appear in job/education/experience\n4. Soft context \"Hungary, Software engineer, student\" should align geographically/professionally\n\nHard Context: Budapest University of Technology and Ecoonomics | Soft Context: Hungary, Software engineer, student\nKnown: Additional: From social media: \n \n \n \n \n \n \n \n \n \n Dates with showtimes for The Tragedy of Man Sat, Sep 27 \n \n \n \n Sat, Sep 27 \n \n \n Sun, Sep 28 \n \n \n \n \n \n \n \n5:40 pm\n \n \n \n Midnite weekend screenings happen on Friday &amp; Saturd\n\nSource: Tamás Szabó - Software Engineer\nContent: # Tamás Szabó [LinkedIn URL](https://hu.linkedin.com/in/tam%C3%A1s-szab%C3%B3-7b876793)\nSoftware Engineer\n### Software Engineer at [Freelance]()\n### Budapest Metropolitan Area [hu]\n#### 209 followers 210 connections\n#### See your mutual connections\n## About me\nMy main skill is mobile development. I have more than 10 years of experience in Android and iOS development. I started with Java and Objective-C and now i am working with Kotlin, Swift and Flutter.I also worked on IoT (C,C++,Python) and 3D graphics (openGL) projects, and the last 2 years i gained some experience with CI/CD (Gitlab CI , Bitbucket Pipelines, Bitrise) environments.\n## Work Experience\n- ### Software Engineer at [Freelance]()\nJun 2021 - Present • 4 years 1 month\nBudapest, Hungary\n- ### Software Engineer at [Teqball](https://www.linkedin.com/company/teqball-ltd-)\nApr 2018 - Jun 2021 • 3 years 3 months\nBudapest\n- ### Software Engineer at [Synthesis-NET LLC](https://www.linkedin.com/company/brighthills)\nMobile Developer \n\nScoring Guide:\n- 9-10: Perfect name match + hard context clearly confirmed\n- 7-8: Name match + hard context partially confirmed OR strong soft context alignment\n- 5-6: Name match but weak/no context confirmation (still acceptable for LinkedIn profiles)\n- 1-4: Name mismatch, wrong person, or company/post page\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"The LinkedIn URL and profile name indicate Tamás Szabó, not Tamás Széles. The hard context Budapest University of Technology and Economics is not present in education/experience, and the soft context includes 'student' which is not evidenced. Some elements like location (Budapest, Hungary) and role (Software Engineer) align but are not sufficient for a positive match.\",\n  \"samePersonElements\": [\n    \"Location: Budapest, Hungary\",\n    \"Role: Software Engineer\"\n  ],\n  \"differentPersonElements\": [\n    \"Profile name: Tamás Szabó (not Tamás Széles)\",\n    \"URL slug indicates Szabó not Széles\",\n    \"Education/experience lacking Budapest University of Technology and Economics\",\n    \"Soft context includes 'student' which is not evidenced\"\n  ]\n}",
+            "category": "profile"
+          }
+        ],
+        "timestamp": "2025-10-18T23:41:14.952Z"
+      },
+      {
+        "phase": "General: mentions or interviews",
+        "query": "Tamás Széles interview Hungary press",
+        "resultsFound": 10,
+        "validatedResults": [
+          {
+            "url": "https://hu.linkedin.com/in/tamas-szeles-b062bab3",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "profile"
+          },
+          {
+            "url": "https://www.academia.edu/107220725/Identity_Preservation_and_Diaspora_Relations_in_the_USA_the_Hungarian_Community_of_New_Brunswick_New_Jersey",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "high",
+            "reasoning": "The source is an Academia.edu PDF about Identity Preservation and Diaspora Relations in the USA, with no mention of Tamás Széles. The provided content does not reference him.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "Source topic: Identity Preservation and Diaspora Relations in the USA (Academia.edu PDF) rather than Tamás Széles",
+              "No explicit mention of Tamás Széles in the provided source content",
+              "Source is an Academia.edu document unrelated to a software engineer/student named Tamás Széles"
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Tamás Széles\".\n\nContext: Hungary, Software engineer, student | Budapest University of Technology and Ecoonomics\nKnown: Additional: From social media: \n \n \n \n \n \n \n \n \n \n Dates with showtimes for The Tragedy of Man Sat, Sep 27 \n \n \n \n Sat, Sep 27 \n \n \n Sun, Sep 28 \n \n \n \n \n \n \n \n5:40 pm\n \n \n \n Midnite weekend screenings happen on Friday &amp; Saturd\n\nSource: (PDF) Identity Preservation and Diaspora Relations in the USA\nContent: Academia.edu no longer supports Internet Explorer.\n\nTo browse Academia.edu and the wider internet faster and more securely, please take a few seconds to [upgrade your browser](https://www.academia.edu/upgrade-browser).\n\n[![Academia.edu](https://a.academia-assets.com/images/academia-logo-redesign-2015-A.svg)![Academia.edu](https://a.academia-assets.com/images/academia-logo-redesign-2015.svg)](https://www.academia.edu/)\n\n- [Log In](https://www.academia.edu/login)\n- [Sign Up](https://www.academia.edu/signup)\n- more\n - [About](https://www.academia.edu/about)\n - [Press](https://www.academia.edu/press)\n - [Papers](https://www.academia.edu/documents)\n - [Terms](https://www.academia.edu/terms)\n - [Privacy](https://www.academia.edu/privacy)\n - [Copyright](https://www.academia.edu/copyright)\n - [We're Hiring!](https://www.academia.edu/hiring)\n - [Help Center](https://support.academia.edu/hc/en-us)\n - less\n\n![First page of “Identity Preservation and Diaspora Relations in the USA: the Hungarian Co\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"high\",\n  \"reasoning\": \"The source is an Academia.edu PDF about Identity Preservation and Diaspora Relations in the USA, with no mention of Tamás Széles. The provided content does not reference him.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\n    \"Source topic: Identity Preservation and Diaspora Relations in the USA (Academia.edu PDF) rather than Tamás Széles\",\n    \"No explicit mention of Tamás Széles in the provided source content\",\n    \"Source is an Academia.edu document unrelated to a software engineer/student named Tamás Széles\"\n  ]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://www.szeretlekmagyarorszag.hu/hirek/a-valasztasok-masnapjan-uj-vilagra-ebrednek-az-emberek-eloszor-adott-interjut-tanacs-zoltan-a-tisza-programalkotasert-felelos-vezetoje/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://telex.hu/belfold/2025/10/04/tanacs-zoltan-tisza-part-program-kormanyzas-kormanyvaltas",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://rtl.hu/hirado/2025/10/04/a-valasztasok-masnapjan-uj-vilagra-ebrednek-az-emberek-eloszor-adott-interjut-tanacs-zoltan-a-tisza-programalkotasert-felelos-vezetoje",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://hiroszto.hu/a-valasztasok-masnapjan-uj-vilagra-ebrednek-az-emberek-eloszor-adott-interjut-tanacs-zoltan-a-tisza-programalkotasert-felelos-vezetoje/",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://4liberty.eu/wp-content/uploads/2018/05/ESZTER-NOVA-_CENSORSHIP-IS-THE-LEAST-OF-THE-PROBLEMS-THE-POLITICAL-AND-ECONOMIC.pdf",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://anticorrp.eu/wp-content/uploads/2016/12/D6.2_Hungary.pdf",
+            "relevancyScore": 2,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "The source is a case study document about corruption involving journalists in Hungary, with authors Miklós Hajdu, Boróka Pápay, István János Tóth. There is no mention of Tamás Széles, and the content does not relate to a software engineer or a person named Tamás Széles.",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "Author names do not include Tamás Széles",
+              "Content topic (anti-corruption case studies) is unrelated to Tamás Széles",
+              "No identifiers (profession, affiliation) matching Tamás Széles",
+              "No social media or biographical details linking to Tamás Széles"
+            ],
+            "prompt": "PROMPT:\nValidate if this source is about \"Tamás Széles\".\n\nContext: Hungary, Software engineer, student | Budapest University of Technology and Ecoonomics\nKnown: Additional: From social media: \n \n \n \n \n \n \n \n \n \n Dates with showtimes for The Tragedy of Man Sat, Sep 27 \n \n \n \n Sat, Sep 27 \n \n \n Sun, Sep 28 \n \n \n \n \n \n \n \n5:40 pm\n \n \n \n Midnite weekend screenings happen on Friday &amp; Saturd\n\nSource: [PDF] Case studies on corruption involving journalists: Hungary - Anticorrp\nContent: EU Grant Agreement number: 290529\nProject acronym: ANTICORRP\nProject title: Anti-Corruption Policies Revisited\nWork Package: WP 6 Media and corruption\nTitle of deliverable: D 6.2 Case studies on corruption involving journalists\nCase studies on corruption involving journalists: Hungary\nDue date of deliverable: 31 August, 2016\n Actual submission date: 31 August, 2016\nAuthors: Miklós Hajdu, Boróka Pápay, István János Tóth (BCE)\nOrganization name of lead beneficiary for this deliverable: UNIPG, UNIVERSITÀ DEGLI STUDI \nDI PERUGIA\nThe information and views set out in this publication are those of the author(s) only and do not \nreflect any collective opinion of the ANTICORRP consortium, nor do they reflect the official \nopinion of the European Commission. Neither the European Commission nor any person acting on \nbehalf of the European Commission is responsible for the use which might be made of the \nfollowing information.\nProject co-funded by the European Commission within the Seventh Framewo\n\nScore 1-10, determine if same person, list matching/conflicting elements.\n\nRespond with ONLY this JSON:\n{\n  \"relevancyScore\": 7,\n  \"isLikelyMatch\": true,\n  \"confidence\": \"high\",\n  \"reasoning\": \"Brief explanation\",\n  \"samePersonElements\": [\"element1\", \"element2\"],\n  \"differentPersonElements\": [\"element1\"]\n}\n\nRESPONSE:\n{\n  \"relevancyScore\": 2,\n  \"isLikelyMatch\": false,\n  \"confidence\": \"low\",\n  \"reasoning\": \"The source is a case study document about corruption involving journalists in Hungary, with authors Miklós Hajdu, Boróka Pápay, István János Tóth. There is no mention of Tamás Széles, and the content does not relate to a software engineer or a person named Tamás Széles.\",\n  \"samePersonElements\": [],\n  \"differentPersonElements\": [\n    \"Author names do not include Tamás Széles\",\n    \"Content topic (anti-corruption case studies) is unrelated to Tamás Széles\",\n    \"No identifiers (profession, affiliation) matching Tamás Széles\",\n    \"No social media or biographical details linking to Tamás Széles\"\n  ]\n}",
+            "category": "other"
+          },
+          {
+            "url": "https://tenyek.hu/cikkek/menczer-tamas-elmagyarazta-a-444-nek-mi-is-a-digitalis-polgari-korok-lenyege",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          },
+          {
+            "url": "https://www.blikk.hu/politika/magyar-politika/tanacs-zoltan-tisza-part-program/xfbhmgn",
+            "relevancyScore": 1,
+            "isLikelyMatch": false,
+            "confidence": "low",
+            "reasoning": "Names not found in source: Tamás Széles",
+            "samePersonElements": [],
+            "differentPersonElements": [
+              "First name \"Tamás\" not found",
+              "Last name \"Széles\" not found"
+            ],
+            "prompt": "SANITY CHECK FAILED: First name \"Tamás\" or last name \"Széles\" not found in source text.",
+            "category": "other"
+          }
+        ],
+        "timestamp": "2025-10-18T23:41:38.510Z"
+      }
+    ]
+  }
+}

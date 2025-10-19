@@ -1,0 +1,55 @@
+{
+  "sessionId": "e49c1ae8-7e24-4b01-ad67-08b27fae2868",
+  "subjectName": "Biebel Botond",
+  "startTime": "2025-10-19T00:02:48.723Z",
+  "currentPhase": "error",
+  "progress": 0,
+  "errors": [
+    "Revamped search failed: Failed to create sources: invalid input syntax for type integer: \"0.7\""
+  ],
+  "isActive": true,
+  "searchLogs": [],
+  "generatedContext": {
+    "additionalFindings": []
+  },
+  "lastUpdate": "2025-10-19T00:04:27.300Z",
+  "isComplete": false,
+  "partialProfile": {
+    "name": "Biebel Botond",
+    "aliases": [],
+    "profileSummary": "",
+    "sources": [],
+    "searchLogs": [
+      {
+        "phase": "general",
+        "query": "\"Biebel Botond\" AND \"Budapest University of Technology and Economics\" AND (research OR publication OR thesis OR project OR profile) -Facebook -Twitter -Instagram; \"Biebel Botond\" \"Budapest University of Technology and Economics\" OR \"BME\" site:linkedin.com OR site:researchgate.net OR site:hu OR site:edu",
+        "resultsFound": 3,
+        "validatedResults": [],
+        "selectedUrl": "https://www.bme.hu/hirek/250624/eelisa-ssc-bukarest-bme-eredmenyek-beszamolo",
+        "timestamp": "2025-10-19T00:03:20.050Z",
+        "searchRound": 1,
+        "totalRounds": 3
+      },
+      {
+        "phase": "general",
+        "query": "\"Biebel Botond\" AND \"Budapest University of Technology and Economics\" AND (research OR publication OR thesis OR project OR profile) -job -resume -contact; \"Biebel Botond\" \"Budapest University of Technology and Economics\" (research OR publication OR thesis OR project OR profile) -job -resume -contact -email; \"Biebel Botond\" \"Budapest University of Technology and Economics\" \"EELISA Student Scientific Conference\" OR \"Good Student Good Athlete award\" OR \"Mechatronics Engineering\" OR \"Barkhausen noise research\"",
+        "resultsFound": 2,
+        "validatedResults": [],
+        "selectedUrl": "https://scholar.google.com/citations?user=bYrcbnoAAAAJ&hl=en",
+        "timestamp": "2025-10-19T00:03:46.601Z",
+        "searchRound": 2,
+        "totalRounds": 3
+      },
+      {
+        "phase": "general",
+        "query": "\"Biebel Botond\" AND \"Budapest University of Technology and Economics\" AND (research OR publication OR thesis OR project OR profile) -job -resume -contact; \"Biebel Botond\" \"Budapest University of Technology and Economics\" OR \"BME\" site:linkedin.com OR site:researchgate.net OR site:edu; \"Biebel Botond\" \"Budapest University of Technology and Economics\" \"EELISA Student Scientific Conference\" OR \"Jó tanuló, jó sportoló\" OR \"Mechatronics Engineering\" OR \"Barkhausen noise\"",
+        "resultsFound": 2,
+        "validatedResults": [],
+        "selectedUrl": "https://scholar.google.com/citations?user=bYrcbnoAAAAJ&hl=en",
+        "timestamp": "2025-10-19T00:04:19.667Z",
+        "searchRound": 3,
+        "totalRounds": 3
+      }
+    ]
+  }
+}

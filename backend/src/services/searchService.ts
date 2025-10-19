@@ -21,7 +21,7 @@ export async function executeSearch(
       url: result.url,
       title: result.title || '',
       snippet: result.text?.substring(0, 500) || result.highlights?.[0] || '',
-      depth: query.depth,
+      depth: query.depth || 0,
     }));
   } catch (error) {
     console.error(`Error executing search for query "${query.query}":`, error);
