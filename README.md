@@ -1,4 +1,4 @@
-# I Know Where You Live - OSINT Profiler
+# OSINT Profiler Intelligence Tool
 
 A powerful open-source intelligence system that profiles individuals using multiple data sources including LinkedIn, GitHub, and personal websites.
 
