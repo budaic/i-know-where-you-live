@@ -13,7 +13,6 @@ export default function TerminalCommandLine({ onSubmit, disabled, onShowInputFor
   const inputRef = useRef<HTMLInputElement>(null);
   const { addEntry, clearHistory, commandHistory, addCommandToHistory, clearCommandHistory } = useTerminalHistory();
 
-
   useEffect(() => {
     if (inputRef.current && !disabled) {
       inputRef.current.focus();
@@ -25,20 +24,6 @@ export default function TerminalCommandLine({ onSubmit, disabled, onShowInputFor
       inputRef.current.focus();
     }
   }, []);
-
-  // Additional focus restoration when component becomes enabled
-  useEffect(() => {
-    if (!disabled && inputRef.current) {
-      // Small delay to ensure the component is fully rendered
-      setTimeout(() => {
-        if (inputRef.current && !disabled) {
-          inputRef.current.focus();
-          // Force focus even if the element seems unresponsive
-          inputRef.current.click();
-        }
-      }, 100);
-    }
-  }, [disabled]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -201,28 +186,14 @@ export default function TerminalCommandLine({ onSubmit, disabled, onShowInputFor
   };
 
   return (
-    <div 
-      className="font-mono"
-      onClick={() => {
-        if (inputRef.current && !disabled) {
-          inputRef.current.focus();
-          inputRef.current.click();
-        }
-      }}
-    >
+    <div className="font-mono">
       {/* Help text - always visible */}
       <div className="terminal-text text-sm mb-4 opacity-75">
         (type "profile_target --name=NAME --hard-context=CONTEXT --soft-context=CONTEXT" to profile anyone)
-        <br />
-        (type "--help" for all commands)
       </div>
 
       {/* Command input */}
-      <form onSubmit={handleSubmit} className="flex items-start" onClick={() => {
-        if (inputRef.current && !disabled) {
-          inputRef.current.focus();
-        }
-      }}>
+      <form onSubmit={handleSubmit} className="flex items-start">
         <span className="terminal-text text-sm mr-2 mt-0.5">
           {new Date().toLocaleTimeString()} $
         </span>
@@ -233,11 +204,6 @@ export default function TerminalCommandLine({ onSubmit, disabled, onShowInputFor
             value={command}
             onChange={(e) => setCommand(e.target.value)}
             onKeyDown={handleKeyDown}
-            onClick={() => {
-              if (inputRef.current && !disabled) {
-                inputRef.current.focus();
-              }
-            }}
             disabled={disabled}
             className="terminal-bg terminal-text text-sm border-none outline-none w-full"
             placeholder=""

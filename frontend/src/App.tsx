@@ -63,7 +63,6 @@ function AppContent() {
     }
   }, [searchState.isSearching, searchState.currentPhase, lastLoggedPhase, addEntry]);
 
-
   const handleCommand = async (command: string, args: string[]) => {
     if (command === 'cd' && args[0] === '/files') {
       setCurrentPage('files');
@@ -119,7 +118,6 @@ function AppContent() {
     }
   };
 
-
   // Show Files page
   if (currentPage === 'files') {
     return (
@@ -147,10 +145,9 @@ function AppContent() {
         {/* Terminal Command Line */}
         <TerminalCommandLine 
           onSubmit={handleCommand}
-          disabled={loading || searchState.isSearching}
+          disabled={loading}
           onShowInputForm={handleShowInputForm}
         />
-        
 
         {/* Input Form (shown when 'input' command is used) */}
         {showInputForm && (
