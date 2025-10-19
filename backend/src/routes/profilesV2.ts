@@ -6,8 +6,9 @@ import {
   deleteProfile,
 } from '../services/database';
 import { executeMultiPhaseSearch } from '../services/searchOrchestrator';
+import { executeRevampedSearch, executeRevampedSearchWithDebug } from '../services/searchOrchestratorRevamped';
 import { generateProfileFromLog } from '../services/profileGeneratorV2';
-import { ProfileRequest, ProfileResponse } from '../types';
+import { ProfileRequest, ProfileResponse, Subject, Profile } from '../types';
 import * as progressTracker from '../services/progressTracker';
 
 const router = Router();
@@ -160,6 +161,122 @@ router.get('/create/stream/:sessionId', (req: Request, res: Response) => {
     clearInterval(heartbeat);
     progressTracker.unregisterSession(sessionId);
   });
+});
+
+// Create new profile(s) using the revamped search system with debug data
+router.post('/create/revamped/debug', async (req: Request, res: Response) => {
+  try {
+    const { subjects, sessionId }: { subjects: Subject[]; sessionId?: string } = req.body;
+
+    if (!subjects || !Array.isArray(subjects) || subjects.length === 0) {
+      return res.status(400).json({ error: 'Subjects array is required' });
+    }
+
+    const profiles: Profile[] = [];
+    const debugData: any[] = [];
+
+    for (const subject of subjects) {
+      console.log(`\n=== Processing Subject: ${subject.name} (Revamped Search with Debug) ===`);
+      console.log(`Hard Context: ${subject.hardContext}`);
+      console.log(`Soft Context: ${subject.softContext}`);
+      console.log(`${'='.repeat(60)}\n`);
+
+      // Register session for live updates if sessionId provided
+      if (sessionId) {
+        progressTracker.registerSession(sessionId, subject.name);
+        // Give a moment for the SSE connection to be established
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+
+      // Execute revamped search with debug data
+      const { profileLog, debugData: subjectDebugData } = await executeRevampedSearchWithDebug(
+        subject.name,
+        subject.hardContext,
+        subject.softContext,
+        sessionId
+      );
+
+      // Generate profile from search log
+      const profile = await generateProfileFromLog(profileLog);
+
+      console.log('\n--- Saving to database ---');
+      const savedProfile = await dbCreateProfile(profile);
+      profiles.push(savedProfile);
+      debugData.push(subjectDebugData);
+
+      console.log(`✅ Profile created successfully: ${savedProfile.id}`);
+    }
+
+    res.json({ profiles, debugData });
+  } catch (error) {
+    console.error('Error in revamped profile creation with debug:', error);
+    
+    if (req.body.sessionId) {
+      progressTracker.sendError(req.body.sessionId, `Revamped search failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
+    
+    res.status(500).json({ 
+      error: 'Failed to create profiles with revamped search',
+      details: error instanceof Error ? error.message : 'Unknown error'
+    });
+  }
+});
+
+// Create new profile(s) using the revamped search system
+router.post('/create/revamped', async (req: Request, res: Response) => {
+  try {
+    const { subjects, sessionId }: { subjects: Subject[]; sessionId?: string } = req.body;
+
+    if (!subjects || !Array.isArray(subjects) || subjects.length === 0) {
+      return res.status(400).json({ error: 'Subjects array is required' });
+    }
+
+    const profiles: Profile[] = [];
+
+    for (const subject of subjects) {
+      console.log(`\n=== Processing Subject: ${subject.name} (Revamped Search) ===`);
+      console.log(`Hard Context: ${subject.hardContext}`);
+      console.log(`Soft Context: ${subject.softContext}`);
+      console.log(`${'='.repeat(60)}\n`);
+
+      // Register session for live updates if sessionId provided
+      if (sessionId) {
+        progressTracker.registerSession(sessionId, subject.name);
+        // Give a moment for the SSE connection to be established
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+
+      // Execute revamped search with progress tracking
+      const searchLog = await executeRevampedSearch(
+        subject.name,
+        subject.hardContext,
+        subject.softContext,
+        sessionId
+      );
+
+      // Generate profile from search log
+      const profile = await generateProfileFromLog(searchLog);
+
+      console.log('\n--- Saving to database ---');
+      const savedProfile = await dbCreateProfile(profile);
+      profiles.push(savedProfile);
+
+      console.log(`✅ Profile created successfully: ${savedProfile.id}`);
+    }
+
+    res.json({ profiles });
+  } catch (error) {
+    console.error('Error in revamped profile creation:', error);
+    
+    if (req.body.sessionId) {
+      progressTracker.sendError(req.body.sessionId, `Revamped search failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    }
+    
+    res.status(500).json({ 
+      error: 'Failed to create profiles with revamped search',
+      details: error instanceof Error ? error.message : 'Unknown error'
+    });
+  }
 });
 
 // Create new profile(s) using the redesigned 4-phase system

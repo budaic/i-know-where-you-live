@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Profile, Subject, ProfileResponse } from '../types';
-import { createProfiles, getAllProfiles, deleteProfile as apiDeleteProfile } from '../services/api';
+import { createProfiles, createProfilesRevamped, createProfilesRevampedWithDebug, getAllProfiles, deleteProfile as apiDeleteProfile } from '../services/api';
 
 export function useProfiles() {
   const [profiles, setProfiles] = useState<Profile[]>([]);
@@ -24,11 +24,20 @@ export function useProfiles() {
     fetchProfiles();
   }, []);
 
-  const createNewProfiles = async (subjects: Subject[]): Promise<ProfileResponse> => {
+  const createNewProfiles = async (subjects: Subject[], useRevampedSearch: boolean = false, useDebugInterface: boolean = false): Promise<ProfileResponse & { debugData?: any[] }> => {
     try {
       setLoading(true);
       setError(null);
-      const response = await createProfiles(subjects);
+      let response: ProfileResponse & { debugData?: any[] };
+      
+      if (useRevampedSearch && useDebugInterface) {
+        response = await createProfilesRevampedWithDebug(subjects);
+      } else if (useRevampedSearch) {
+        response = await createProfilesRevamped(subjects);
+      } else {
+        response = await createProfiles(subjects);
+      }
+      
       await fetchProfiles(); // Refresh the list
       return response;
     } catch (err) {

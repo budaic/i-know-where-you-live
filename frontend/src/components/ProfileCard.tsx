@@ -105,11 +105,15 @@ export default function ProfileCard({ profile, onDelete }: ProfileCardProps) {
                     {profile.generatedContext.additionalFindings.length > 0 && (
                       <div>
                         <strong>Additional Findings:</strong>
-                        <ul className="list-disc ml-5 mt-1">
+                        <div className="mt-2 p-3 bg-gray-50 border border-gray-200 rounded text-sm">
                           {profile.generatedContext.additionalFindings.map((finding, idx) => (
-                            <li key={idx}>{finding.substring(0, 150)}{finding.length > 150 ? '...' : ''}</li>
+                            <div key={idx} className="mb-3 last:mb-0">
+                              <div className="whitespace-pre-wrap text-gray-700 leading-relaxed">
+                                {finding}
+                              </div>
+                            </div>
                           ))}
-                        </ul>
+                        </div>
                       </div>
                     )}
                   </div>

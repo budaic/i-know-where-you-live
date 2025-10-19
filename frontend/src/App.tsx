@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SubjectForm from './components/SubjectForm';
 import ProfileList from './components/ProfileList';
 import LiveSearchProgress from './components/LiveSearchProgress';
+import RevampedSearchDebugComponent from './components/RevampedSearchDebug';
 import { useProfiles } from './hooks/useProfiles';
 import { useLiveSearch } from './hooks/useLiveSearch';
 import { Subject } from './types';
@@ -14,6 +15,9 @@ function App() {
     errors?: string[];
   }>({});
   const [useLiveSearchMode, setUseLiveSearchMode] = useState(true);
+  const [useRevampedSearch, setUseRevampedSearch] = useState(false);
+  const [showDebugInterface, setShowDebugInterface] = useState(false);
+  const [debugData, setDebugData] = useState<any>(null);
 
   const handleCreateProfile = async (subjects: Subject[]) => {
     setCreationStatus({});
@@ -21,7 +25,7 @@ function App() {
     if (useLiveSearchMode) {
       // Use live search mode
       try {
-        await startSearch(subjects);
+        await startSearch(subjects, useRevampedSearch);
       } catch (err) {
         setCreationStatus({
           errors: [err instanceof Error ? err.message : 'Failed to start live search'],
@@ -30,7 +34,12 @@ function App() {
     } else {
       // Use traditional mode
       try {
-        const response = await createProfiles(subjects);
+        const response = await createProfiles(subjects, useRevampedSearch, showDebugInterface);
+        
+        // Store debug data if available
+        if (response.debugData && response.debugData.length > 0) {
+          setDebugData(response.debugData[0]); // Use first subject's debug data
+        }
         
         const successCount = response.profiles.length;
         
@@ -109,6 +118,52 @@ function App() {
               </span>
             </label>
           </div>
+
+          {/* Search System Toggle */}
+          <div className="flex items-center">
+            <label className="flex items-center cursor-pointer">
+              <input
+                type="checkbox"
+                checked={useRevampedSearch}
+                onChange={(e) => setUseRevampedSearch(e.target.checked)}
+                className="sr-only"
+              />
+              <div className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                useRevampedSearch ? 'bg-green-600' : 'bg-gray-200'
+              }`}>
+                <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                  useRevampedSearch ? 'translate-x-6' : 'translate-x-1'
+                }`} />
+              </div>
+              <span className="ml-3 text-sm font-medium text-gray-700">
+                {useRevampedSearch ? 'Revamped Search' : 'Legacy Search'}
+              </span>
+            </label>
+          </div>
+
+          {/* Debug Interface Toggle */}
+          {useRevampedSearch && (
+            <div className="flex items-center">
+              <label className="flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={showDebugInterface}
+                  onChange={(e) => setShowDebugInterface(e.target.checked)}
+                  className="sr-only"
+                />
+                <div className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                  showDebugInterface ? 'bg-purple-600' : 'bg-gray-200'
+                }`}>
+                  <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                    showDebugInterface ? 'translate-x-6' : 'translate-x-1'
+                  }`} />
+                </div>
+                <span className="ml-3 text-sm font-medium text-gray-700">
+                  Debug Interface
+                </span>
+              </label>
+            </div>
+          )}
         </div>
 
         <SubjectForm onSubmit={handleCreateProfile} loading={loading || searchState.isSearching} />
@@ -119,6 +174,11 @@ function App() {
             searchState={searchState} 
             onStop={stopSearch}
           />
+        )}
+
+        {/* Debug Interface */}
+        {showDebugInterface && debugData && (
+          <RevampedSearchDebugComponent debugData={debugData} />
         )}
 
         {/* Search Completion Status */}

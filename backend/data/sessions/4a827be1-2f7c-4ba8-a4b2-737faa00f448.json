@@ -1,0 +1,15 @@
+{
+  "sessionId": "4a827be1-2f7c-4ba8-a4b2-737faa00f448",
+  "subjectName": "Benedek Forrai",
+  "startTime": "2025-10-19T00:27:05.748Z",
+  "currentPhase": "general",
+  "progress": 75,
+  "errors": [],
+  "isActive": true,
+  "searchLogs": [],
+  "generatedContext": {
+    "additionalFindings": []
+  },
+  "lastUpdate": "2025-10-19T00:29:05.123Z",
+  "isComplete": false
+}

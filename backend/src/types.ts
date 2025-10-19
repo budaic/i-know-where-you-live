@@ -37,6 +37,67 @@ export interface SearchLog {
   selectedUrl?: string;
   contextAdded?: string;
   timestamp: Date;
+  searchRound?: number;
+  totalRounds?: number;
+}
+
+export interface RevampedSearchStep {
+  stepId: string;
+  stepType: 'query_generation' | 'search_execution' | 'name_validation' | 'context_validation' | 'point_generation' | 'confidence_scoring';
+  query?: string;
+  queryType?: 'simple' | 'hard-context' | 'generated-context';
+  resultsCount?: number;
+  processedCount?: number;
+  validCount?: number;
+  confidence?: number;
+  details: string;
+  timestamp: Date;
+  duration?: number;
+  errors?: string[];
+}
+
+export interface RevampedSearchRound {
+  roundNumber: number;
+  totalRounds: number;
+  queries: SearchQuery[];
+  steps: RevampedSearchStep[];
+  resultsCollected: number;
+  resultsProcessed: number;
+  resultsValid: number;
+  contextPointsGenerated: number;
+  averageConfidence: number;
+  startTime: Date;
+  endTime: Date;
+  duration: number;
+}
+
+export interface SearchQuery {
+  query: string;
+  type: 'simple' | 'hard-context' | 'generated-context';
+  priority: number;
+  expectedResults?: number;
+  actualResults?: number;
+  uid?: string;
+  depth?: number;
+}
+
+export interface RevampedSearchDebug {
+  sessionId: string;
+  subjectName: string;
+  hardContext: string;
+  softContext: string;
+  generatedContext: string;
+  rounds: RevampedSearchRound[];
+  totalResultsCollected: number;
+  totalResultsProcessed: number;
+  totalResultsValid: number;
+  totalContextPoints: number;
+  overallConfidence: number;
+  startTime: Date;
+  endTime: Date;
+  totalDuration: number;
+  errors: string[];
+  warnings: string[];
 }
 
 export interface ProfileCreationLog {
@@ -48,11 +109,6 @@ export interface ProfileCreationLog {
   finalSources: ValidationResult[];
 }
 
-export interface SearchQuery {
-  uid: string;
-  depth: number;
-  query: string;
-}
 
 export interface SearchResult {
   url: string;

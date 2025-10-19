@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { Subject, LiveSearchState, ProgressUpdate } from '../types';
-import { createProfiles, getSession, recoverSession } from '../services/api';
+import { createProfiles, createProfilesRevamped, getSession, recoverSession } from '../services/api';
 import { v4 as uuidv4 } from 'uuid';
 
 export function useLiveSearch() {
@@ -210,7 +210,7 @@ export function useLiveSearch() {
     checkForExistingSession();
   }, [recoverExistingSession]);
 
-  const startSearch = useCallback(async (subjects: Subject[]): Promise<void> => {
+  const startSearch = useCallback(async (subjects: Subject[], useRevampedSearch: boolean = false): Promise<void> => {
     if (searchState.isSearching) {
       console.warn('Search already in progress');
       return;
@@ -290,8 +290,12 @@ export function useLiveSearch() {
         console.log('EventSource readyState:', eventSource.readyState);
       };
 
-      // Start the search
-      await createProfiles(subjects, sessionId);
+      // Start the search with the selected system
+      if (useRevampedSearch) {
+        await createProfilesRevamped(subjects, sessionId);
+      } else {
+        await createProfiles(subjects, sessionId);
+      }
       
     } catch (error) {
       console.error('Error starting search:', error);

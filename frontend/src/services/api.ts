@@ -15,6 +15,16 @@ export const createProfiles = async (subjects: Subject[], sessionId?: string): P
   return response.data;
 };
 
+export const createProfilesRevamped = async (subjects: Subject[], sessionId?: string): Promise<ProfileResponse> => {
+  const response = await api.post<ProfileResponse>('/profiles/create/revamped', { subjects, sessionId });
+  return response.data;
+};
+
+export const createProfilesRevampedWithDebug = async (subjects: Subject[], sessionId?: string): Promise<ProfileResponse & { debugData?: any[] }> => {
+  const response = await api.post<ProfileResponse & { debugData?: any[] }>('/profiles/create/revamped/debug', { subjects, sessionId });
+  return response.data;
+};
+
 export const getProfile = async (id: string): Promise<Profile> => {
   const response = await api.get<Profile>(`/profiles/${id}`);
   return response.data;

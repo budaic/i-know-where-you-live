@@ -47,6 +47,7 @@ function LogEntry({ log, index }: LogEntryProps) {
     if (phase.includes('LinkedIn')) return 'bg-blue-100 text-blue-800';
     if (phase.includes('GitHub')) return 'bg-purple-100 text-purple-800';
     if (phase.includes('Website')) return 'bg-green-100 text-green-800';
+    if (phase.includes('Revamped')) return 'bg-indigo-100 text-indigo-800';
     return 'bg-gray-100 text-gray-800';
   };
 

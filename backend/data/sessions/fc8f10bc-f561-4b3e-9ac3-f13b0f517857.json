@@ -1,0 +1,55 @@
+{
+  "sessionId": "fc8f10bc-f561-4b3e-9ac3-f13b0f517857",
+  "subjectName": "Kristóf Floch",
+  "startTime": "2025-10-18T23:49:46.955Z",
+  "currentPhase": "error",
+  "progress": 0,
+  "errors": [
+    "Revamped search failed: Failed to create sources: invalid input syntax for type integer: \"0.7\""
+  ],
+  "isActive": true,
+  "searchLogs": [],
+  "generatedContext": {
+    "additionalFindings": []
+  },
+  "lastUpdate": "2025-10-18T23:51:39.473Z",
+  "isComplete": false,
+  "partialProfile": {
+    "name": "Kristóf Floch",
+    "aliases": [],
+    "profileSummary": "",
+    "sources": [],
+    "searchLogs": [
+      {
+        "phase": "general",
+        "query": "Kristóf Floch; Kristóf Floch Budapest University of Technology and Economics, ETH Zürich.",
+        "resultsFound": 59,
+        "validatedResults": [],
+        "selectedUrl": "https://arxiv.org/abs/2501.14672",
+        "timestamp": "2025-10-18T23:50:12.958Z",
+        "searchRound": 1,
+        "totalRounds": 3
+      },
+      {
+        "phase": "general",
+        "query": "Kristóf Floch; Kristóf Floch Budapest University of Technology and Economics, ETH Zürich.; Kristóf Floch Source 1 (https://arxiv.org/abs/2501.14672):\n• Kristóf Floch is affiliated with the Budapest University of Technology and Economics, indicating his academic background and institutional support in the field of electrical engineering and systems science.\n• The research presented in the paper showcases advanced methodologies in systems and control, which aligns with the academic focus of ETH Zürich, a leading institution in engineering and technology.\n• The paper's emphasis on adaptive control strategies for autonomous vehicles reflects ongoing research trends in robotics, a field that is also a significant area of study at both the Budapest University of Technology and Economics and ETH Zürich.\n",
+        "resultsFound": 74,
+        "validatedResults": [],
+        "selectedUrl": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4348616",
+        "timestamp": "2025-10-18T23:50:51.454Z",
+        "searchRound": 2,
+        "totalRounds": 3
+      },
+      {
+        "phase": "general",
+        "query": "Kristóf Floch; Kristóf Floch Budapest University of Technology and Economics, ETH Zürich.; Kristóf Floch Source 1 (https://arxiv.org/abs/2501.14672):\n• Kristóf Floch is affiliated with the Budapest University of Technology and Economics, indicating his academic background and institutional support in the field of electrical engineering and systems science.\n• The research presented in the paper showcases advanced methodologies in systems and control, which aligns with the academic focus of ETH Zürich, a leading institution in engineering and technology.\n• The paper's emphasis on adaptive control strategies for autonomous vehicles reflects ongoing research trends in robotics, a field that is also a significant area of study at both the Budapest University of Technology and Economics and ETH Zürich.\n\nSource 2 (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4348616):\n• Kristóf Floch's affiliation with the Budapest University of Technology and Economics establishes his connection to a prominent institution that supports research in engineering and technology, aligning with the academic rigor of ETH Zürich.\n• The development of the Motion Tracker Beta application demonstrates Floch's engagement with advanced image processing techniques, which is relevant to the research methodologies emphasized at ETH Zürich in the context of systems and control.\n• The focus on motion analysis and tracking algorithms in Floch's work reflects current trends in robotics and automation, areas of significant research interest at both the Budapest University of Technology and Economics and ETH Zürich.\n",
+        "resultsFound": 87,
+        "validatedResults": [],
+        "selectedUrl": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4348616",
+        "timestamp": "2025-10-18T23:51:32.523Z",
+        "searchRound": 3,
+        "totalRounds": 3
+      }
+    ]
+  }
+}
