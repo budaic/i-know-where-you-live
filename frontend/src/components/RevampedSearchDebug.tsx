@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RevampedSearchDebug, RevampedSearchRound, RevampedSearchStep } from '../types';
+import { RevampedSearchDebug, RevampedSearchRound, RevampedSearchStep, SearchQuery } from '../types';
 
 interface RevampedSearchDebugProps {
   debugData: RevampedSearchDebug;
@@ -58,48 +58,48 @@ export default function RevampedSearchDebugComponent({ debugData }: RevampedSear
     return `${(ms / 1000).toFixed(1)}s`;
   };
 
-  const formatTimestamp = (timestamp: string) => {
+  const formatTimestamp = (timestamp: string | Date) => {
     return new Date(timestamp).toLocaleTimeString();
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+    <div className="terminal-bg terminal-border p-6 mb-6 font-mono">
       <div className="flex items-center justify-between mb-6">
-        <h3 className="text-xl font-bold text-gray-800">Revamped Search Debug</h3>
-        <div className="text-sm text-gray-600">
+        <h3 className="terminal-text text-xl font-bold">🔍 Revamped Search Debug</h3>
+        <div className="terminal-description text-sm">
           Duration: {formatDuration(debugData.totalDuration)}
         </div>
       </div>
 
       {/* Overall Statistics */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-        <div className="bg-blue-50 p-4 rounded-lg">
-          <div className="text-2xl font-bold text-blue-600">{debugData.totalResultsCollected}</div>
-          <div className="text-sm text-blue-800">Results Collected</div>
+        <div className="terminal-border p-4 bg-terminal-dark-gray">
+          <div className="text-2xl font-bold text-blue-400">{debugData.totalResultsCollected}</div>
+          <div className="terminal-description text-sm">Results Collected</div>
         </div>
-        <div className="bg-green-50 p-4 rounded-lg">
-          <div className="text-2xl font-bold text-green-600">{debugData.totalResultsProcessed}</div>
-          <div className="text-sm text-green-800">Results Processed</div>
+        <div className="terminal-border p-4 bg-terminal-dark-gray">
+          <div className="text-2xl font-bold text-green-400">{debugData.totalResultsProcessed}</div>
+          <div className="terminal-description text-sm">Results Processed</div>
         </div>
-        <div className="bg-purple-50 p-4 rounded-lg">
-          <div className="text-2xl font-bold text-purple-600">{debugData.totalResultsValid}</div>
-          <div className="text-sm text-purple-800">Valid Results</div>
+        <div className="terminal-border p-4 bg-terminal-dark-gray">
+          <div className="text-2xl font-bold text-purple-400">{debugData.totalResultsValid}</div>
+          <div className="terminal-description text-sm">Valid Results</div>
         </div>
-        <div className="bg-orange-50 p-4 rounded-lg">
-          <div className="text-2xl font-bold text-orange-600">{debugData.totalContextPoints}</div>
-          <div className="text-sm text-orange-800">Context Points</div>
+        <div className="terminal-border p-4 bg-terminal-dark-gray">
+          <div className="text-2xl font-bold text-orange-400">{debugData.totalContextPoints}</div>
+          <div className="terminal-description text-sm">Context Points</div>
         </div>
       </div>
 
       {/* Overall Confidence */}
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-sm font-medium text-gray-700">Overall Confidence</span>
-          <span className="text-sm text-gray-600">{(debugData.overallConfidence * 100).toFixed(1)}%</span>
+          <span className="terminal-text text-sm font-medium">Overall Confidence</span>
+          <span className="terminal-description text-sm">{(debugData.overallConfidence * 100).toFixed(1)}%</span>
         </div>
-        <div className="w-full bg-gray-200 rounded-full h-2">
+        <div className="w-full bg-terminal-gray rounded-full h-2">
           <div
-            className="bg-indigo-600 h-2 rounded-full transition-all duration-500"
+            className="bg-terminal-green h-2 rounded-full transition-all duration-500"
             style={{ width: `${debugData.overallConfidence * 100}%` }}
           />
         </div>
@@ -109,20 +109,20 @@ export default function RevampedSearchDebugComponent({ debugData }: RevampedSear
       {(debugData.errors.length > 0 || debugData.warnings.length > 0) && (
         <div className="mb-6">
           {debugData.errors.length > 0 && (
-            <div className="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
-              <h4 className="text-red-800 font-semibold mb-2">Errors ({debugData.errors.length})</h4>
-              <ul className="text-red-700 text-sm space-y-1">
-                {debugData.errors.map((error, index) => (
+            <div className="terminal-border border-l-4 border-red-400 p-4 mb-4 bg-red-900/20">
+              <h4 className="text-red-400 font-semibold mb-2">⚠️ Errors ({debugData.errors.length})</h4>
+              <ul className="text-red-300 text-sm space-y-1">
+                {debugData.errors.map((error: string, index: number) => (
                   <li key={index}>• {error}</li>
                 ))}
               </ul>
             </div>
           )}
           {debugData.warnings.length > 0 && (
-            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
-              <h4 className="text-yellow-800 font-semibold mb-2">Warnings ({debugData.warnings.length})</h4>
-              <ul className="text-yellow-700 text-sm space-y-1">
-                {debugData.warnings.map((warning, index) => (
+            <div className="terminal-border border-l-4 border-yellow-400 p-4 bg-yellow-900/20">
+              <h4 className="text-yellow-400 font-semibold mb-2">⚠️ Warnings ({debugData.warnings.length})</h4>
+              <ul className="text-yellow-300 text-sm space-y-1">
+                {debugData.warnings.map((warning: string, index: number) => (
                   <li key={index}>• {warning}</li>
                 ))}
               </ul>
@@ -133,65 +133,65 @@ export default function RevampedSearchDebugComponent({ debugData }: RevampedSear
 
       {/* Search Rounds */}
       <div className="space-y-4">
-        <h4 className="text-lg font-semibold text-gray-800">Search Rounds ({debugData.rounds.length})</h4>
-        {debugData.rounds.map((round) => (
-          <div key={round.roundNumber} className="border border-gray-200 rounded-lg">
+        <h4 className="terminal-text text-lg font-semibold">🔍 Search Rounds ({debugData.rounds.length})</h4>
+        {debugData.rounds.map((round: RevampedSearchRound) => (
+          <div key={round.roundNumber} className="terminal-border bg-terminal-dark-gray">
             <div
-              className="p-4 cursor-pointer hover:bg-gray-50 flex items-center justify-between"
+              className="p-4 cursor-pointer hover:bg-terminal-gray flex items-center justify-between transition-colors"
               onClick={() => toggleRound(round.roundNumber)}
             >
               <div className="flex items-center space-x-3">
                 <span className="text-lg">{expandedRounds.has(round.roundNumber) ? '📂' : '📁'}</span>
                 <div>
-                  <h5 className="font-medium text-gray-800">Round {round.roundNumber}/{round.totalRounds}</h5>
-                  <p className="text-sm text-gray-600">
+                  <h5 className="terminal-text font-medium">Round {round.roundNumber}/{round.totalRounds}</h5>
+                  <p className="terminal-description text-sm">
                     {round.resultsValid} valid results • {round.contextPointsGenerated} context points • 
                     Avg confidence: {(round.averageConfidence * 100).toFixed(1)}% • 
                     Duration: {formatDuration(round.duration)}
                   </p>
                 </div>
               </div>
-              <div className="text-sm text-gray-500">
+              <div className="terminal-description text-sm">
                 {formatTimestamp(round.startTime)} - {formatTimestamp(round.endTime)}
               </div>
             </div>
 
             {expandedRounds.has(round.roundNumber) && (
-              <div className="border-t border-gray-200 p-4 bg-gray-50">
+              <div className="border-t border-terminal-border p-4 bg-terminal-gray">
                 {/* Round Statistics */}
                 <div className="grid grid-cols-3 gap-4 mb-4">
                   <div className="text-center">
-                    <div className="text-lg font-bold text-blue-600">{round.resultsCollected}</div>
-                    <div className="text-xs text-blue-800">Collected</div>
+                    <div className="text-lg font-bold text-blue-400">{round.resultsCollected}</div>
+                    <div className="terminal-description text-xs">Collected</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-lg font-bold text-green-600">{round.resultsProcessed}</div>
-                    <div className="text-xs text-green-800">Processed</div>
+                    <div className="text-lg font-bold text-green-400">{round.resultsProcessed}</div>
+                    <div className="terminal-description text-xs">Processed</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-lg font-bold text-purple-600">{round.resultsValid}</div>
-                    <div className="text-xs text-purple-800">Valid</div>
+                    <div className="text-lg font-bold text-purple-400">{round.resultsValid}</div>
+                    <div className="terminal-description text-xs">Valid</div>
                   </div>
                 </div>
 
                 {/* Queries */}
                 <div className="mb-4">
-                  <h6 className="font-medium text-gray-700 mb-2">Queries ({round.queries.length})</h6>
+                  <h6 className="terminal-text font-medium mb-2">📋 Queries ({round.queries.length})</h6>
                   <div className="space-y-2">
-                    {round.queries.map((query, index) => (
-                      <div key={index} className="bg-white p-3 rounded border">
+                    {round.queries.map((query: SearchQuery, index: number) => (
+                      <div key={index} className="terminal-bg p-3 terminal-border">
                         <div className="flex items-center justify-between">
-                          <span className="font-medium text-gray-800">{query.query}</span>
-                          <span className={`px-2 py-1 rounded text-xs font-medium ${
-                            query.type === 'simple' ? 'bg-blue-100 text-blue-800' :
-                            query.type === 'hard-context' ? 'bg-green-100 text-green-800' :
-                            'bg-orange-100 text-orange-800'
+                          <span className="terminal-text font-medium">{query.query}</span>
+                          <span className={`px-2 py-1 terminal-border text-xs font-medium ${
+                            query.type === 'simple' ? 'text-blue-400' :
+                            query.type === 'hard-context' ? 'text-green-400' :
+                            'text-orange-400'
                           }`}>
                             {query.type}
                           </span>
                         </div>
                         {query.actualResults !== undefined && (
-                          <div className="text-sm text-gray-600 mt-1">
+                          <div className="terminal-description text-sm mt-1">
                             Results: {query.actualResults}
                           </div>
                         )}
@@ -202,12 +202,12 @@ export default function RevampedSearchDebugComponent({ debugData }: RevampedSear
 
                 {/* Steps */}
                 <div>
-                  <h6 className="font-medium text-gray-700 mb-2">Steps ({round.steps.length})</h6>
+                  <h6 className="terminal-text font-medium mb-2">⚙️ Steps ({round.steps.length})</h6>
                   <div className="space-y-2">
-                    {round.steps.map((step) => (
-                      <div key={step.stepId} className="bg-white rounded border">
+                    {round.steps.map((step: RevampedSearchStep) => (
+                      <div key={step.stepId} className="terminal-bg terminal-border">
                         <div
-                          className="p-3 cursor-pointer hover:bg-gray-50 flex items-center justify-between"
+                          className="p-3 cursor-pointer hover:bg-terminal-gray flex items-center justify-between transition-colors"
                           onClick={() => toggleStep(step.stepId)}
                         >
                           <div className="flex items-center space-x-3">
@@ -223,47 +223,47 @@ export default function RevampedSearchDebugComponent({ debugData }: RevampedSear
                                   </span>
                                 )}
                               </div>
-                              <p className="text-sm text-gray-700 mt-1">{step.details}</p>
+                              <p className="terminal-description text-sm mt-1">{step.details}</p>
                             </div>
                           </div>
-                          <div className="text-sm text-gray-500">
+                          <div className="terminal-description text-sm">
                             {formatTimestamp(step.timestamp)}
                           </div>
                         </div>
 
                         {expandedSteps.has(step.stepId) && (
-                          <div className="border-t border-gray-200 p-3 bg-gray-50">
+                          <div className="border-t border-terminal-border p-3 bg-terminal-gray">
                             <div className="grid grid-cols-2 gap-4 text-sm">
                               {step.query && (
                                 <div>
-                                  <span className="font-medium text-gray-700">Query:</span>
-                                  <p className="text-gray-600">{step.query}</p>
+                                  <span className="terminal-text font-medium">Query:</span>
+                                  <p className="terminal-description">{step.query}</p>
                                 </div>
                               )}
                               {step.resultsCount !== undefined && (
                                 <div>
-                                  <span className="font-medium text-gray-700">Results:</span>
-                                  <p className="text-gray-600">{step.resultsCount}</p>
+                                  <span className="terminal-text font-medium">Results:</span>
+                                  <p className="terminal-description">{step.resultsCount}</p>
                                 </div>
                               )}
                               {step.processedCount !== undefined && (
                                 <div>
-                                  <span className="font-medium text-gray-700">Processed:</span>
-                                  <p className="text-gray-600">{step.processedCount}</p>
+                                  <span className="terminal-text font-medium">Processed:</span>
+                                  <p className="terminal-description">{step.processedCount}</p>
                                 </div>
                               )}
                               {step.validCount !== undefined && (
                                 <div>
-                                  <span className="font-medium text-gray-700">Valid:</span>
-                                  <p className="text-gray-600">{step.validCount}</p>
+                                  <span className="terminal-text font-medium">Valid:</span>
+                                  <p className="terminal-description">{step.validCount}</p>
                                 </div>
                               )}
                             </div>
                             {step.errors && step.errors.length > 0 && (
                               <div className="mt-3">
-                                <span className="font-medium text-red-700">Errors:</span>
-                                <ul className="text-red-600 text-sm mt-1">
-                                  {step.errors.map((error, index) => (
+                                <span className="terminal-text font-medium text-red-400">Errors:</span>
+                                <ul className="text-red-300 text-sm mt-1">
+                                  {step.errors.map((error: string, index: number) => (
                                     <li key={index}>• {error}</li>
                                   ))}
                                 </ul>
@@ -284,9 +284,9 @@ export default function RevampedSearchDebugComponent({ debugData }: RevampedSear
       {/* Generated Context */}
       {debugData.generatedContext && (
         <div className="mt-6">
-          <h4 className="text-lg font-semibold text-gray-800 mb-3">Generated Context</h4>
-          <div className="bg-gray-50 p-4 rounded-lg">
-            <pre className="text-sm text-gray-700 whitespace-pre-wrap">{debugData.generatedContext}</pre>
+          <h4 className="terminal-text text-lg font-semibold mb-3">📝 Generated Context</h4>
+          <div className="terminal-border p-4 bg-terminal-dark-gray">
+            <pre className="terminal-description text-sm whitespace-pre-wrap">{debugData.generatedContext}</pre>
           </div>
         </div>
       )}

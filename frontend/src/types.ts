@@ -32,6 +32,8 @@ export interface SearchLog {
   selectedUrl?: string;
   contextAdded?: string;
   timestamp: string;
+  searchRound?: number;
+  totalRounds?: number;
 }
 
 export interface Profile {
@@ -57,6 +59,12 @@ export interface Source {
   validationReasoning?: string;
   confidence?: string;
   createdAt: string;
+  // Additional rich information from ValidationResult
+  isLikelyMatch?: boolean;
+  samePersonElements?: string[];
+  differentPersonElements?: string[];
+  prompt?: string;
+  category?: 'profile' | 'post' | 'company' | 'other';
 }
 
 export interface ProfileResponse {
@@ -112,5 +120,65 @@ export interface SessionInfo {
   generatedContext?: GeneratedContext;
   partialProfile?: Partial<Profile>;
   finalProfile?: Profile;
+}
+
+// Revamped Search Types
+export interface RevampedSearchStep {
+  stepId: string;
+  stepType: 'query_generation' | 'search_execution' | 'name_validation' | 'context_validation' | 'point_generation' | 'confidence_scoring';
+  query?: string;
+  queryType?: 'simple' | 'hard-context' | 'generated-context';
+  resultsCount?: number;
+  processedCount?: number;
+  validCount?: number;
+  confidence?: number;
+  details: string;
+  timestamp: Date;
+  duration?: number;
+  errors?: string[];
+}
+
+export interface SearchQuery {
+  query: string;
+  type: 'simple' | 'hard-context' | 'generated-context';
+  priority: number;
+  expectedResults?: number;
+  actualResults?: number;
+  uid?: string;
+  depth?: number;
+}
+
+export interface RevampedSearchRound {
+  roundNumber: number;
+  totalRounds: number;
+  queries: SearchQuery[];
+  steps: RevampedSearchStep[];
+  resultsCollected: number;
+  resultsProcessed: number;
+  resultsValid: number;
+  contextPointsGenerated: number;
+  averageConfidence: number;
+  startTime: Date;
+  endTime: Date;
+  duration: number;
+}
+
+export interface RevampedSearchDebug {
+  sessionId: string;
+  subjectName: string;
+  hardContext: string;
+  softContext: string;
+  generatedContext: string;
+  rounds: RevampedSearchRound[];
+  totalResultsCollected: number;
+  totalResultsProcessed: number;
+  totalResultsValid: number;
+  totalContextPoints: number;
+  overallConfidence: number;
+  startTime: Date;
+  endTime: Date;
+  totalDuration: number;
+  errors: string[];
+  warnings: string[];
 }
 
