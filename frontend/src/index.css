@@ -2,17 +2,114 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Terminal Color Variables */
+:root {
+  --terminal-bg: #000000;
+  --terminal-green: #00FF00;
+  --terminal-green-dim: #00CC00;
+  --terminal-green-bright: #33FF33;
+  --terminal-white: #FFFFFF;
+  --terminal-gray: #AAAAAA;
+  --terminal-dark-gray: #333333;
+  --terminal-link: #66FFFF;
+  --terminal-description: #CCCCCC;
+  --terminal-border: #555555;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+  background-color: var(--terminal-bg);
+  color: var(--terminal-green);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Terminal-specific utility classes */
+.terminal-text {
+  color: var(--terminal-green);
+  font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+}
+
+.terminal-white {
+  color: var(--terminal-white);
+}
+
+.terminal-bg {
+  background-color: var(--terminal-bg);
+}
+
+.terminal-border {
+  border: 1px solid var(--terminal-border);
+}
+
+.terminal-link {
+  color: var(--terminal-link);
+}
+
+.terminal-description {
+  color: var(--terminal-description);
+}
+
+.terminal-glow {
+  text-shadow: 0 0 5px var(--terminal-green);
+}
+
+.terminal-input {
+  background-color: transparent;
+  border: 1px solid var(--terminal-green);
+  color: var(--terminal-green);
+  font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+  padding: 8px;
+}
+
+.terminal-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--terminal-green);
+}
+
+.terminal-button {
+  background-color: transparent;
+  border: 1px solid var(--terminal-green);
+  color: var(--terminal-green);
+  font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.terminal-button:hover:not(:disabled) {
+  background-color: var(--terminal-green);
+  color: var(--terminal-bg);
+}
+
+.terminal-button:disabled {
+  color: var(--terminal-gray);
+  border-color: var(--terminal-gray);
+  cursor: not-allowed;
+}
+
+.terminal-button:disabled:hover {
+  background-color: transparent;
+  color: var(--terminal-gray);
+}
+
+.terminal-progress-bar {
+  background-color: var(--terminal-dark-gray);
+  border: 1px solid var(--terminal-green);
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal-progress-fill {
+  background-color: var(--terminal-green);
+  height: 100%;
+  transition: width 0.3s ease;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
 }
 
